@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 27 ?????? 2013 12:29:40 ???? by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="gr.manousos.model.E1prepaidTaxes" table="E1PrepaidTaxes"
+		catalog="TaxisDB">
+		<id name="idE1prepaidTaxes" type="java.lang.Integer">
+			<column name="idE1PrepaidTaxes" />
+			<generator class="identity" />
+		</id>
+		<property name="_601" type="java.lang.Float">
+			<column name="601" precision="12" scale="0" />
+		</property>
+		<property name="_602" type="java.lang.Float">
+			<column name="602" precision="12" scale="0" />
+		</property>
+		<property name="_603" type="java.lang.Float">
+			<column name="603" precision="12" scale="0" />
+		</property>
+		<property name="_604" type="java.lang.Float">
+			<column name="604" precision="12" scale="0" />
+		</property>
+		<property name="_605" type="java.lang.Float">
+			<column name="605" precision="12" scale="0" />
+		</property>
+		<property name="_606" type="java.lang.Float">
+			<column name="606" precision="12" scale="0" />
+		</property>
+		<property name="_607" type="java.lang.Float">
+			<column name="607" precision="12" scale="0" />
+		</property>
+		<property name="_608" type="java.lang.Float">
+			<column name="608" precision="12" scale="0" />
+		</property>
+		<property name="_609" type="java.lang.Float">
+			<column name="609" precision="12" scale="0" />
+		</property>
+		<property name="_610" type="java.lang.Float">
+			<column name="610" precision="12" scale="0" />
+		</property>
+		<property name="_651" type="java.lang.Float">
+			<column name="651" precision="12" scale="0" />
+		</property>
+		<property name="_652" type="java.lang.Float">
+			<column name="652" precision="12" scale="0" />
+		</property>
+		<property name="_293" type="java.lang.Float">
+			<column name="293" precision="12" scale="0" />
+		</property>
+		<property name="_294" type="java.lang.Float">
+			<column name="294" precision="12" scale="0" />
+		</property>
+		<property name="_313" type="java.lang.Float">
+			<column name="313" precision="12" scale="0" />
+		</property>
+		<property name="_314" type="java.lang.Float">
+			<column name="314" precision="12" scale="0" />
+		</property>
+		<property name="_315" type="java.lang.Float">
+			<column name="315" precision="12" scale="0" />
+		</property>
+		<property name="_316" type="java.lang.Float">
+			<column name="316" precision="12" scale="0" />
+		</property>
+		<property name="_297" type="java.lang.Float">
+			<column name="297" precision="12" scale="0" />
+		</property>
+		<property name="_298" type="java.lang.Float">
+			<column name="298" precision="12" scale="0" />
+		</property>
+		<property name="_127" type="java.lang.Float">
+			<column name="127" precision="12" scale="0" />
+		</property>
+		<property name="_128" type="string">
+			<column name="128" length="45" />
+		</property>
+		<set name="e1s" table="E1" inverse="true" lazy="true" fetch="select">
+			<key>
+				<column name="idE1PrepaidTaxes" />
+			</key>
+			<one-to-many class="gr.manousos.model.E1" />
+		</set>
+	</class>
+</hibernate-mapping>
