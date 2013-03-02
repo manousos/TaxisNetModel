@@ -1,6 +1,6 @@
 package gr.manousos.model;
 
-// Generated 27 Φεβ 2013 12:29:40 πμ by Hibernate Tools 3.4.0.CR1
+// Generated 2 Μαρ 2013 9:35:29 μμ by Hibernate Tools 3.4.0.CR1
 
 import java.util.HashSet;
 import java.util.Set;
@@ -21,26 +21,27 @@ public class Taxpayer implements java.io.Serializable {
 	private String fname;
 	private String lname;
 	private String fatherName;
+	private String address;
 	private Set<E2> e2s = new HashSet<E2>(0);
-	private Set<Address> addresses = new HashSet<Address>(0);
 	private Set<E1> e1s = new HashSet<E1>(0);
 
 	public Taxpayer() {
 	}
 
 	public Taxpayer(Contact contact, User user, String afm, String fname,
-			String lname, String fatherName) {
+			String lname, String fatherName, String address) {
 		this.contact = contact;
 		this.user = user;
 		this.afm = afm;
 		this.fname = fname;
 		this.lname = lname;
 		this.fatherName = fatherName;
+		this.address = address;
 	}
 
 	public Taxpayer(Contact contact, User user, String afm, String fname,
-			String lname, String fatherName, Set<E2> e2s,
-			Set<Address> addresses, Set<E1> e1s) {
+			String lname, String fatherName, Set<E2> e2s, Set<E1> e1s,
+			String address) {
 		this.contact = contact;
 		this.user = user;
 		this.afm = afm;
@@ -48,7 +49,7 @@ public class Taxpayer implements java.io.Serializable {
 		this.lname = lname;
 		this.fatherName = fatherName;
 		this.e2s = e2s;
-		this.addresses = addresses;
+		this.address = address;
 		this.e1s = e1s;
 	}
 
@@ -114,14 +115,14 @@ public class Taxpayer implements java.io.Serializable {
 
 	public void setE2s(Set<E2> e2s) {
 		this.e2s = e2s;
+	}	
+
+	public String getAddress() {
+		return address;
 	}
 
-	public Set<Address> getAddresses() {
-		return this.addresses;
-	}
-
-	public void setAddresses(Set<Address> addresses) {
-		this.addresses = addresses;
+	public void setAddress(String address) {
+		this.address = address;
 	}
 
 	public Set<E1> getE1s() {
