@@ -21,7 +21,6 @@ public class Taxpayer implements java.io.Serializable {
 	private String fname;
 	private String lname;
 	private String fatherName;
-	private String address;
 	private Set<E2> e2s = new HashSet<E2>(0);
 	private Set<E1> e1s = new HashSet<E1>(0);
 
@@ -29,14 +28,13 @@ public class Taxpayer implements java.io.Serializable {
 	}
 
 	public Taxpayer(Contact contact, User user, String afm, String fname,
-			String lname, String fatherName, String address) {
+			String lname, String fatherName) {
 		this.contact = contact;
 		this.user = user;
 		this.afm = afm;
 		this.fname = fname;
 		this.lname = lname;
-		this.fatherName = fatherName;
-		this.address = address;
+		this.fatherName = fatherName;		
 	}
 
 	public Taxpayer(Contact contact, User user, String afm, String fname,
@@ -48,8 +46,7 @@ public class Taxpayer implements java.io.Serializable {
 		this.fname = fname;
 		this.lname = lname;
 		this.fatherName = fatherName;
-		this.e2s = e2s;
-		this.address = address;
+		this.e2s = e2s;		
 		this.e1s = e1s;
 	}
 
@@ -116,14 +113,6 @@ public class Taxpayer implements java.io.Serializable {
 	public void setE2s(Set<E2> e2s) {
 		this.e2s = e2s;
 	}	
-
-	public String getAddress() {
-		return address;
-	}
-
-	public void setAddress(String address) {
-		this.address = address;
-	}
 
 	public Set<E1> getE1s() {
 		return this.e1s;

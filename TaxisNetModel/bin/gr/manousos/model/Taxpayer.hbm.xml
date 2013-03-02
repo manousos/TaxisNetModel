@@ -28,10 +28,7 @@
 		</property>
 		<property name="fatherName" type="string">
 			<column name="FatherName" length="50" not-null="true" />
-		</property>
-		<property name="address" type="string">
-			<column name="Address" length="500" not-null="true" />
-		</property>
+		</property>		
 		<set name="e2s" table="E2" inverse="true" lazy="true" fetch="select">
 			<key>
 				<column name="TaxierID" not-null="true" />
