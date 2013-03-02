@@ -1,6 +1,6 @@
 package gr.manousos.model;
 
-// Generated 2 Μαρ 2013 9:35:29 μμ by Hibernate Tools 3.4.0.CR1
+// Generated 2 Μαρ 2013 11:21:38 μμ by Hibernate Tools 3.4.0.CR1
 
 import java.util.HashSet;
 import java.util.Set;
@@ -27,6 +27,7 @@ public class E1 implements java.io.Serializable {
 	private E1taxableIncomes e1taxableIncomes;
 	private E1incomesReduceTaxes e1incomesReduceTaxes;
 	private String taxpayerAddress;
+	private String atid;
 	private Integer isComplete;
 	private Set<E1relatePersons> e1relatePersonses = new HashSet<E1relatePersons>(
 			0);
@@ -34,10 +35,11 @@ public class E1 implements java.io.Serializable {
 	public E1() {
 	}
 
-	public E1(E1Id id, Taxpayer taxpayer, String taxpayerAddress) {
+	public E1(E1Id id, Taxpayer taxpayer, String taxpayerAddress, String atid) {
 		this.id = id;
 		this.taxpayer = taxpayer;
 		this.taxpayerAddress = taxpayerAddress;
+		this.atid = atid;
 	}
 
 	public E1(E1Id id, E1reduceTax e1reduceTax,
@@ -49,7 +51,8 @@ public class E1 implements java.io.Serializable {
 			E1expensesRemovedFromTotalIncome e1expensesRemovedFromTotalIncome,
 			E1prepaidTaxes e1prepaidTaxes, E1taxableIncomes e1taxableIncomes,
 			E1incomesReduceTaxes e1incomesReduceTaxes, String taxpayerAddress,
-			Integer isComplete, Set<E1relatePersons> e1relatePersonses) {
+			String atid, Integer isComplete,
+			Set<E1relatePersons> e1relatePersonses) {
 		this.id = id;
 		this.e1reduceTax = e1reduceTax;
 		this.e1objectiveSpending = e1objectiveSpending;
@@ -63,6 +66,7 @@ public class E1 implements java.io.Serializable {
 		this.e1taxableIncomes = e1taxableIncomes;
 		this.e1incomesReduceTaxes = e1incomesReduceTaxes;
 		this.taxpayerAddress = taxpayerAddress;
+		this.atid = atid;
 		this.isComplete = isComplete;
 		this.e1relatePersonses = e1relatePersonses;
 	}
@@ -174,6 +178,14 @@ public class E1 implements java.io.Serializable {
 
 	public void setTaxpayerAddress(String taxpayerAddress) {
 		this.taxpayerAddress = taxpayerAddress;
+	}
+
+	public String getAtid() {
+		return this.atid;
+	}
+
+	public void setAtid(String atid) {
+		this.atid = atid;
 	}
 
 	public Integer getIsComplete() {

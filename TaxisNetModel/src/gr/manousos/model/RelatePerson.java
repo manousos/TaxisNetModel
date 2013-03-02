@@ -1,6 +1,6 @@
 package gr.manousos.model;
 
-// Generated 2 Μαρ 2013 9:35:29 μμ by Hibernate Tools 3.4.0.CR1
+// Generated 2 Μαρ 2013 11:21:38 μμ by Hibernate Tools 3.4.0.CR1
 
 import java.util.HashSet;
 import java.util.Set;
@@ -22,6 +22,7 @@ public class RelatePerson implements java.io.Serializable {
 	private String fname;
 	private String lname;
 	private String fatherName;
+	private String atid;
 	private Set<E1relatePersons> e1relatePersonses = new HashSet<E1relatePersons>(
 			0);
 
@@ -34,7 +35,8 @@ public class RelatePerson implements java.io.Serializable {
 
 	public RelatePerson(int idRelatePerson, Contact contact, Integer type,
 			String address, String afm, String fname, String lname,
-			String fatherName, Set<E1relatePersons> e1relatePersonses) {
+			String fatherName, String atid,
+			Set<E1relatePersons> e1relatePersonses) {
 		this.idRelatePerson = idRelatePerson;
 		this.contact = contact;
 		this.type = type;
@@ -43,6 +45,7 @@ public class RelatePerson implements java.io.Serializable {
 		this.fname = fname;
 		this.lname = lname;
 		this.fatherName = fatherName;
+		this.atid = atid;
 		this.e1relatePersonses = e1relatePersonses;
 	}
 
@@ -108,6 +111,14 @@ public class RelatePerson implements java.io.Serializable {
 
 	public void setFatherName(String fatherName) {
 		this.fatherName = fatherName;
+	}
+
+	public String getAtid() {
+		return this.atid;
+	}
+
+	public void setAtid(String atid) {
+		this.atid = atid;
 	}
 
 	public Set<E1relatePersons> getE1relatePersonses() {
