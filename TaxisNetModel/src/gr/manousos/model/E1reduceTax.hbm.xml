@@ -31,7 +31,7 @@
 			<key>
 				<column name="idE1ReduceTax" />
 			</key>
-			<one-to-many class="gr.manousos.model.E1" />
+			<one-to-many class="gr.manousos.model.E1" unique="true" />
 		</set>
 	</class>
 </hibernate-mapping>

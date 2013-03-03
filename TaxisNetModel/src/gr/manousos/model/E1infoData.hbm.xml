@@ -111,7 +111,7 @@
             <key>
                 <column name="E1InfoDataID" />
             </key>
-            <one-to-many class="gr.manousos.model.E1" />
+            <one-to-many class="gr.manousos.model.E1" unique="true"/>
         </set>
     </class>
 </hibernate-mapping>

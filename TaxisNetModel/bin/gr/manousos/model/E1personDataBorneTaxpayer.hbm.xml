@@ -107,7 +107,7 @@
 		</property>
 		<set name="e1s" table="E1" inverse="true" lazy="true" fetch="select">
 			<key>
-				<column name="idE1PersonDataBorneTaxpayer" />
+				<column name="idE1PersonDataBorneTaxpayer" unique="true" />
 			</key>
 			<one-to-many class="gr.manousos.model.E1" />
 		</set>

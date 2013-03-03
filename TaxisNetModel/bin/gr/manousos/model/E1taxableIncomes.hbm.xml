@@ -435,7 +435,7 @@
 		</set>
 		<set name="e1s" table="E1" inverse="true" lazy="true" fetch="select">
 			<key>
-				<column name="E1TaxableIncomeID" />
+				<column name="E1TaxableIncomeID" unique="true" />
 			</key>
 			<one-to-many class="gr.manousos.model.E1" />
 		</set>

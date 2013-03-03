@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<!-- Generated 2 ?????? 2013 9:35:30 ???? by Hibernate Tools 3.4.0.CR1 -->
+<!-- Generated 2 ?????? 2013 11:28:02 ???? by Hibernate Tools 3.4.0.CR1 -->
 <hibernate-mapping>
 	<class name="gr.manousos.model.E1" table="E1" catalog="TaxisDB">
 		<composite-id name="id" class="gr.manousos.model.E1Id">
@@ -44,6 +44,10 @@
 			class="gr.manousos.model.E1expensesRemovedFromTotalIncome" fetch="select">
 			<column name="idE1ExpensesRemovedFromTotalIncome" unique="true" />
 		</many-to-one>
+		<many-to-one name="e1nauticalincomes" class="gr.manousos.model.E1nauticalincomes"
+			fetch="select">
+			<column name="idE1NauticalIncomes" unique="true" />
+		</many-to-one>
 		<many-to-one name="e1prepaidTaxes" class="gr.manousos.model.E1prepaidTaxes"
 			fetch="select">
 			<column name="idE1PrepaidTaxes" unique="true" />
@@ -64,6 +68,15 @@
 		</property>
 		<property name="isComplete" type="java.lang.Integer">
 			<column name="isComplete" />
+		</property>
+		<property name="dateInserted" type="timestamp">
+			<column name="DateInserted" length="19" />
+		</property>
+		<property name="doy" type="string">
+			<column name="DOY" length="45" not-null="true" />
+		</property>
+		<property name="marriage" type="java.lang.Integer">
+			<column name="Marriage" />
 		</property>
 		<set name="e1relatePersonses" table="E1RelatePersons" inverse="true"
 			lazy="true" fetch="select">

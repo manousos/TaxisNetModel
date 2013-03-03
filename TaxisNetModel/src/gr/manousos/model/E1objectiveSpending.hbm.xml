@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<!-- Generated 27 ?????? 2013 12:29:40 ???? by Hibernate Tools 3.4.0.CR1 -->
+<!-- Generated 12 ?????? 2013 11:51:58 ???? by Hibernate Tools 3.4.0.CR1 -->
 <hibernate-mapping>
 	<class name="gr.manousos.model.E1objectiveSpending" table="E1ObjectiveSpending"
 		catalog="TaxisDB">
@@ -15,6 +15,9 @@
 		<property name="houseAddr1" type="string">
 			<column name="HouseAddr1" length="200" />
 		</property>
+		<property name="floor1" type="java.lang.Integer">
+            <column name="Floor1" />
+        </property>
 		<property name="_203" type="java.lang.Integer">
 			<column name="203" />
 		</property>
@@ -42,6 +45,9 @@
 		<property name="houseAddr2" type="string">
 			<column name="HouseAddr2" length="200" />
 		</property>
+				<property name="floor2" type="java.lang.Integer">
+            <column name="Floor2" />
+        </property>
 		<property name="_207" type="java.lang.Integer">
 			<column name="207" />
 		</property>
@@ -69,6 +75,9 @@
 		<property name="houseAddr3" type="string">
 			<column name="HouseAddr3" length="200" />
 		</property>
+				<property name="floor3" type="java.lang.Integer">
+            <column name="Floor3" />
+        </property>
 		<property name="_209" type="java.lang.Integer">
 			<column name="209" />
 		</property>
@@ -364,7 +373,7 @@
 		</property>
 		<set name="e1s" table="E1" inverse="true" lazy="true" fetch="select">
 			<key>
-				<column name="idE1ObjectiveSpending" />
+				<column name="idE1ObjectiveSpending" unique="true" />
 			</key>
 			<one-to-many class="gr.manousos.model.E1" />
 		</set>

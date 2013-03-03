@@ -77,7 +77,7 @@
 		</property>
 		<set name="e1s" table="E1" inverse="true" lazy="true" fetch="select">
 			<key>
-				<column name="idE1PrepaidTaxes" />
+				<column name="idE1PrepaidTaxes" unique="true" />
 			</key>
 			<one-to-many class="gr.manousos.model.E1" />
 		</set>

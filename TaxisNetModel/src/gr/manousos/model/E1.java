@@ -1,7 +1,8 @@
 package gr.manousos.model;
 
-// Generated 2 Μαρ 2013 11:21:38 μμ by Hibernate Tools 3.4.0.CR1
+// Generated 12 Μαρ 2013 11:28:00 by Hibernate Tools 3.4.0.CR1
 
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -23,23 +24,30 @@ public class E1 implements java.io.Serializable {
 	private E1dataFromTaxPayerFolder e1dataFromTaxPayerFolder;
 	private E1personDataBorneTaxpayer e1personDataBorneTaxpayer;
 	private E1expensesRemovedFromTotalIncome e1expensesRemovedFromTotalIncome;
+	private E1nauticalincomes e1nauticalincomes;
 	private E1prepaidTaxes e1prepaidTaxes;
 	private E1taxableIncomes e1taxableIncomes;
 	private E1incomesReduceTaxes e1incomesReduceTaxes;
 	private String taxpayerAddress;
 	private String atid;
 	private Integer isComplete;
+	private Date dateInserted;
+	private String doy;
+	private Integer marriage;
 	private Set<E1relatePersons> e1relatePersonses = new HashSet<E1relatePersons>(
 			0);
 
 	public E1() {
 	}
 
-	public E1(E1Id id, Taxpayer taxpayer, String taxpayerAddress, String atid) {
+	public E1(E1Id id, Taxpayer taxpayer, String taxpayerAddress, String atid,
+			String doy, Integer marriage) {
 		this.id = id;
 		this.taxpayer = taxpayer;
 		this.taxpayerAddress = taxpayerAddress;
 		this.atid = atid;
+		this.doy = doy;
+		this.marriage = marriage;
 	}
 
 	public E1(E1Id id, E1reduceTax e1reduceTax,
@@ -51,8 +59,8 @@ public class E1 implements java.io.Serializable {
 			E1expensesRemovedFromTotalIncome e1expensesRemovedFromTotalIncome,
 			E1prepaidTaxes e1prepaidTaxes, E1taxableIncomes e1taxableIncomes,
 			E1incomesReduceTaxes e1incomesReduceTaxes, String taxpayerAddress,
-			String atid, Integer isComplete,
-			Set<E1relatePersons> e1relatePersonses) {
+			String atid, Integer isComplete, Date dateInserted,
+			Set<E1relatePersons> e1relatePersonses, String doy, Integer marriage) {
 		this.id = id;
 		this.e1reduceTax = e1reduceTax;
 		this.e1objectiveSpending = e1objectiveSpending;
@@ -68,7 +76,10 @@ public class E1 implements java.io.Serializable {
 		this.taxpayerAddress = taxpayerAddress;
 		this.atid = atid;
 		this.isComplete = isComplete;
+		this.dateInserted = dateInserted;
 		this.e1relatePersonses = e1relatePersonses;
+		this.doy = doy;
+		this.marriage = marriage;
 	}
 
 	public E1Id getId() {
@@ -147,6 +158,14 @@ public class E1 implements java.io.Serializable {
 		this.e1expensesRemovedFromTotalIncome = e1expensesRemovedFromTotalIncome;
 	}
 
+	public E1nauticalincomes getE1nauticalincomes() {
+		return this.e1nauticalincomes;
+	}
+
+	public void setE1nauticalincomes(E1nauticalincomes e1nauticalincomes) {
+		this.e1nauticalincomes = e1nauticalincomes;
+	}
+
 	public E1prepaidTaxes getE1prepaidTaxes() {
 		return this.e1prepaidTaxes;
 	}
@@ -194,6 +213,30 @@ public class E1 implements java.io.Serializable {
 
 	public void setIsComplete(Integer isComplete) {
 		this.isComplete = isComplete;
+	}
+
+	public Date getDateInserted() {
+		return this.dateInserted;
+	}
+
+	public void setDateInserted(Date dateInserted) {
+		this.dateInserted = dateInserted;
+	}
+
+	public String getDoy() {
+		return this.doy;
+	}
+
+	public void setDoy(String doy) {
+		this.doy = doy;
+	}
+
+	public Integer getMarriage() {
+		return this.marriage;
+	}
+
+	public void setMarriage(Integer marriage) {
+		this.marriage = marriage;
 	}
 
 	public Set<E1relatePersons> getE1relatePersonses() {
