@@ -13,1574 +13,1784 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class E1taxableIncomes implements java.io.Serializable {
 
-	private static final long serialVersionUID = 1L;
-	private Integer e1taxableIncome;
-	private Float _301;
-	private Float _302;
-	private Float _303;
-	private Float _304;
-	private Float _321;
-	private Float _322;
-	private Float _317;
-	private Float _318;
-	private Float _461;
-	private Float _462;
-	private Float _921;
-	private Float _922;
-	private Float _919;
-	private Float _920;
-	private Float _915;
-	private Float _916;
-	private Float _923;
-	private Float _924;
-	private Float _335;
-	private Float _336;
-	private Float _326;
-	private Float _337;
-	private Float _338;
-	private Float _339;
-	private Float _340;
-	private Float _465;
-	private Float _466;
-	private Float _467;
-	private Float _468;
-	private Float _475;
-	private Float _476;
-	private Float _479;
-	private Float _480;
-	private Float _481;
-	private Float _482;
-	private Float _401;
-	private Float _402;
-	private Float _403;
-	private Float _404;
-	private Float _405;
-	private Float _406;
-	private Float _407;
-	private Float _408;
-	private Float _413;
-	private Float _414;
-	private Float _415;
-	private Float _416;
-	private Float _425;
-	private Float _426;
-	private Float _501;
-	private Float _502;
-	private Float _503;
-	private Float _504;
-	private Float _505;
-	private Float _506;
-	private Float _507;
-	private Float _508;
-	private Float _511;
-	private Float _512;
-	private Float _515;
-	private Float _516;
-	private Float _517;
-	private Float _518;
-	private Float _103;
-	private Float _104;
-	private Float _121;
-	private Float _122;
-	private Float _105;
-	private Float _106;
-	private Float _107;
-	private Float _108;
-	private Float _109;
-	private Float _110;
-	private Float _101;
-	private Float _102;
-	private Float _909;
-	private Float _910;
-	private Float _111;
-	private Float _112;
-	private Float _113;
-	private Float _114;
-	private Float _129;
-	private Float _130;
-	private Float _143;
-	private Float _144;
-	private Float _145;
-	private Float _146;
-	private Float _147;
-	private Float _148;
-	private Float _141;
-	private Float _142;
-	private Float _701;
-	private Float _702;
-	private Float _123;
-	private Float _124;
-	private Float _125;
-	private Float _126;
-	private Float _151;
-	private Float _152;
-	private Float _163;
-	private Float _164;
-	private Float _165;
-	private Float _166;
-	private Float _159;
-	private Float _160;
-	private Float _175;
-	private Float _176;
-	private Float _131;
-	private Float _132;
-	private Float _133;
-	private Float _134;
-	private Float _741;
-	private Float _742;
-	private Float _291;
-	private Float _292;
-	private Float _389;
-	private Float _390;
-	private Float _391;
-	private Float _392;
-	private Float _463;
-	private Float _464;
-	private Float _471;
-	private Float _472;
-	private Float _411;
-	private Float _412;
-	private Float _421;
-	private Float _422;
-	private Float _509;
-	private Float _510;
-	private Float _513;
-	private Float _514;
-	private Float _295;
-	private Float _296;
-	private Float _171;
-	private Float _172;
-	private Float _173;
-	private Float _174;
-	private Float _395;
-	private Float _396;
-	private Set<E1incomeFromAgricularCompanyData> e1incomeFromAgricularCompanyDatas = new HashSet<E1incomeFromAgricularCompanyData>(
-			0);
-	private Set<E1> e1s = new HashSet<E1>(0);
-
-	public E1taxableIncomes() {
-	}
-
-	public E1taxableIncomes(
-			Float _301,
-			Float _302,
-			Float _303,
-			Float _304,
-			Float _321,
-			Float _322,
-			Float _317,
-			Float _318,
-			Float _461,
-			Float _462,
-			Float _921,
-			Float _922,
-			Float _919,
-			Float _920,
-			Float _915,
-			Float _916,
-			Float _923,
-			Float _924,
-			Float _335,
-			Float _336,
-			Float _326,
-			Float _337,
-			Float _338,
-			Float _339,
-			Float _340,
-			Float _465,
-			Float _466,
-			Float _467,
-			Float _468,
-			Float _475,
-			Float _476,
-			Float _479,
-			Float _480,
-			Float _481,
-			Float _482,
-			Float _401,
-			Float _402,
-			Float _403,
-			Float _404,
-			Float _405,
-			Float _406,
-			Float _407,
-			Float _408,
-			Float _413,
-			Float _414,
-			Float _415,
-			Float _416,
-			Float _425,
-			Float _426,
-			Float _501,
-			Float _502,
-			Float _503,
-			Float _504,
-			Float _505,
-			Float _506,
-			Float _507,
-			Float _508,
-			Float _511,
-			Float _512,
-			Float _515,
-			Float _516,
-			Float _517,
-			Float _518,
-			Float _103,
-			Float _104,
-			Float _121,
-			Float _122,
-			Float _105,
-			Float _106,
-			Float _107,
-			Float _108,
-			Float _109,
-			Float _110,
-			Float _101,
-			Float _102,
-			Float _909,
-			Float _910,
-			Float _111,
-			Float _112,
-			Float _113,
-			Float _114,
-			Float _129,
-			Float _130,
-			Float _143,
-			Float _144,
-			Float _145,
-			Float _146,
-			Float _147,
-			Float _148,
-			Float _141,
-			Float _142,
-			Float _701,
-			Float _702,
-			Float _123,
-			Float _124,
-			Float _125,
-			Float _126,
-			Float _151,
-			Float _152,
-			Float _163,
-			Float _164,
-			Float _165,
-			Float _166,
-			Float _159,
-			Float _160,
-			Float _175,
-			Float _176,
-			Float _131,
-			Float _132,
-			Float _133,
-			Float _134,
-			Float _741,
-			Float _742,
-			Float _291,
-			Float _292,
-			Float _389,
-			Float _390,
-			Float _391,
-			Float _392,
-			Float _463,
-			Float _464,
-			Float _471,
-			Float _472,
-			Float _411,
-			Float _412,
-			Float _421,
-			Float _422,
-			Float _509,
-			Float _510,
-			Float _513,
-			Float _514,
-			Float _295,
-			Float _296,
-			Float _171,
-			Float _172,
-			Float _173,
-			Float _174,
-			Float _395,
-			Float _396,
-			Set<E1incomeFromAgricularCompanyData> e1incomeFromAgricularCompanyDatas,
-			Set<E1> e1s) {
-		this._301 = _301;
-		this._302 = _302;
-		this._303 = _303;
-		this._304 = _304;
-		this._321 = _321;
-		this._322 = _322;
-		this._317 = _317;
-		this._318 = _318;
-		this._461 = _461;
-		this._462 = _462;
-		this._921 = _921;
-		this._922 = _922;
-		this._919 = _919;
-		this._920 = _920;
-		this._915 = _915;
-		this._916 = _916;
-		this._923 = _923;
-		this._924 = _924;
-		this._335 = _335;
-		this._336 = _336;
-		this._326 = _326;
-		this._337 = _337;
-		this._338 = _338;
-		this._339 = _339;
-		this._340 = _340;
-		this._465 = _465;
-		this._466 = _466;
-		this._467 = _467;
-		this._468 = _468;
-		this._475 = _475;
-		this._476 = _476;
-		this._479 = _479;
-		this._480 = _480;
-		this._481 = _481;
-		this._482 = _482;
-		this._401 = _401;
-		this._402 = _402;
-		this._403 = _403;
-		this._404 = _404;
-		this._405 = _405;
-		this._406 = _406;
-		this._407 = _407;
-		this._408 = _408;
-		this._413 = _413;
-		this._414 = _414;
-		this._415 = _415;
-		this._416 = _416;
-		this._425 = _425;
-		this._426 = _426;
-		this._501 = _501;
-		this._502 = _502;
-		this._503 = _503;
-		this._504 = _504;
-		this._505 = _505;
-		this._506 = _506;
-		this._507 = _507;
-		this._508 = _508;
-		this._511 = _511;
-		this._512 = _512;
-		this._515 = _515;
-		this._516 = _516;
-		this._517 = _517;
-		this._518 = _518;
-		this._103 = _103;
-		this._104 = _104;
-		this._121 = _121;
-		this._122 = _122;
-		this._105 = _105;
-		this._106 = _106;
-		this._107 = _107;
-		this._108 = _108;
-		this._109 = _109;
-		this._110 = _110;
-		this._101 = _101;
-		this._102 = _102;
-		this._909 = _909;
-		this._910 = _910;
-		this._111 = _111;
-		this._112 = _112;
-		this._113 = _113;
-		this._114 = _114;
-		this._129 = _129;
-		this._130 = _130;
-		this._143 = _143;
-		this._144 = _144;
-		this._145 = _145;
-		this._146 = _146;
-		this._147 = _147;
-		this._148 = _148;
-		this._141 = _141;
-		this._142 = _142;
-		this._701 = _701;
-		this._702 = _702;
-		this._123 = _123;
-		this._124 = _124;
-		this._125 = _125;
-		this._126 = _126;
-		this._151 = _151;
-		this._152 = _152;
-		this._163 = _163;
-		this._164 = _164;
-		this._165 = _165;
-		this._166 = _166;
-		this._159 = _159;
-		this._160 = _160;
-		this._175 = _175;
-		this._176 = _176;
-		this._131 = _131;
-		this._132 = _132;
-		this._133 = _133;
-		this._134 = _134;
-		this._741 = _741;
-		this._742 = _742;
-		this._291 = _291;
-		this._292 = _292;
-		this._389 = _389;
-		this._390 = _390;
-		this._391 = _391;
-		this._392 = _392;
-		this._463 = _463;
-		this._464 = _464;
-		this._471 = _471;
-		this._472 = _472;
-		this._411 = _411;
-		this._412 = _412;
-		this._421 = _421;
-		this._422 = _422;
-		this._509 = _509;
-		this._510 = _510;
-		this._513 = _513;
-		this._514 = _514;
-		this._295 = _295;
-		this._296 = _296;
-		this._171 = _171;
-		this._172 = _172;
-		this._173 = _173;
-		this._174 = _174;
-		this._395 = _395;
-		this._396 = _396;
-		this.e1incomeFromAgricularCompanyDatas = e1incomeFromAgricularCompanyDatas;
-		this.e1s = e1s;
-	}
-
-	public Integer getE1taxableIncome() {
-		return this.e1taxableIncome;
-	}
-
-	public void setE1taxableIncome(Integer e1taxableIncome) {
-		this.e1taxableIncome = e1taxableIncome;
-	}
-
-	public Float get301() {
-		return this._301;
-	}
-
-	public void set301(Float _301) {
-		this._301 = _301;
-	}
-
-	public Float get302() {
-		return this._302;
-	}
-
-	public void set302(Float _302) {
-		this._302 = _302;
-	}
-
-	public Float get303() {
-		return this._303;
-	}
-
-	public void set303(Float _303) {
-		this._303 = _303;
-	}
-
-	public Float get304() {
-		return this._304;
-	}
-
-	public void set304(Float _304) {
-		this._304 = _304;
-	}
-
-	public Float get321() {
-		return this._321;
-	}
-
-	public void set321(Float _321) {
-		this._321 = _321;
-	}
-
-	public Float get322() {
-		return this._322;
-	}
-
-	public void set322(Float _322) {
-		this._322 = _322;
-	}
-
-	public Float get317() {
-		return this._317;
-	}
-
-	public void set317(Float _317) {
-		this._317 = _317;
-	}
-
-	public Float get318() {
-		return this._318;
-	}
-
-	public void set318(Float _318) {
-		this._318 = _318;
-	}
-
-	public Float get461() {
-		return this._461;
-	}
-
-	public void set461(Float _461) {
-		this._461 = _461;
-	}
-
-	public Float get462() {
-		return this._462;
-	}
-
-	public void set462(Float _462) {
-		this._462 = _462;
-	}
-
-	public Float get921() {
-		return this._921;
-	}
-
-	public void set921(Float _921) {
-		this._921 = _921;
-	}
-
-	public Float get922() {
-		return this._922;
-	}
-
-	public void set922(Float _922) {
-		this._922 = _922;
-	}
-
-	public Float get919() {
-		return this._919;
-	}
-
-	public void set919(Float _919) {
-		this._919 = _919;
-	}
-
-	public Float get920() {
-		return this._920;
-	}
-
-	public void set920(Float _920) {
-		this._920 = _920;
-	}
-
-	public Float get915() {
-		return this._915;
-	}
-
-	public void set915(Float _915) {
-		this._915 = _915;
-	}
-
-	public Float get916() {
-		return this._916;
-	}
-
-	public void set916(Float _916) {
-		this._916 = _916;
-	}
-
-	public Float get923() {
-		return this._923;
-	}
-
-	public void set923(Float _923) {
-		this._923 = _923;
-	}
-
-	public Float get924() {
-		return this._924;
-	}
-
-	public void set924(Float _924) {
-		this._924 = _924;
-	}
-
-	public Float get335() {
-		return this._335;
-	}
-
-	public void set335(Float _335) {
-		this._335 = _335;
-	}
-
-	public Float get336() {
-		return this._336;
-	}
-
-	public void set336(Float _336) {
-		this._336 = _336;
-	}
-
-	public Float get326() {
-		return this._326;
-	}
-
-	public void set326(Float _326) {
-		this._326 = _326;
-	}
-
-	public Float get337() {
-		return this._337;
-	}
-
-	public void set337(Float _337) {
-		this._337 = _337;
-	}
-
-	public Float get338() {
-		return this._338;
-	}
-
-	public void set338(Float _338) {
-		this._338 = _338;
-	}
-
-	public Float get339() {
-		return this._339;
-	}
-
-	public void set339(Float _339) {
-		this._339 = _339;
-	}
-
-	public Float get340() {
-		return this._340;
-	}
-
-	public void set340(Float _340) {
-		this._340 = _340;
-	}
-
-	public Float get465() {
-		return this._465;
-	}
-
-	public void set465(Float _465) {
-		this._465 = _465;
-	}
-
-	public Float get466() {
-		return this._466;
-	}
-
-	public void set466(Float _466) {
-		this._466 = _466;
-	}
-
-	public Float get467() {
-		return this._467;
-	}
-
-	public void set467(Float _467) {
-		this._467 = _467;
-	}
-
-	public Float get468() {
-		return this._468;
-	}
-
-	public void set468(Float _468) {
-		this._468 = _468;
-	}
-
-	public Float get475() {
-		return this._475;
-	}
-
-	public void set475(Float _475) {
-		this._475 = _475;
-	}
-
-	public Float get476() {
-		return this._476;
-	}
-
-	public void set476(Float _476) {
-		this._476 = _476;
-	}
-
-	public Float get479() {
-		return this._479;
-	}
-
-	public void set479(Float _479) {
-		this._479 = _479;
-	}
-
-	public Float get480() {
-		return this._480;
-	}
-
-	public void set480(Float _480) {
-		this._480 = _480;
-	}
-
-	public Float get481() {
-		return this._481;
-	}
-
-	public void set481(Float _481) {
-		this._481 = _481;
-	}
-
-	public Float get482() {
-		return this._482;
-	}
-
-	public void set482(Float _482) {
-		this._482 = _482;
-	}
-
-	public Float get401() {
-		return this._401;
-	}
-
-	public void set401(Float _401) {
-		this._401 = _401;
-	}
-
-	public Float get402() {
-		return this._402;
-	}
-
-	public void set402(Float _402) {
-		this._402 = _402;
-	}
-
-	public Float get403() {
-		return this._403;
-	}
-
-	public void set403(Float _403) {
-		this._403 = _403;
-	}
-
-	public Float get404() {
-		return this._404;
-	}
-
-	public void set404(Float _404) {
-		this._404 = _404;
-	}
-
-	public Float get405() {
-		return this._405;
-	}
-
-	public void set405(Float _405) {
-		this._405 = _405;
-	}
-
-	public Float get406() {
-		return this._406;
-	}
-
-	public void set406(Float _406) {
-		this._406 = _406;
-	}
-
-	public Float get407() {
-		return this._407;
-	}
-
-	public void set407(Float _407) {
-		this._407 = _407;
-	}
-
-	public Float get408() {
-		return this._408;
-	}
-
-	public void set408(Float _408) {
-		this._408 = _408;
-	}
-
-	public Float get413() {
-		return this._413;
-	}
-
-	public void set413(Float _413) {
-		this._413 = _413;
-	}
-
-	public Float get414() {
-		return this._414;
-	}
-
-	public void set414(Float _414) {
-		this._414 = _414;
-	}
-
-	public Float get415() {
-		return this._415;
-	}
-
-	public void set415(Float _415) {
-		this._415 = _415;
-	}
-
-	public Float get416() {
-		return this._416;
-	}
-
-	public void set416(Float _416) {
-		this._416 = _416;
-	}
-
-	public Float get425() {
-		return this._425;
-	}
-
-	public void set425(Float _425) {
-		this._425 = _425;
-	}
-
-	public Float get426() {
-		return this._426;
-	}
-
-	public void set426(Float _426) {
-		this._426 = _426;
-	}
-
-	public Float get501() {
-		return this._501;
-	}
-
-	public void set501(Float _501) {
-		this._501 = _501;
-	}
-
-	public Float get502() {
-		return this._502;
-	}
-
-	public void set502(Float _502) {
-		this._502 = _502;
-	}
-
-	public Float get503() {
-		return this._503;
-	}
-
-	public void set503(Float _503) {
-		this._503 = _503;
-	}
-
-	public Float get504() {
-		return this._504;
-	}
-
-	public void set504(Float _504) {
-		this._504 = _504;
-	}
-
-	public Float get505() {
-		return this._505;
-	}
-
-	public void set505(Float _505) {
-		this._505 = _505;
-	}
-
-	public Float get506() {
-		return this._506;
-	}
-
-	public void set506(Float _506) {
-		this._506 = _506;
-	}
-
-	public Float get507() {
-		return this._507;
-	}
-
-	public void set507(Float _507) {
-		this._507 = _507;
-	}
-
-	public Float get508() {
-		return this._508;
-	}
-
-	public void set508(Float _508) {
-		this._508 = _508;
-	}
-
-	public Float get511() {
-		return this._511;
-	}
-
-	public void set511(Float _511) {
-		this._511 = _511;
-	}
-
-	public Float get512() {
-		return this._512;
-	}
-
-	public void set512(Float _512) {
-		this._512 = _512;
-	}
-
-	public Float get515() {
-		return this._515;
-	}
-
-	public void set515(Float _515) {
-		this._515 = _515;
-	}
-
-	public Float get516() {
-		return this._516;
-	}
-
-	public void set516(Float _516) {
-		this._516 = _516;
-	}
-
-	public Float get517() {
-		return this._517;
-	}
-
-	public void set517(Float _517) {
-		this._517 = _517;
-	}
-
-	public Float get518() {
-		return this._518;
-	}
-
-	public void set518(Float _518) {
-		this._518 = _518;
-	}
-
-	public Float get103() {
-		return this._103;
-	}
-
-	public void set103(Float _103) {
-		this._103 = _103;
-	}
-
-	public Float get104() {
-		return this._104;
-	}
-
-	public void set104(Float _104) {
-		this._104 = _104;
-	}
-
-	public Float get121() {
-		return this._121;
-	}
-
-	public void set121(Float _121) {
-		this._121 = _121;
-	}
-
-	public Float get122() {
-		return this._122;
-	}
-
-	public void set122(Float _122) {
-		this._122 = _122;
-	}
-
-	public Float get105() {
-		return this._105;
-	}
-
-	public void set105(Float _105) {
-		this._105 = _105;
-	}
-
-	public Float get106() {
-		return this._106;
-	}
-
-	public void set106(Float _106) {
-		this._106 = _106;
-	}
-
-	public Float get107() {
-		return this._107;
-	}
-
-	public void set107(Float _107) {
-		this._107 = _107;
-	}
-
-	public Float get108() {
-		return this._108;
-	}
-
-	public void set108(Float _108) {
-		this._108 = _108;
-	}
-
-	public Float get109() {
-		return this._109;
-	}
-
-	public void set109(Float _109) {
-		this._109 = _109;
-	}
-
-	public Float get110() {
-		return this._110;
-	}
-
-	public void set110(Float _110) {
-		this._110 = _110;
-	}
-
-	public Float get101() {
-		return this._101;
-	}
-
-	public void set101(Float _101) {
-		this._101 = _101;
-	}
-
-	public Float get102() {
-		return this._102;
-	}
-
-	public void set102(Float _102) {
-		this._102 = _102;
-	}
-
-	public Float get909() {
-		return this._909;
-	}
-
-	public void set909(Float _909) {
-		this._909 = _909;
-	}
-
-	public Float get910() {
-		return this._910;
-	}
-
-	public void set910(Float _910) {
-		this._910 = _910;
-	}
-
-	public Float get111() {
-		return this._111;
-	}
-
-	public void set111(Float _111) {
-		this._111 = _111;
-	}
-
-	public Float get112() {
-		return this._112;
-	}
-
-	public void set112(Float _112) {
-		this._112 = _112;
-	}
-
-	public Float get113() {
-		return this._113;
-	}
-
-	public void set113(Float _113) {
-		this._113 = _113;
-	}
-
-	public Float get114() {
-		return this._114;
-	}
-
-	public void set114(Float _114) {
-		this._114 = _114;
-	}
-
-	public Float get129() {
-		return this._129;
-	}
-
-	public void set129(Float _129) {
-		this._129 = _129;
-	}
-
-	public Float get130() {
-		return this._130;
-	}
-
-	public void set130(Float _130) {
-		this._130 = _130;
-	}
-
-	public Float get143() {
-		return this._143;
-	}
-
-	public void set143(Float _143) {
-		this._143 = _143;
-	}
-
-	public Float get144() {
-		return this._144;
-	}
-
-	public void set144(Float _144) {
-		this._144 = _144;
-	}
-
-	public Float get145() {
-		return this._145;
-	}
-
-	public void set145(Float _145) {
-		this._145 = _145;
-	}
-
-	public Float get146() {
-		return this._146;
-	}
-
-	public void set146(Float _146) {
-		this._146 = _146;
-	}
-
-	public Float get147() {
-		return this._147;
-	}
-
-	public void set147(Float _147) {
-		this._147 = _147;
-	}
-
-	public Float get148() {
-		return this._148;
-	}
-
-	public void set148(Float _148) {
-		this._148 = _148;
-	}
-
-	public Float get141() {
-		return this._141;
-	}
-
-	public void set141(Float _141) {
-		this._141 = _141;
-	}
-
-	public Float get142() {
-		return this._142;
-	}
-
-	public void set142(Float _142) {
-		this._142 = _142;
-	}
-
-	public Float get701() {
-		return this._701;
-	}
-
-	public void set701(Float _701) {
-		this._701 = _701;
-	}
-
-	public Float get702() {
-		return this._702;
-	}
-
-	public void set702(Float _702) {
-		this._702 = _702;
-	}
-
-	public Float get123() {
-		return this._123;
-	}
-
-	public void set123(Float _123) {
-		this._123 = _123;
-	}
-
-	public Float get124() {
-		return this._124;
-	}
-
-	public void set124(Float _124) {
-		this._124 = _124;
-	}
-
-	public Float get125() {
-		return this._125;
-	}
-
-	public void set125(Float _125) {
-		this._125 = _125;
-	}
-
-	public Float get126() {
-		return this._126;
-	}
-
-	public void set126(Float _126) {
-		this._126 = _126;
-	}
-
-	public Float get151() {
-		return this._151;
-	}
-
-	public void set151(Float _151) {
-		this._151 = _151;
-	}
-
-	public Float get152() {
-		return this._152;
-	}
-
-	public void set152(Float _152) {
-		this._152 = _152;
-	}
-
-	public Float get163() {
-		return this._163;
-	}
-
-	public void set163(Float _163) {
-		this._163 = _163;
-	}
-
-	public Float get164() {
-		return this._164;
-	}
-
-	public void set164(Float _164) {
-		this._164 = _164;
-	}
-
-	public Float get165() {
-		return this._165;
-	}
-
-	public void set165(Float _165) {
-		this._165 = _165;
-	}
-
-	public Float get166() {
-		return this._166;
-	}
-
-	public void set166(Float _166) {
-		this._166 = _166;
-	}
-
-	public Float get159() {
-		return this._159;
-	}
-
-	public void set159(Float _159) {
-		this._159 = _159;
-	}
-
-	public Float get160() {
-		return this._160;
-	}
-
-	public void set160(Float _160) {
-		this._160 = _160;
-	}
-
-	public Float get175() {
-		return this._175;
-	}
-
-	public void set175(Float _175) {
-		this._175 = _175;
-	}
-
-	public Float get176() {
-		return this._176;
-	}
-
-	public void set176(Float _176) {
-		this._176 = _176;
-	}
-
-	public Float get131() {
-		return this._131;
-	}
-
-	public void set131(Float _131) {
-		this._131 = _131;
-	}
-
-	public Float get132() {
-		return this._132;
-	}
-
-	public void set132(Float _132) {
-		this._132 = _132;
-	}
-
-	public Float get133() {
-		return this._133;
-	}
-
-	public void set133(Float _133) {
-		this._133 = _133;
-	}
-
-	public Float get134() {
-		return this._134;
-	}
-
-	public void set134(Float _134) {
-		this._134 = _134;
-	}
-
-	public Float get741() {
-		return this._741;
-	}
-
-	public void set741(Float _741) {
-		this._741 = _741;
-	}
-
-	public Float get742() {
-		return this._742;
-	}
-
-	public void set742(Float _742) {
-		this._742 = _742;
-	}
-
-	public Float get291() {
-		return this._291;
-	}
-
-	public void set291(Float _291) {
-		this._291 = _291;
-	}
-
-	public Float get292() {
-		return this._292;
-	}
-
-	public void set292(Float _292) {
-		this._292 = _292;
-	}
-
-	public Float get389() {
-		return this._389;
-	}
-
-	public void set389(Float _389) {
-		this._389 = _389;
-	}
-
-	public Float get390() {
-		return this._390;
-	}
-
-	public void set390(Float _390) {
-		this._390 = _390;
-	}
-
-	public Float get391() {
-		return this._391;
-	}
-
-	public void set391(Float _391) {
-		this._391 = _391;
-	}
-
-	public Float get392() {
-		return this._392;
-	}
-
-	public void set392(Float _392) {
-		this._392 = _392;
-	}
-
-	public Float get463() {
-		return this._463;
-	}
-
-	public void set463(Float _463) {
-		this._463 = _463;
-	}
-
-	public Float get464() {
-		return this._464;
-	}
-
-	public void set464(Float _464) {
-		this._464 = _464;
-	}
-
-	public Float get471() {
-		return this._471;
-	}
-
-	public void set471(Float _471) {
-		this._471 = _471;
-	}
-
-	public Float get472() {
-		return this._472;
-	}
-
-	public void set472(Float _472) {
-		this._472 = _472;
-	}
-
-	public Float get411() {
-		return this._411;
-	}
-
-	public void set411(Float _411) {
-		this._411 = _411;
-	}
-
-	public Float get412() {
-		return this._412;
-	}
-
-	public void set412(Float _412) {
-		this._412 = _412;
-	}
-
-	public Float get421() {
-		return this._421;
-	}
-
-	public void set421(Float _421) {
-		this._421 = _421;
-	}
-
-	public Float get422() {
-		return this._422;
-	}
-
-	public void set422(Float _422) {
-		this._422 = _422;
-	}
-
-	public Float get509() {
-		return this._509;
-	}
-
-	public void set509(Float _509) {
-		this._509 = _509;
-	}
-
-	public Float get510() {
-		return this._510;
-	}
-
-	public void set510(Float _510) {
-		this._510 = _510;
-	}
-
-	public Float get513() {
-		return this._513;
-	}
-
-	public void set513(Float _513) {
-		this._513 = _513;
-	}
-
-	public Float get514() {
-		return this._514;
-	}
-
-	public void set514(Float _514) {
-		this._514 = _514;
-	}
-
-	public Float get295() {
-		return this._295;
-	}
-
-	public void set295(Float _295) {
-		this._295 = _295;
-	}
-
-	public Float get296() {
-		return this._296;
-	}
-
-	public void set296(Float _296) {
-		this._296 = _296;
-	}
-
-	public Float get171() {
-		return this._171;
-	}
-
-	public void set171(Float _171) {
-		this._171 = _171;
-	}
-
-	public Float get172() {
-		return this._172;
-	}
-
-	public void set172(Float _172) {
-		this._172 = _172;
-	}
-
-	public Float get173() {
-		return this._173;
-	}
-
-	public void set173(Float _173) {
-		this._173 = _173;
-	}
-
-	public Float get174() {
-		return this._174;
-	}
-
-	public void set174(Float _174) {
-		this._174 = _174;
-	}
-
-	public Float get395() {
-		return this._395;
-	}
-
-	public void set395(Float _395) {
-		this._395 = _395;
-	}
-
-	public Float get396() {
-		return this._396;
-	}
-
-	public void set396(Float _396) {
-		this._396 = _396;
-	}
-
-	public Set<E1incomeFromAgricularCompanyData> getE1incomeFromAgricularCompanyDatas() {
-		return this.e1incomeFromAgricularCompanyDatas;
-	}
-
-	public void setE1incomeFromAgricularCompanyDatas(
-			Set<E1incomeFromAgricularCompanyData> e1incomeFromAgricularCompanyDatas) {
-		this.e1incomeFromAgricularCompanyDatas = e1incomeFromAgricularCompanyDatas;
-	}
-
-	public Set<E1> getE1s() {
-		return this.e1s;
-	}
-
-	public void setE1s(Set<E1> e1s) {
-		this.e1s = e1s;
-	}
+    private static final long serialVersionUID = 1L;
+    private Integer e1taxableIncome;
+    private Float _301;
+    private Float _302;
+    private Float _303;
+    private Float _304;
+    private Float _321;
+    private Float _322;
+    private Float _317;
+    private Float _318;
+    private Float _461;
+    private Float _462;
+    private Float _921;
+    private Float _922;
+    private Float _919;
+    private Float _920;
+    private Float _915;
+    private Float _916;
+    private Float _923;
+    private Float _924;
+    private Float _335;
+    private Float _336;
+    private Float _326;
+    private Float _337;
+    private Float _338;
+    private Float _339;
+    private Float _340;
+    private Float _465;
+    private Float _466;
+    private Float _467;
+    private Float _468;
+    private Float _475;
+    private Float _476;
+    private Float _479;
+    private Float _480;
+    private Float _481;
+    private Float _482;
+    private Float _401;
+    private Float _402;
+    private Float _403;
+    private Float _404;
+    private Float _405;
+    private Float _406;
+    private Float _407;
+    private Float _408;
+    private Float _413;
+    private Float _414;
+    private Float _415;
+    private Float _416;
+    private Float _425;
+    private Float _426;
+    private Float _501;
+    private Float _502;
+    private Float _503;
+    private Float _504;
+    private Float _505;
+    private Float _506;
+    private Float _507;
+    private Float _508;
+    private Float _511;
+    private Float _512;
+    private Float _515;
+    private Float _516;
+    private Float _517;
+    private Float _518;
+    private Float _103;
+    private Float _104;
+    private Float _121;
+    private Float _122;
+    private Float _105;
+    private Float _106;
+    private Float _107;
+    private Float _108;
+    private Float _109;
+    private Float _110;
+    private Float _101;
+    private Float _102;
+    private Float _909;
+    private Float _910;
+    private Float _111;
+    private Float _112;
+    private Float _113;
+    private Float _114;
+    private Float _129;
+    private Float _130;
+    private Float _143;
+    private Float _144;
+    private Float _145;
+    private Float _146;
+    private Float _147;
+    private Float _148;
+    private Float _141;
+    private Float _142;
+    private Float _701;
+    private Float _702;
+    private Float _123;
+    private Float _124;
+    private Float _125;
+    private Float _126;
+    private Float _151;
+    private Float _152;
+    private Float _163;
+    private Float _164;
+    private Float _165;
+    private Float _166;
+    private Float _159;
+    private Float _160;
+    private Float _175;
+    private Float _176;
+    private Float _131;
+    private Float _132;
+    private Float _133;
+    private Float _134;
+    private Float _741;
+    private Float _742;
+    private Float _291;
+    private Float _292;
+    private Float _389;
+    private Float _390;
+    private Float _391;
+    private Float _392;
+    private Float _463;
+    private Float _464;
+    private Float _471;
+    private Float _472;
+    private Float _411;
+    private Float _412;
+    private Float _421;
+    private Float _422;
+    private Float _509;
+    private Float _510;
+    private Float _513;
+    private Float _514;
+    private Float _295;
+    private Float _296;
+    private Float _171;
+    private Float _172;
+    private Float _173;
+    private Float _174;
+    private Float _395;
+    private Float _396;
+    private String agrLocation1;
+    private String agrProdKind1;
+    private Float agrPopulation1;
+    private Integer agrLocationType1;
+    private Integer agrHasWater1;
+    private Float agrNetIncome1;
+    private Float agrTotalNetincome1;
+    private Float agrTotalWifeNetincome1;
+    private String agrLocation2;
+    private String agrProdKind2;
+    private Float agrPopulation2;
+    private Integer agrLocationType2;
+    private Integer agrHasWater2;
+    private Float agrNetIncome2;
+    private Float agrTotalNetincome2;
+    private Float agrTotalWifeNetincome2;
+    private String agrLocation3;
+    private String agrProdKind3;
+    private Float agrPopulation3;
+    private Integer agrLocationType3;
+    private Integer agrHasWater3;
+    private Float agrNetIncome3;
+    private Float agrTotalNetincome3;
+    private Float agrTotalWifeNetincome3;
+    private String agrLocation4;
+    private String agrProdKind4;
+    private Float agrPopulation4;
+    private Integer agrLocationType4;
+    private Integer agrHasWater4;
+    private Float agrNetIncome4;
+    private Float agrTotalNetincome4;
+    private Float agrTotalWifeNetincome4;
+    private Set<E1> e1s = new HashSet<E1>(0);
+
+    public E1taxableIncomes() {
+    }
+
+    public E1taxableIncomes(Float _301, Float _302, Float _303, Float _304,
+	    Float _321, Float _322, Float _317, Float _318, Float _461,
+	    Float _462, Float _921, Float _922, Float _919, Float _920,
+	    Float _915, Float _916, Float _923, Float _924, Float _335,
+	    Float _336, Float _326, Float _337, Float _338, Float _339,
+	    Float _340, Float _465, Float _466, Float _467, Float _468,
+	    Float _475, Float _476, Float _479, Float _480, Float _481,
+	    Float _482, Float _401, Float _402, Float _403, Float _404,
+	    Float _405, Float _406, Float _407, Float _408, Float _413,
+	    Float _414, Float _415, Float _416, Float _425, Float _426,
+	    Float _501, Float _502, Float _503, Float _504, Float _505,
+	    Float _506, Float _507, Float _508, Float _511, Float _512,
+	    Float _515, Float _516, Float _517, Float _518, Float _103,
+	    Float _104, Float _121, Float _122, Float _105, Float _106,
+	    Float _107, Float _108, Float _109, Float _110, Float _101,
+	    Float _102, Float _909, Float _910, Float _111, Float _112,
+	    Float _113, Float _114, Float _129, Float _130, Float _143,
+	    Float _144, Float _145, Float _146, Float _147, Float _148,
+	    Float _141, Float _142, Float _701, Float _702, Float _123,
+	    Float _124, Float _125, Float _126, Float _151, Float _152,
+	    Float _163, Float _164, Float _165, Float _166, Float _159,
+	    Float _160, Float _175, Float _176, Float _131, Float _132,
+	    Float _133, Float _134, Float _741, Float _742, Float _291,
+	    Float _292, Float _389, Float _390, Float _391, Float _392,
+	    Float _463, Float _464, Float _471, Float _472, Float _411,
+	    Float _412, Float _421, Float _422, Float _509, Float _510,
+	    Float _513, Float _514, Float _295, Float _296, Float _171,
+	    Float _172, Float _173, Float _174, Float _395, Float _396,
+	    String agrLocation1, String agrProdKind1, Float agrPopulation1,
+	    Integer agrLocationType1, Integer agrHasWater1,
+	    Float agrNetIncome1, Float agrTotalNetincome1,
+	    Float agrTotalWifeNetincome1, String agrLocation2,
+	    String agrProdKind2, Float agrPopulation2,
+	    Integer agrLocationType2, Integer agrHasWater2,
+	    Float agrNetIncome2, Float agrTotalNetincome2,
+	    Float agrTotalWifeNetincome2, String agrLocation3,
+	    String agrProdKind3, Float agrPopulation3,
+	    Integer agrLocationType3, Integer agrHasWater3,
+	    Float agrNetIncome3, Float agrTotalNetincome3,
+	    Float agrTotalWifeNetincome3, String agrLocation4,
+	    String agrProdKind4, Float agrPopulation4,
+	    Integer agrLocationType4, Integer agrHasWater4,
+	    Float agrNetIncome4, Float agrTotalNetincome4,
+	    Float agrTotalWifeNetincome4, Set<E1> e1s) {
+	this._301 = _301;
+	this._302 = _302;
+	this._303 = _303;
+	this._304 = _304;
+	this._321 = _321;
+	this._322 = _322;
+	this._317 = _317;
+	this._318 = _318;
+	this._461 = _461;
+	this._462 = _462;
+	this._921 = _921;
+	this._922 = _922;
+	this._919 = _919;
+	this._920 = _920;
+	this._915 = _915;
+	this._916 = _916;
+	this._923 = _923;
+	this._924 = _924;
+	this._335 = _335;
+	this._336 = _336;
+	this._326 = _326;
+	this._337 = _337;
+	this._338 = _338;
+	this._339 = _339;
+	this._340 = _340;
+	this._465 = _465;
+	this._466 = _466;
+	this._467 = _467;
+	this._468 = _468;
+	this._475 = _475;
+	this._476 = _476;
+	this._479 = _479;
+	this._480 = _480;
+	this._481 = _481;
+	this._482 = _482;
+	this._401 = _401;
+	this._402 = _402;
+	this._403 = _403;
+	this._404 = _404;
+	this._405 = _405;
+	this._406 = _406;
+	this._407 = _407;
+	this._408 = _408;
+	this._413 = _413;
+	this._414 = _414;
+	this._415 = _415;
+	this._416 = _416;
+	this._425 = _425;
+	this._426 = _426;
+	this._501 = _501;
+	this._502 = _502;
+	this._503 = _503;
+	this._504 = _504;
+	this._505 = _505;
+	this._506 = _506;
+	this._507 = _507;
+	this._508 = _508;
+	this._511 = _511;
+	this._512 = _512;
+	this._515 = _515;
+	this._516 = _516;
+	this._517 = _517;
+	this._518 = _518;
+	this._103 = _103;
+	this._104 = _104;
+	this._121 = _121;
+	this._122 = _122;
+	this._105 = _105;
+	this._106 = _106;
+	this._107 = _107;
+	this._108 = _108;
+	this._109 = _109;
+	this._110 = _110;
+	this._101 = _101;
+	this._102 = _102;
+	this._909 = _909;
+	this._910 = _910;
+	this._111 = _111;
+	this._112 = _112;
+	this._113 = _113;
+	this._114 = _114;
+	this._129 = _129;
+	this._130 = _130;
+	this._143 = _143;
+	this._144 = _144;
+	this._145 = _145;
+	this._146 = _146;
+	this._147 = _147;
+	this._148 = _148;
+	this._141 = _141;
+	this._142 = _142;
+	this._701 = _701;
+	this._702 = _702;
+	this._123 = _123;
+	this._124 = _124;
+	this._125 = _125;
+	this._126 = _126;
+	this._151 = _151;
+	this._152 = _152;
+	this._163 = _163;
+	this._164 = _164;
+	this._165 = _165;
+	this._166 = _166;
+	this._159 = _159;
+	this._160 = _160;
+	this._175 = _175;
+	this._176 = _176;
+	this._131 = _131;
+	this._132 = _132;
+	this._133 = _133;
+	this._134 = _134;
+	this._741 = _741;
+	this._742 = _742;
+	this._291 = _291;
+	this._292 = _292;
+	this._389 = _389;
+	this._390 = _390;
+	this._391 = _391;
+	this._392 = _392;
+	this._463 = _463;
+	this._464 = _464;
+	this._471 = _471;
+	this._472 = _472;
+	this._411 = _411;
+	this._412 = _412;
+	this._421 = _421;
+	this._422 = _422;
+	this._509 = _509;
+	this._510 = _510;
+	this._513 = _513;
+	this._514 = _514;
+	this._295 = _295;
+	this._296 = _296;
+	this._171 = _171;
+	this._172 = _172;
+	this._173 = _173;
+	this._174 = _174;
+	this._395 = _395;
+	this._396 = _396;
+	this.agrLocation1 = agrLocation1;
+	this.agrProdKind1 = agrProdKind1;
+	this.agrPopulation1 = agrPopulation1;
+	this.agrLocationType1 = agrLocationType1;
+	this.agrHasWater1 = agrHasWater1;
+	this.agrNetIncome1 = agrNetIncome1;
+	this.agrTotalNetincome1 = agrTotalNetincome1;
+	this.agrTotalWifeNetincome1 = agrTotalWifeNetincome1;
+	this.agrLocation2 = agrLocation2;
+	this.agrProdKind2 = agrProdKind2;
+	this.agrPopulation2 = agrPopulation2;
+	this.agrLocationType2 = agrLocationType2;
+	this.agrHasWater2 = agrHasWater2;
+	this.agrNetIncome2 = agrNetIncome2;
+	this.agrTotalNetincome2 = agrTotalNetincome2;
+	this.agrTotalWifeNetincome2 = agrTotalWifeNetincome2;
+	this.agrLocation3 = agrLocation3;
+	this.agrProdKind3 = agrProdKind3;
+	this.agrPopulation3 = agrPopulation3;
+	this.agrLocationType3 = agrLocationType3;
+	this.agrHasWater3 = agrHasWater3;
+	this.agrNetIncome3 = agrNetIncome3;
+	this.agrTotalNetincome3 = agrTotalNetincome3;
+	this.agrTotalWifeNetincome3 = agrTotalWifeNetincome3;
+	this.agrLocation4 = agrLocation4;
+	this.agrProdKind4 = agrProdKind4;
+	this.agrPopulation4 = agrPopulation4;
+	this.agrLocationType4 = agrLocationType4;
+	this.agrHasWater4 = agrHasWater4;
+	this.agrNetIncome4 = agrNetIncome4;
+	this.agrTotalNetincome4 = agrTotalNetincome4;
+	this.agrTotalWifeNetincome4 = agrTotalWifeNetincome4;
+	this.e1s = e1s;
+    }
+
+    public Integer getE1taxableIncome() {
+	return this.e1taxableIncome;
+    }
+
+    public void setE1taxableIncome(Integer e1taxableIncome) {
+	this.e1taxableIncome = e1taxableIncome;
+    }
+
+    public Float get301() {
+	return this._301;
+    }
+
+    public void set301(Float _301) {
+	this._301 = _301;
+    }
+
+    public Float get302() {
+	return this._302;
+    }
+
+    public void set302(Float _302) {
+	this._302 = _302;
+    }
+
+    public Float get303() {
+	return this._303;
+    }
+
+    public void set303(Float _303) {
+	this._303 = _303;
+    }
+
+    public Float get304() {
+	return this._304;
+    }
+
+    public void set304(Float _304) {
+	this._304 = _304;
+    }
+
+    public Float get321() {
+	return this._321;
+    }
+
+    public void set321(Float _321) {
+	this._321 = _321;
+    }
+
+    public Float get322() {
+	return this._322;
+    }
+
+    public void set322(Float _322) {
+	this._322 = _322;
+    }
+
+    public Float get317() {
+	return this._317;
+    }
+
+    public void set317(Float _317) {
+	this._317 = _317;
+    }
+
+    public Float get318() {
+	return this._318;
+    }
+
+    public void set318(Float _318) {
+	this._318 = _318;
+    }
+
+    public Float get461() {
+	return this._461;
+    }
+
+    public void set461(Float _461) {
+	this._461 = _461;
+    }
+
+    public Float get462() {
+	return this._462;
+    }
+
+    public void set462(Float _462) {
+	this._462 = _462;
+    }
+
+    public Float get921() {
+	return this._921;
+    }
+
+    public void set921(Float _921) {
+	this._921 = _921;
+    }
+
+    public Float get922() {
+	return this._922;
+    }
+
+    public void set922(Float _922) {
+	this._922 = _922;
+    }
+
+    public Float get919() {
+	return this._919;
+    }
+
+    public void set919(Float _919) {
+	this._919 = _919;
+    }
+
+    public Float get920() {
+	return this._920;
+    }
+
+    public void set920(Float _920) {
+	this._920 = _920;
+    }
+
+    public Float get915() {
+	return this._915;
+    }
+
+    public void set915(Float _915) {
+	this._915 = _915;
+    }
+
+    public Float get916() {
+	return this._916;
+    }
+
+    public void set916(Float _916) {
+	this._916 = _916;
+    }
+
+    public Float get923() {
+	return this._923;
+    }
+
+    public void set923(Float _923) {
+	this._923 = _923;
+    }
+
+    public Float get924() {
+	return this._924;
+    }
+
+    public void set924(Float _924) {
+	this._924 = _924;
+    }
+
+    public Float get335() {
+	return this._335;
+    }
+
+    public void set335(Float _335) {
+	this._335 = _335;
+    }
+
+    public Float get336() {
+	return this._336;
+    }
+
+    public void set336(Float _336) {
+	this._336 = _336;
+    }
+
+    public Float get326() {
+	return this._326;
+    }
+
+    public void set326(Float _326) {
+	this._326 = _326;
+    }
+
+    public Float get337() {
+	return this._337;
+    }
+
+    public void set337(Float _337) {
+	this._337 = _337;
+    }
+
+    public Float get338() {
+	return this._338;
+    }
+
+    public void set338(Float _338) {
+	this._338 = _338;
+    }
+
+    public Float get339() {
+	return this._339;
+    }
+
+    public void set339(Float _339) {
+	this._339 = _339;
+    }
+
+    public Float get340() {
+	return this._340;
+    }
+
+    public void set340(Float _340) {
+	this._340 = _340;
+    }
+
+    public Float get465() {
+	return this._465;
+    }
+
+    public void set465(Float _465) {
+	this._465 = _465;
+    }
+
+    public Float get466() {
+	return this._466;
+    }
+
+    public void set466(Float _466) {
+	this._466 = _466;
+    }
+
+    public Float get467() {
+	return this._467;
+    }
+
+    public void set467(Float _467) {
+	this._467 = _467;
+    }
+
+    public Float get468() {
+	return this._468;
+    }
+
+    public void set468(Float _468) {
+	this._468 = _468;
+    }
+
+    public Float get475() {
+	return this._475;
+    }
+
+    public void set475(Float _475) {
+	this._475 = _475;
+    }
+
+    public Float get476() {
+	return this._476;
+    }
+
+    public void set476(Float _476) {
+	this._476 = _476;
+    }
+
+    public Float get479() {
+	return this._479;
+    }
+
+    public void set479(Float _479) {
+	this._479 = _479;
+    }
+
+    public Float get480() {
+	return this._480;
+    }
+
+    public void set480(Float _480) {
+	this._480 = _480;
+    }
+
+    public Float get481() {
+	return this._481;
+    }
+
+    public void set481(Float _481) {
+	this._481 = _481;
+    }
+
+    public Float get482() {
+	return this._482;
+    }
+
+    public void set482(Float _482) {
+	this._482 = _482;
+    }
+
+    public Float get401() {
+	return this._401;
+    }
+
+    public void set401(Float _401) {
+	this._401 = _401;
+    }
+
+    public Float get402() {
+	return this._402;
+    }
+
+    public void set402(Float _402) {
+	this._402 = _402;
+    }
+
+    public Float get403() {
+	return this._403;
+    }
+
+    public void set403(Float _403) {
+	this._403 = _403;
+    }
+
+    public Float get404() {
+	return this._404;
+    }
+
+    public void set404(Float _404) {
+	this._404 = _404;
+    }
+
+    public Float get405() {
+	return this._405;
+    }
+
+    public void set405(Float _405) {
+	this._405 = _405;
+    }
+
+    public Float get406() {
+	return this._406;
+    }
+
+    public void set406(Float _406) {
+	this._406 = _406;
+    }
+
+    public Float get407() {
+	return this._407;
+    }
+
+    public void set407(Float _407) {
+	this._407 = _407;
+    }
+
+    public Float get408() {
+	return this._408;
+    }
+
+    public void set408(Float _408) {
+	this._408 = _408;
+    }
+
+    public Float get413() {
+	return this._413;
+    }
+
+    public void set413(Float _413) {
+	this._413 = _413;
+    }
+
+    public Float get414() {
+	return this._414;
+    }
+
+    public void set414(Float _414) {
+	this._414 = _414;
+    }
+
+    public Float get415() {
+	return this._415;
+    }
+
+    public void set415(Float _415) {
+	this._415 = _415;
+    }
+
+    public Float get416() {
+	return this._416;
+    }
+
+    public void set416(Float _416) {
+	this._416 = _416;
+    }
+
+    public Float get425() {
+	return this._425;
+    }
+
+    public void set425(Float _425) {
+	this._425 = _425;
+    }
+
+    public Float get426() {
+	return this._426;
+    }
+
+    public void set426(Float _426) {
+	this._426 = _426;
+    }
+
+    public Float get501() {
+	return this._501;
+    }
+
+    public void set501(Float _501) {
+	this._501 = _501;
+    }
+
+    public Float get502() {
+	return this._502;
+    }
+
+    public void set502(Float _502) {
+	this._502 = _502;
+    }
+
+    public Float get503() {
+	return this._503;
+    }
+
+    public void set503(Float _503) {
+	this._503 = _503;
+    }
+
+    public Float get504() {
+	return this._504;
+    }
+
+    public void set504(Float _504) {
+	this._504 = _504;
+    }
+
+    public Float get505() {
+	return this._505;
+    }
+
+    public void set505(Float _505) {
+	this._505 = _505;
+    }
+
+    public Float get506() {
+	return this._506;
+    }
+
+    public void set506(Float _506) {
+	this._506 = _506;
+    }
+
+    public Float get507() {
+	return this._507;
+    }
+
+    public void set507(Float _507) {
+	this._507 = _507;
+    }
+
+    public Float get508() {
+	return this._508;
+    }
+
+    public void set508(Float _508) {
+	this._508 = _508;
+    }
+
+    public Float get511() {
+	return this._511;
+    }
+
+    public void set511(Float _511) {
+	this._511 = _511;
+    }
+
+    public Float get512() {
+	return this._512;
+    }
+
+    public void set512(Float _512) {
+	this._512 = _512;
+    }
+
+    public Float get515() {
+	return this._515;
+    }
+
+    public void set515(Float _515) {
+	this._515 = _515;
+    }
+
+    public Float get516() {
+	return this._516;
+    }
+
+    public void set516(Float _516) {
+	this._516 = _516;
+    }
+
+    public Float get517() {
+	return this._517;
+    }
+
+    public void set517(Float _517) {
+	this._517 = _517;
+    }
+
+    public Float get518() {
+	return this._518;
+    }
+
+    public void set518(Float _518) {
+	this._518 = _518;
+    }
+
+    public Float get103() {
+	return this._103;
+    }
+
+    public void set103(Float _103) {
+	this._103 = _103;
+    }
+
+    public Float get104() {
+	return this._104;
+    }
+
+    public void set104(Float _104) {
+	this._104 = _104;
+    }
+
+    public Float get121() {
+	return this._121;
+    }
+
+    public void set121(Float _121) {
+	this._121 = _121;
+    }
+
+    public Float get122() {
+	return this._122;
+    }
+
+    public void set122(Float _122) {
+	this._122 = _122;
+    }
+
+    public Float get105() {
+	return this._105;
+    }
+
+    public void set105(Float _105) {
+	this._105 = _105;
+    }
+
+    public Float get106() {
+	return this._106;
+    }
+
+    public void set106(Float _106) {
+	this._106 = _106;
+    }
+
+    public Float get107() {
+	return this._107;
+    }
+
+    public void set107(Float _107) {
+	this._107 = _107;
+    }
+
+    public Float get108() {
+	return this._108;
+    }
+
+    public void set108(Float _108) {
+	this._108 = _108;
+    }
+
+    public Float get109() {
+	return this._109;
+    }
+
+    public void set109(Float _109) {
+	this._109 = _109;
+    }
+
+    public Float get110() {
+	return this._110;
+    }
+
+    public void set110(Float _110) {
+	this._110 = _110;
+    }
+
+    public Float get101() {
+	return this._101;
+    }
+
+    public void set101(Float _101) {
+	this._101 = _101;
+    }
+
+    public Float get102() {
+	return this._102;
+    }
+
+    public void set102(Float _102) {
+	this._102 = _102;
+    }
+
+    public Float get909() {
+	return this._909;
+    }
+
+    public void set909(Float _909) {
+	this._909 = _909;
+    }
+
+    public Float get910() {
+	return this._910;
+    }
+
+    public void set910(Float _910) {
+	this._910 = _910;
+    }
+
+    public Float get111() {
+	return this._111;
+    }
+
+    public void set111(Float _111) {
+	this._111 = _111;
+    }
+
+    public Float get112() {
+	return this._112;
+    }
+
+    public void set112(Float _112) {
+	this._112 = _112;
+    }
+
+    public Float get113() {
+	return this._113;
+    }
+
+    public void set113(Float _113) {
+	this._113 = _113;
+    }
+
+    public Float get114() {
+	return this._114;
+    }
+
+    public void set114(Float _114) {
+	this._114 = _114;
+    }
+
+    public Float get129() {
+	return this._129;
+    }
+
+    public void set129(Float _129) {
+	this._129 = _129;
+    }
+
+    public Float get130() {
+	return this._130;
+    }
+
+    public void set130(Float _130) {
+	this._130 = _130;
+    }
+
+    public Float get143() {
+	return this._143;
+    }
+
+    public void set143(Float _143) {
+	this._143 = _143;
+    }
+
+    public Float get144() {
+	return this._144;
+    }
+
+    public void set144(Float _144) {
+	this._144 = _144;
+    }
+
+    public Float get145() {
+	return this._145;
+    }
+
+    public void set145(Float _145) {
+	this._145 = _145;
+    }
+
+    public Float get146() {
+	return this._146;
+    }
+
+    public void set146(Float _146) {
+	this._146 = _146;
+    }
+
+    public Float get147() {
+	return this._147;
+    }
+
+    public void set147(Float _147) {
+	this._147 = _147;
+    }
+
+    public Float get148() {
+	return this._148;
+    }
+
+    public void set148(Float _148) {
+	this._148 = _148;
+    }
+
+    public Float get141() {
+	return this._141;
+    }
+
+    public void set141(Float _141) {
+	this._141 = _141;
+    }
+
+    public Float get142() {
+	return this._142;
+    }
+
+    public void set142(Float _142) {
+	this._142 = _142;
+    }
+
+    public Float get701() {
+	return this._701;
+    }
+
+    public void set701(Float _701) {
+	this._701 = _701;
+    }
+
+    public Float get702() {
+	return this._702;
+    }
+
+    public void set702(Float _702) {
+	this._702 = _702;
+    }
+
+    public Float get123() {
+	return this._123;
+    }
+
+    public void set123(Float _123) {
+	this._123 = _123;
+    }
+
+    public Float get124() {
+	return this._124;
+    }
+
+    public void set124(Float _124) {
+	this._124 = _124;
+    }
+
+    public Float get125() {
+	return this._125;
+    }
+
+    public void set125(Float _125) {
+	this._125 = _125;
+    }
+
+    public Float get126() {
+	return this._126;
+    }
+
+    public void set126(Float _126) {
+	this._126 = _126;
+    }
+
+    public Float get151() {
+	return this._151;
+    }
+
+    public void set151(Float _151) {
+	this._151 = _151;
+    }
+
+    public Float get152() {
+	return this._152;
+    }
+
+    public void set152(Float _152) {
+	this._152 = _152;
+    }
+
+    public Float get163() {
+	return this._163;
+    }
+
+    public void set163(Float _163) {
+	this._163 = _163;
+    }
+
+    public Float get164() {
+	return this._164;
+    }
+
+    public void set164(Float _164) {
+	this._164 = _164;
+    }
+
+    public Float get165() {
+	return this._165;
+    }
+
+    public void set165(Float _165) {
+	this._165 = _165;
+    }
+
+    public Float get166() {
+	return this._166;
+    }
+
+    public void set166(Float _166) {
+	this._166 = _166;
+    }
+
+    public Float get159() {
+	return this._159;
+    }
+
+    public void set159(Float _159) {
+	this._159 = _159;
+    }
+
+    public Float get160() {
+	return this._160;
+    }
+
+    public void set160(Float _160) {
+	this._160 = _160;
+    }
+
+    public Float get175() {
+	return this._175;
+    }
+
+    public void set175(Float _175) {
+	this._175 = _175;
+    }
+
+    public Float get176() {
+	return this._176;
+    }
+
+    public void set176(Float _176) {
+	this._176 = _176;
+    }
+
+    public Float get131() {
+	return this._131;
+    }
+
+    public void set131(Float _131) {
+	this._131 = _131;
+    }
+
+    public Float get132() {
+	return this._132;
+    }
+
+    public void set132(Float _132) {
+	this._132 = _132;
+    }
+
+    public Float get133() {
+	return this._133;
+    }
+
+    public void set133(Float _133) {
+	this._133 = _133;
+    }
+
+    public Float get134() {
+	return this._134;
+    }
+
+    public void set134(Float _134) {
+	this._134 = _134;
+    }
+
+    public Float get741() {
+	return this._741;
+    }
+
+    public void set741(Float _741) {
+	this._741 = _741;
+    }
+
+    public Float get742() {
+	return this._742;
+    }
+
+    public void set742(Float _742) {
+	this._742 = _742;
+    }
+
+    public Float get291() {
+	return this._291;
+    }
+
+    public void set291(Float _291) {
+	this._291 = _291;
+    }
+
+    public Float get292() {
+	return this._292;
+    }
+
+    public void set292(Float _292) {
+	this._292 = _292;
+    }
+
+    public Float get389() {
+	return this._389;
+    }
+
+    public void set389(Float _389) {
+	this._389 = _389;
+    }
+
+    public Float get390() {
+	return this._390;
+    }
+
+    public void set390(Float _390) {
+	this._390 = _390;
+    }
+
+    public Float get391() {
+	return this._391;
+    }
+
+    public void set391(Float _391) {
+	this._391 = _391;
+    }
+
+    public Float get392() {
+	return this._392;
+    }
+
+    public void set392(Float _392) {
+	this._392 = _392;
+    }
+
+    public Float get463() {
+	return this._463;
+    }
+
+    public void set463(Float _463) {
+	this._463 = _463;
+    }
+
+    public Float get464() {
+	return this._464;
+    }
+
+    public void set464(Float _464) {
+	this._464 = _464;
+    }
+
+    public Float get471() {
+	return this._471;
+    }
+
+    public void set471(Float _471) {
+	this._471 = _471;
+    }
+
+    public Float get472() {
+	return this._472;
+    }
+
+    public void set472(Float _472) {
+	this._472 = _472;
+    }
+
+    public Float get411() {
+	return this._411;
+    }
+
+    public void set411(Float _411) {
+	this._411 = _411;
+    }
+
+    public Float get412() {
+	return this._412;
+    }
+
+    public void set412(Float _412) {
+	this._412 = _412;
+    }
+
+    public Float get421() {
+	return this._421;
+    }
+
+    public void set421(Float _421) {
+	this._421 = _421;
+    }
+
+    public Float get422() {
+	return this._422;
+    }
+
+    public void set422(Float _422) {
+	this._422 = _422;
+    }
+
+    public Float get509() {
+	return this._509;
+    }
+
+    public void set509(Float _509) {
+	this._509 = _509;
+    }
+
+    public Float get510() {
+	return this._510;
+    }
+
+    public void set510(Float _510) {
+	this._510 = _510;
+    }
+
+    public Float get513() {
+	return this._513;
+    }
+
+    public void set513(Float _513) {
+	this._513 = _513;
+    }
+
+    public Float get514() {
+	return this._514;
+    }
+
+    public void set514(Float _514) {
+	this._514 = _514;
+    }
+
+    public Float get295() {
+	return this._295;
+    }
+
+    public void set295(Float _295) {
+	this._295 = _295;
+    }
+
+    public Float get296() {
+	return this._296;
+    }
+
+    public void set296(Float _296) {
+	this._296 = _296;
+    }
+
+    public Float get171() {
+	return this._171;
+    }
+
+    public void set171(Float _171) {
+	this._171 = _171;
+    }
+
+    public Float get172() {
+	return this._172;
+    }
+
+    public void set172(Float _172) {
+	this._172 = _172;
+    }
+
+    public Float get173() {
+	return this._173;
+    }
+
+    public void set173(Float _173) {
+	this._173 = _173;
+    }
+
+    public Float get174() {
+	return this._174;
+    }
+
+    public void set174(Float _174) {
+	this._174 = _174;
+    }
+
+    public Float get395() {
+	return this._395;
+    }
+
+    public void set395(Float _395) {
+	this._395 = _395;
+    }
+
+    public Float get396() {
+	return this._396;
+    }
+
+    public void set396(Float _396) {
+	this._396 = _396;
+    }
+
+    public String getAgrLocation1() {
+	return this.agrLocation1;
+    }
+
+    public void setAgrLocation1(String agrLocation1) {
+	this.agrLocation1 = agrLocation1;
+    }
+
+    public String getAgrProdKind1() {
+	return this.agrProdKind1;
+    }
+
+    public void setAgrProdKind1(String agrProdKind1) {
+	this.agrProdKind1 = agrProdKind1;
+    }
+
+    public Float getAgrPopulation1() {
+	return this.agrPopulation1;
+    }
+
+    public void setAgrPopulation1(Float agrPopulation1) {
+	this.agrPopulation1 = agrPopulation1;
+    }
+
+    public Integer getAgrLocationType1() {
+	return this.agrLocationType1;
+    }
+
+    public void setAgrLocationType1(Integer agrLocationType1) {
+	this.agrLocationType1 = agrLocationType1;
+    }
+
+    public Integer getAgrHasWater1() {
+	return this.agrHasWater1;
+    }
+
+    public void setAgrHasWater1(Integer agrHasWater1) {
+	this.agrHasWater1 = agrHasWater1;
+    }
+
+    public Float getAgrNetIncome1() {
+	return this.agrNetIncome1;
+    }
+
+    public void setAgrNetIncome1(Float agrNetIncome1) {
+	this.agrNetIncome1 = agrNetIncome1;
+    }
+
+    public Float getAgrTotalNetincome1() {
+	return this.agrTotalNetincome1;
+    }
+
+    public void setAgrTotalNetincome1(Float agrTotalNetincome1) {
+	this.agrTotalNetincome1 = agrTotalNetincome1;
+    }
+
+    public Float getAgrTotalWifeNetincome1() {
+	return this.agrTotalWifeNetincome1;
+    }
+
+    public void setAgrTotalWifeNetincome1(Float agrTotalWifeNetincome1) {
+	this.agrTotalWifeNetincome1 = agrTotalWifeNetincome1;
+    }
+
+    public String getAgrLocation2() {
+	return this.agrLocation2;
+    }
+
+    public void setAgrLocation2(String agrLocation2) {
+	this.agrLocation2 = agrLocation2;
+    }
+
+    public String getAgrProdKind2() {
+	return this.agrProdKind2;
+    }
+
+    public void setAgrProdKind2(String agrProdKind2) {
+	this.agrProdKind2 = agrProdKind2;
+    }
+
+    public Float getAgrPopulation2() {
+	return this.agrPopulation2;
+    }
+
+    public void setAgrPopulation2(Float agrPopulation2) {
+	this.agrPopulation2 = agrPopulation2;
+    }
+
+    public Integer getAgrLocationType2() {
+	return this.agrLocationType2;
+    }
+
+    public void setAgrLocationType2(Integer agrLocationType2) {
+	this.agrLocationType2 = agrLocationType2;
+    }
+
+    public Integer getAgrHasWater2() {
+	return this.agrHasWater2;
+    }
+
+    public void setAgrHasWater2(Integer agrHasWater2) {
+	this.agrHasWater2 = agrHasWater2;
+    }
+
+    public Float getAgrNetIncome2() {
+	return this.agrNetIncome2;
+    }
+
+    public void setAgrNetIncome2(Float agrNetIncome2) {
+	this.agrNetIncome2 = agrNetIncome2;
+    }
+
+    public Float getAgrTotalNetincome2() {
+	return this.agrTotalNetincome2;
+    }
+
+    public void setAgrTotalNetincome2(Float agrTotalNetincome2) {
+	this.agrTotalNetincome2 = agrTotalNetincome2;
+    }
+
+    public Float getAgrTotalWifeNetincome2() {
+	return this.agrTotalWifeNetincome2;
+    }
+
+    public void setAgrTotalWifeNetincome2(Float agrTotalWifeNetincome2) {
+	this.agrTotalWifeNetincome2 = agrTotalWifeNetincome2;
+    }
+
+    public String getAgrLocation3() {
+	return this.agrLocation3;
+    }
+
+    public void setAgrLocation3(String agrLocation3) {
+	this.agrLocation3 = agrLocation3;
+    }
+
+    public String getAgrProdKind3() {
+	return this.agrProdKind3;
+    }
+
+    public void setAgrProdKind3(String agrProdKind3) {
+	this.agrProdKind3 = agrProdKind3;
+    }
+
+    public Float getAgrPopulation3() {
+	return this.agrPopulation3;
+    }
+
+    public void setAgrPopulation3(Float agrPopulation3) {
+	this.agrPopulation3 = agrPopulation3;
+    }
+
+    public Integer getAgrLocationType3() {
+	return this.agrLocationType3;
+    }
+
+    public void setAgrLocationType3(Integer agrLocationType3) {
+	this.agrLocationType3 = agrLocationType3;
+    }
+
+    public Integer getAgrHasWater3() {
+	return this.agrHasWater3;
+    }
+
+    public void setAgrHasWater3(Integer agrHasWater3) {
+	this.agrHasWater3 = agrHasWater3;
+    }
+
+    public Float getAgrNetIncome3() {
+	return this.agrNetIncome3;
+    }
+
+    public void setAgrNetIncome3(Float agrNetIncome3) {
+	this.agrNetIncome3 = agrNetIncome3;
+    }
+
+    public Float getAgrTotalNetincome3() {
+	return this.agrTotalNetincome3;
+    }
+
+    public void setAgrTotalNetincome3(Float agrTotalNetincome3) {
+	this.agrTotalNetincome3 = agrTotalNetincome3;
+    }
+
+    public Float getAgrTotalWifeNetincome3() {
+	return this.agrTotalWifeNetincome3;
+    }
+
+    public void setAgrTotalWifeNetincome3(Float agrTotalWifeNetincome3) {
+	this.agrTotalWifeNetincome3 = agrTotalWifeNetincome3;
+    }
+
+    public String getAgrLocation4() {
+	return this.agrLocation4;
+    }
+
+    public void setAgrLocation4(String agrLocation4) {
+	this.agrLocation4 = agrLocation4;
+    }
+
+    public String getAgrProdKind4() {
+	return this.agrProdKind4;
+    }
+
+    public void setAgrProdKind4(String agrProdKind4) {
+	this.agrProdKind4 = agrProdKind4;
+    }
+
+    public Float getAgrPopulation4() {
+	return this.agrPopulation4;
+    }
+
+    public void setAgrPopulation4(Float agrPopulation4) {
+	this.agrPopulation4 = agrPopulation4;
+    }
+
+    public Integer getAgrLocationType4() {
+	return this.agrLocationType4;
+    }
+
+    public void setAgrLocationType4(Integer agrLocationType4) {
+	this.agrLocationType4 = agrLocationType4;
+    }
+
+    public Integer getAgrHasWater4() {
+	return this.agrHasWater4;
+    }
+
+    public void setAgrHasWater4(Integer agrHasWater4) {
+	this.agrHasWater4 = agrHasWater4;
+    }
+
+    public Float getAgrNetIncome4() {
+	return this.agrNetIncome4;
+    }
+
+    public void setAgrNetIncome4(Float agrNetIncome4) {
+	this.agrNetIncome4 = agrNetIncome4;
+    }
+
+    public Float getAgrTotalNetincome4() {
+	return this.agrTotalNetincome4;
+    }
+
+    public void setAgrTotalNetincome4(Float agrTotalNetincome4) {
+	this.agrTotalNetincome4 = agrTotalNetincome4;
+    }
+
+    public Float getAgrTotalWifeNetincome4() {
+	return this.agrTotalWifeNetincome4;
+    }
+
+    public void setAgrTotalWifeNetincome4(Float agrTotalWifeNetincome4) {
+	this.agrTotalWifeNetincome4 = agrTotalWifeNetincome4;
+    }
+
+    public Set<E1> getE1s() {
+	return this.e1s;
+    }
+
+    public void setE1s(Set<E1> e1s) {
+	this.e1s = e1s;
+    }
 
 }
