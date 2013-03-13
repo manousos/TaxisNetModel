@@ -15,9 +15,9 @@
 		<property name="houseAddr1" type="string">
 			<column name="HouseAddr1" length="200" />
 		</property>
-		<property name="floor1" type="java.lang.Integer">
-            <column name="Floor1" />
-        </property>
+		<property name="floor1" type="string">
+			<column name="Floor1" />
+		</property>
 		<property name="_203" type="java.lang.Integer">
 			<column name="203" />
 		</property>
@@ -45,9 +45,9 @@
 		<property name="houseAddr2" type="string">
 			<column name="HouseAddr2" length="200" />
 		</property>
-				<property name="floor2" type="java.lang.Integer">
-            <column name="Floor2" />
-        </property>
+		<property name="floor2" type="string">
+			<column name="Floor2" />
+		</property>
 		<property name="_207" type="java.lang.Integer">
 			<column name="207" />
 		</property>
@@ -75,9 +75,9 @@
 		<property name="houseAddr3" type="string">
 			<column name="HouseAddr3" length="200" />
 		</property>
-				<property name="floor3" type="java.lang.Integer">
-            <column name="Floor3" />
-        </property>
+		<property name="floor3" type="string">
+			<column name="Floor3" />
+		</property>
 		<property name="_209" type="java.lang.Integer">
 			<column name="209" />
 		</property>

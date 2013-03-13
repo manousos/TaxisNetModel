@@ -17,7 +17,7 @@ public class E1objectiveSpending implements java.io.Serializable {
 	private Integer idE1objectiveSpending;
 	private String _205;
 	private String houseAddr1;
-	private Integer floor1;
+	private String floor1;
 	private Integer _203;
 	private Integer _240;
 	private Float _211;
@@ -27,7 +27,7 @@ public class E1objectiveSpending implements java.io.Serializable {
 	private Integer _215;
 	private Float _216;
 	private String houseAddr2;
-	private Integer floor2;
+	private String floor2;
 	private Integer _207;
 	private Integer _241;
 	private Float _218;
@@ -37,7 +37,7 @@ public class E1objectiveSpending implements java.io.Serializable {
 	private Integer _222;
 	private Float _223;
 	private String houseAddr3;
-	private Integer floor3;
+	private String floor3;
 	private Integer _209;
 	private Integer _242;
 	private Float _225;
@@ -140,12 +140,12 @@ public class E1objectiveSpending implements java.io.Serializable {
 	public E1objectiveSpending() {
 	}
 
-	public E1objectiveSpending(String _205, String houseAddr1, Integer floor1,
+	public E1objectiveSpending(String _205, String houseAddr1, String floor1,
 			Integer _203, Integer _240, Float _211, Float _212, Float _213,
 			Float _214, Integer _215, Float _216, String houseAddr2,
-			Integer floor2, Integer _207, Integer _241, Float _218, Float _219,
+			String floor2, Integer _207, Integer _241, Float _218, Float _219,
 			Float _220, Float _221, Integer _222, Float _223,
-			String houseAddr3, Integer floor3, Integer _209, Integer _242,
+			String houseAddr3, String floor3, Integer _209, Integer _242,
 			Float _225, Float _226, Float _227, Float _228, Integer _229,
 			Float _230, Float _707, Float _708, String afm1, String _750,
 			Integer _703, Integer _761, Float _771, Integer _775, String afm2,
@@ -321,11 +321,11 @@ public class E1objectiveSpending implements java.io.Serializable {
 		this.houseAddr1 = houseAddr1;
 	}
 
-	public Integer getFloor1() {
+	public String getFloor1() {
 		return floor1;
 	}
 
-	public void setFloor1(Integer floor1) {
+	public void setFloor1(String floor1) {
 		this.floor1 = floor1;
 	}
 
@@ -401,11 +401,11 @@ public class E1objectiveSpending implements java.io.Serializable {
 		this.houseAddr2 = houseAddr2;
 	}
 
-	public Integer getFloor2() {
+	public String getFloor2() {
 		return floor2;
 	}
 
-	public void setFloor2(Integer floor2) {
+	public void setFloor2(String floor2) {
 		this.floor2 = floor2;
 	}
 
@@ -481,11 +481,11 @@ public class E1objectiveSpending implements java.io.Serializable {
 		this.houseAddr3 = houseAddr3;
 	}
 
-	public Integer getFloor3() {
+	public String getFloor3() {
 		return floor3;
 	}
 
-	public void setFloor3(Integer floor3) {
+	public void setFloor3(String floor3) {
 		this.floor3 = floor3;
 	}
 

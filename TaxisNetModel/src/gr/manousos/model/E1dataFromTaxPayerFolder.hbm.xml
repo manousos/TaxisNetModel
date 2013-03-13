@@ -1,102 +1,40 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<!-- Generated 27 ?????? 2013 12:29:40 ???? by Hibernate Tools 3.4.0.CR1 -->
+<!-- Generated 13 ?????? 2013 1:09:48 ???? by Hibernate Tools 3.4.0.CR1 -->
 <hibernate-mapping>
-    <class name="gr.manousos.model.E1dataFromTaxPayerFolder" table="E1DataFromTaxPayerFolder" catalog="TaxisDB">
-        <id name="idE1dataFromTaxPayerFolder" type="java.lang.Integer">
-            <column name="idE1DataFromTaxPayerFolder" />
-            <generator class="identity" />
-        </id>
-        <property name="_901" type="java.lang.Float">
-            <column name="901" precision="12" scale="0" />
-        </property>
-        <property name="_902" type="java.lang.Float">
-            <column name="902" precision="12" scale="0" />
-        </property>
-        <property name="_903" type="java.lang.Float">
-            <column name="903" precision="12" scale="0" />
-        </property>
-        <property name="_904" type="java.lang.Float">
-            <column name="904" precision="12" scale="0" />
-        </property>
-        <property name="_341" type="java.lang.Float">
-            <column name="341" precision="12" scale="0" />
-        </property>
-        <property name="_342" type="java.lang.Float">
-            <column name="342" precision="12" scale="0" />
-        </property>
-        <property name="_745" type="java.lang.Float">
-            <column name="745" precision="12" scale="0" />
-        </property>
-        <property name="_746" type="java.lang.Float">
-            <column name="746" precision="12" scale="0" />
-        </property>
-        <property name="_995" type="java.lang.Float">
-            <column name="995" precision="12" scale="0" />
-        </property>
-        <property name="_996" type="java.lang.Float">
-            <column name="996" precision="12" scale="0" />
-        </property>
-        <property name="_997" type="java.lang.Float">
-            <column name="997" precision="12" scale="0" />
-        </property>
-        <property name="_998" type="java.lang.Float">
-            <column name="998" precision="12" scale="0" />
-        </property>
-        <property name="_959" type="java.lang.Float">
-            <column name="959" precision="12" scale="0" />
-        </property>
-        <property name="_960" type="java.lang.Float">
-            <column name="960" precision="12" scale="0" />
-        </property>
-        <property name="_743" type="java.lang.Float">
-            <column name="743" precision="12" scale="0" />
-        </property>
-        <property name="_744" type="java.lang.Float">
-            <column name="744" precision="12" scale="0" />
-        </property>
-        <property name="_323" type="java.lang.Float">
-            <column name="323" precision="12" scale="0" />
-        </property>
-        <property name="_324" type="java.lang.Float">
-            <column name="324" precision="12" scale="0" />
-        </property>
-        <property name="_399" type="java.lang.Float">
-            <column name="399" precision="12" scale="0" />
-        </property>
-        <property name="_400" type="java.lang.Float">
-            <column name="400" precision="12" scale="0" />
-        </property>
-        <property name="_907" type="java.lang.Float">
-            <column name="907" precision="12" scale="0" />
-        </property>
-        <property name="_908" type="java.lang.Float">
-            <column name="908" precision="12" scale="0" />
-        </property>
-        <property name="_985" type="java.lang.Float">
-            <column name="985" precision="12" scale="0" />
-        </property>
-        <property name="_986" type="java.lang.Float">
-            <column name="986" precision="12" scale="0" />
-        </property>
-        <property name="_987" type="java.lang.Float">
-            <column name="987" precision="12" scale="0" />
-        </property>
-        <property name="_988" type="java.lang.Float">
-            <column name="988" precision="12" scale="0" />
-        </property>
-        <property name="_989" type="java.lang.Float">
-            <column name="989" precision="12" scale="0" />
-        </property>
-        <property name="_990" type="java.lang.Float">
-            <column name="990" precision="12" scale="0" />
-        </property>
-        <set name="e1s" table="E1" inverse="true" lazy="true" fetch="select">
-            <key>
-                <column name="idE1DataFromTaxPayerFolder" unique="true"/>
-            </key>
-            <one-to-many class="gr.manousos.model.E1" />
-        </set>
-    </class>
+	<class name="gr.manousos.model.E1dataFromTaxPayerFolder" table="E1DataFromTaxPayerFolder"
+		catalog="TaxisDB">
+		<id name="idE1dataFromTaxPayerFolder" type="java.lang.Integer">
+			<column name="idE1DataFromTaxPayerFolder" />
+			<generator class="identity" />
+		</id>
+		<property name="_901" type="java.lang.Float">
+			<column name="901" precision="12" scale="0" />
+		</property>
+		<property name="_902" type="java.lang.Float">
+			<column name="902" precision="12" scale="0" />
+		</property>
+		<property name="_903" type="java.lang.Float">
+			<column name="903" precision="12" scale="0" />
+		</property>
+		<property name="_904" type="java.lang.Float">
+			<column name="904" precision="12" scale="0" />
+		</property>
+		<property name="_341" type="java.lang.Float">
+			<column name="341" precision="12" scale="0" />
+		</property>
+		<property name="_995" type="java.lang.Float">
+			<column name="995" precision="12" scale="0" />
+		</property>
+		<property name="_996" type="java.lang.Float">
+			<column name="996" precision="12" scale="0" />
+		</property>
+		<set name="e1s" table="E1" inverse="true" lazy="true" fetch="select">
+			<key>
+				<column name="idE1DataFromTaxPayerFolder" unique="true" />
+			</key>
+			<one-to-many class="gr.manousos.model.E1" />
+		</set>
+	</class>
 </hibernate-mapping>
