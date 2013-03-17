@@ -19,7 +19,7 @@
 			<column name="SchoolName1" length="100" />
 		</property>
 		<property name="_831" type="string">
-			<column name="831" length="10" />
+			<column name="_831" length="10" />
 		</property>
 		<property name="name2" type="string">
 			<column name="Name2" length="45" />
@@ -31,7 +31,7 @@
 			<column name="SchoolName2" length="100" />
 		</property>
 		<property name="_832" type="string">
-			<column name="832" length="10" />
+			<column name="_832" length="10" />
 		</property>
 		<property name="name3" type="string">
 			<column name="Name3" length="45" />
@@ -43,7 +43,7 @@
 			<column name="SchoolName3" length="100" />
 		</property>
 		<property name="_833" type="string">
-			<column name="833" length="10" />
+			<column name="_833" length="10" />
 		</property>
 		<property name="name4" type="string">
 			<column name="Name4" length="45" />
@@ -55,13 +55,13 @@
 			<column name="SchoolName4" length="100" />
 		</property>
 		<property name="_834" type="string">
-			<column name="834" length="10" />
+			<column name="_834" length="10" />
 		</property>
 		<property name="fullName1" type="string">
 			<column name="FullName1" length="45" />
 		</property>
 		<property name="_835" type="string">
-			<column name="835" length="10" />
+			<column name="_835" length="10" />
 		</property>
 		<property name="relationshipWithPrincipal1" type="string">
 			<column name="RelationshipWithPrincipal1" length="45" />
@@ -73,7 +73,7 @@
 			<column name="FullName2" length="45" />
 		</property>
 		<property name="_836" type="string">
-			<column name="836" length="10" />
+			<column name="_836" length="10" />
 		</property>
 		<property name="relationshipWithPrincipal2" type="string">
 			<column name="RelationshipWithPrincipal2" length="45" />
@@ -85,7 +85,7 @@
 			<column name="FullName3" length="45" />
 		</property>
 		<property name="_837" type="string">
-			<column name="837" length="45" />
+			<column name="_837" length="45" />
 		</property>
 		<property name="relationshipWithPrincipal3" type="string">
 			<column name="RelationshipWithPrincipal3" length="45" />
@@ -97,7 +97,7 @@
 			<column name="FullName4" length="45" />
 		</property>
 		<property name="_838" type="string">
-			<column name="838" length="10" />
+			<column name="_838" length="10" />
 		</property>
 		<property name="relationshipWithPrincipal4" type="string">
 			<column name="RelationshipWithPrincipal4" length="45" />

@@ -45,7 +45,7 @@ public class E1reduceTax implements java.io.Serializable {
 		this.idE1reduceTax = idE1reduceTax;
 	}
 
-	public Integer get001() {
+	public Integer get_001() {
 		return this._001;
 	}
 
@@ -53,46 +53,50 @@ public class E1reduceTax implements java.io.Serializable {
 		this._001 = _001;
 	}
 
-	public Integer get002() {
-		return this._002;
+	public Integer get_002() {
+	    return _002;
 	}
 
-	public void set002(Integer _002) {
-		this._002 = _002;
+	public void set_002(Integer _002) {
+	    this._002 = _002;
 	}
 
-	public Integer _get003() {
-		return this._003;
+	public Integer get_003() {
+	    return _003;
 	}
 
-	public void set003(Integer _003) {
-		this._003 = _003;
+	public void set_003(Integer _003) {
+	    this._003 = _003;
 	}
 
-	public Integer _get004() {
-		return this._004;
+	public Integer get_004() {
+	    return _004;
 	}
 
-	public void set004(Integer _004) {
-		this._004 = _004;
+	public void set_004(Integer _004) {
+	    this._004 = _004;
 	}
 
-	public Integer _get005() {
-		return this._005;
+	public Integer get_005() {
+	    return _005;
 	}
 
-	public void set005(Integer _005) {
-		this._005 = _005;
+	public void set_005(Integer _005) {
+	    this._005 = _005;
 	}
 
-	public Integer _get006() {
-		return this._006;
+	public Integer get_006() {
+	    return _006;
 	}
 
-	public void set006(Integer _006) {
-		this._006 = _006;
+	public void set_006(Integer _006) {
+	    this._006 = _006;
 	}
 
+	public void set_001(Integer _001) {
+	    this._001 = _001;
+	}
+	
 	public Set<E1> getE1s() {
 		return this.e1s;
 	}

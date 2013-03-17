@@ -13,369 +13,369 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class E1infoData implements java.io.Serializable {
 
-	private static final long serialVersionUID = 1L;
-	private Integer e1infoDataId;
-	private Integer _327;
-	private Integer _328;
-	private Integer _319;
-	private Integer _320;
-	private Integer _023;
-	private Integer _024;
-	private Integer _329;
-	private Integer _330;
-	private Integer _331;
-	private Integer _011;
-	private Integer _012;
-	private Integer _013;
-	private Integer _014;
-	private Integer _015;
-	private Integer _016;
-	private Integer _017;
-	private Integer _018;
-	private Integer _021;
-	private Integer _022;
-	private Integer _025;
-	private Integer _026;
-	private Integer _007;
-	private Integer _008;
-	private Integer _617;
-	private Integer _385;
-	private Integer _386;
-	private Integer _029;
-	private Integer _030;
-	private Integer _905;
-	private Integer _906;
-	private Integer _911;
-	private Integer _912;
-	private Integer _010;
-	private Set<E1> e1s = new HashSet<E1>(0);
-
-	public E1infoData() {
-	}
-
-	public E1infoData(Integer _327, Integer _328, Integer _319, Integer _320,
-			Integer _023, Integer _024, Integer _329, Integer _330,
-			Integer _331, Integer _011, Integer _012, Integer _013,
-			Integer _014, Integer _015, Integer _016, Integer _017,
-			Integer _018, Integer _021, Integer _022, Integer _025,
-			Integer _026, Integer _007, Integer _008, Integer _617,
-			Integer _385, Integer _386, Integer _029, Integer _030,
-			Integer _905, Integer _906, Integer _911, Integer _912,
-			Integer _010, Set<E1> e1s) {
-		this._327 = _327;
-		this._328 = _328;
-		this._319 = _319;
-		this._320 = _320;
-		this._023 = _023;
-		this._024 = _024;
-		this._329 = _329;
-		this._330 = _330;
-		this._331 = _331;
-		this._011 = _011;
-		this._012 = _012;
-		this._013 = _013;
-		this._014 = _014;
-		this._015 = _015;
-		this._016 = _016;
-		this._017 = _017;
-		this._018 = _018;
-		this._021 = _021;
-		this._022 = _022;
-		this._025 = _025;
-		this._026 = _026;
-		this._007 = _007;
-		this._008 = _008;
-		this._617 = _617;
-		this._385 = _385;
-		this._386 = _386;
-		this._029 = _029;
-		this._030 = _030;
-		this._905 = _905;
-		this._906 = _906;
-		this._911 = _911;
-		this._912 = _912;
-		this._010 = _010;
-		this.e1s = e1s;
-	}
-
-	public Integer getE1infoDataId() {
-		return this.e1infoDataId;
-	}
-
-	public void setE1infoDataId(Integer e1infoDataId) {
-		this.e1infoDataId = e1infoDataId;
-	}
-
-	public Integer get327() {
-		return this._327;
-	}
-
-	public void set327(Integer _327) {
-		this._327 = _327;
-	}
-
-	public Integer get328() {
-		return this._328;
-	}
+    private static final long serialVersionUID = 1L;
+    private Integer e1infoDataId;
+    private Integer _327;
+    private Integer _328;
+    private Integer _319;
+    private Integer _320;
+    private Integer _023;
+    private Integer _024;
+    private Integer _329;
+    private Integer _330;
+    private Integer _331;
+    private Integer _011;
+    private Integer _012;
+    private Integer _013;
+    private Integer _014;
+    private Integer _015;
+    private Integer _016;
+    private Integer _017;
+    private Integer _018;
+    private Integer _021;
+    private Integer _022;
+    private Integer _025;
+    private Integer _026;
+    private Integer _007;
+    private Integer _008;
+    private Integer _617;
+    private Integer _385;
+    private Integer _386;
+    private Integer _029;
+    private Integer _030;
+    private Integer _905;
+    private Integer _906;
+    private Integer _911;
+    private Integer _912;
+    private Integer _010;
+    private Set<E1> e1s = new HashSet<E1>(0);
+
+    public E1infoData() {
+    }
+
+    public E1infoData(Integer _327, Integer _328, Integer _319, Integer _320,
+	    Integer _023, Integer _024, Integer _329, Integer _330,
+	    Integer _331, Integer _011, Integer _012, Integer _013,
+	    Integer _014, Integer _015, Integer _016, Integer _017,
+	    Integer _018, Integer _021, Integer _022, Integer _025,
+	    Integer _026, Integer _007, Integer _008, Integer _617,
+	    Integer _385, Integer _386, Integer _029, Integer _030,
+	    Integer _905, Integer _906, Integer _911, Integer _912,
+	    Integer _010, Set<E1> e1s) {
+	this._327 = _327;
+	this._328 = _328;
+	this._319 = _319;
+	this._320 = _320;
+	this._023 = _023;
+	this._024 = _024;
+	this._329 = _329;
+	this._330 = _330;
+	this._331 = _331;
+	this._011 = _011;
+	this._012 = _012;
+	this._013 = _013;
+	this._014 = _014;
+	this._015 = _015;
+	this._016 = _016;
+	this._017 = _017;
+	this._018 = _018;
+	this._021 = _021;
+	this._022 = _022;
+	this._025 = _025;
+	this._026 = _026;
+	this._007 = _007;
+	this._008 = _008;
+	this._617 = _617;
+	this._385 = _385;
+	this._386 = _386;
+	this._029 = _029;
+	this._030 = _030;
+	this._905 = _905;
+	this._906 = _906;
+	this._911 = _911;
+	this._912 = _912;
+	this._010 = _010;
+	this.e1s = e1s;
+    }
+
+    public Integer getE1infoDataId() {
+	return this.e1infoDataId;
+    }
+
+    public void setE1infoDataId(Integer e1infoDataId) {
+	this.e1infoDataId = e1infoDataId;
+    }
+
+    public Integer get_327() {
+	return _327;
+    }
+
+    public void set_327(Integer _327) {
+	this._327 = _327;
+    }
+
+    public Integer get_328() {
+	return _328;
+    }
 
-	public void set328(Integer _328) {
-		this._328 = _328;
-	}
+    public void set_328(Integer _328) {
+	this._328 = _328;
+    }
 
-	public Integer get319() {
-		return this._319;
-	}
+    public Integer get_319() {
+	return _319;
+    }
 
-	public void set319(Integer _319) {
-		this._319 = _319;
-	}
+    public void set_319(Integer _319) {
+	this._319 = _319;
+    }
 
-	public Integer get320() {
-		return this._320;
-	}
+    public Integer get_320() {
+	return _320;
+    }
 
-	public void set320(Integer _320) {
-		this._320 = _320;
-	}
+    public void set_320(Integer _320) {
+	this._320 = _320;
+    }
 
-	public Integer get023() {
-		return this._023;
-	}
+    public Integer get_023() {
+	return _023;
+    }
 
-	public void set023(Integer _023) {
-		this._023 = _023;
-	}
+    public void set_023(Integer _023) {
+	this._023 = _023;
+    }
 
-	public Integer get024() {
-		return this._024;
-	}
+    public Integer get_024() {
+	return _024;
+    }
 
-	public void set024(Integer _024) {
-		this._024 = _024;
-	}
+    public void set_024(Integer _024) {
+	this._024 = _024;
+    }
 
-	public Integer get329() {
-		return this._329;
-	}
+    public Integer get_329() {
+	return _329;
+    }
 
-	public void set329(Integer _329) {
-		this._329 = _329;
-	}
+    public void set_329(Integer _329) {
+	this._329 = _329;
+    }
 
-	public Integer get330() {
-		return this._330;
-	}
+    public Integer get_330() {
+	return _330;
+    }
 
-	public void set330(Integer _330) {
-		this._330 = _330;
-	}
+    public void set_330(Integer _330) {
+	this._330 = _330;
+    }
 
-	public Integer get331() {
-		return this._331;
-	}
+    public Integer get_331() {
+	return _331;
+    }
 
-	public void set331(Integer _331) {
-		this._331 = _331;
-	}
+    public void set_331(Integer _331) {
+	this._331 = _331;
+    }
 
-	public Integer get011() {
-		return this._011;
-	}
+    public Integer get_011() {
+	return _011;
+    }
 
-	public void set011(Integer _011) {
-		this._011 = _011;
-	}
+    public void set_011(Integer _011) {
+	this._011 = _011;
+    }
 
-	public Integer get012() {
-		return this._012;
-	}
+    public Integer get_012() {
+	return _012;
+    }
 
-	public void set012(Integer _012) {
-		this._012 = _012;
-	}
+    public void set_012(Integer _012) {
+	this._012 = _012;
+    }
 
-	public Integer get013() {
-		return this._013;
-	}
+    public Integer get_013() {
+	return _013;
+    }
 
-	public void set013(Integer _013) {
-		this._013 = _013;
-	}
+    public void set_013(Integer _013) {
+	this._013 = _013;
+    }
 
-	public Integer get014() {
-		return this._014;
-	}
+    public Integer get_014() {
+	return _014;
+    }
 
-	public void set014(Integer _014) {
-		this._014 = _014;
-	}
+    public void set_014(Integer _014) {
+	this._014 = _014;
+    }
 
-	public Integer get015() {
-		return this._015;
-	}
+    public Integer get_015() {
+	return _015;
+    }
 
-	public void set015(Integer _015) {
-		this._015 = _015;
-	}
+    public void set_015(Integer _015) {
+	this._015 = _015;
+    }
 
-	public Integer get016() {
-		return this._016;
-	}
+    public Integer get_016() {
+	return _016;
+    }
 
-	public void set016(Integer _016) {
-		this._016 = _016;
-	}
+    public void set_016(Integer _016) {
+	this._016 = _016;
+    }
 
-	public Integer get017() {
-		return this._017;
-	}
+    public Integer get_017() {
+	return _017;
+    }
 
-	public void set017(Integer _017) {
-		this._017 = _017;
-	}
+    public void set_017(Integer _017) {
+	this._017 = _017;
+    }
 
-	public Integer get018() {
-		return this._018;
-	}
+    public Integer get_018() {
+	return _018;
+    }
 
-	public void set018(Integer _018) {
-		this._018 = _018;
-	}
+    public void set_018(Integer _018) {
+	this._018 = _018;
+    }
 
-	public Integer get021() {
-		return this._021;
-	}
+    public Integer get_021() {
+	return _021;
+    }
 
-	public void set021(Integer _021) {
-		this._021 = _021;
-	}
+    public void set_021(Integer _021) {
+	this._021 = _021;
+    }
 
-	public Integer get022() {
-		return this._022;
-	}
+    public Integer get_022() {
+	return _022;
+    }
 
-	public void set022(Integer _022) {
-		this._022 = _022;
-	}
+    public void set_022(Integer _022) {
+	this._022 = _022;
+    }
 
-	public Integer get025() {
-		return this._025;
-	}
+    public Integer get_025() {
+	return _025;
+    }
 
-	public void set025(Integer _025) {
-		this._025 = _025;
-	}
+    public void set_025(Integer _025) {
+	this._025 = _025;
+    }
 
-	public Integer get026() {
-		return this._026;
-	}
+    public Integer get_026() {
+	return _026;
+    }
 
-	public void set026(Integer _026) {
-		this._026 = _026;
-	}
+    public void set_026(Integer _026) {
+	this._026 = _026;
+    }
 
-	public Integer get007() {
-		return this._007;
-	}
+    public Integer get_007() {
+	return _007;
+    }
 
-	public void set007(Integer _007) {
-		this._007 = _007;
-	}
+    public void set_007(Integer _007) {
+	this._007 = _007;
+    }
 
-	public Integer get008() {
-		return this._008;
-	}
+    public Integer get_008() {
+	return _008;
+    }
 
-	public void set008(Integer _008) {
-		this._008 = _008;
-	}
+    public void set_008(Integer _008) {
+	this._008 = _008;
+    }
 
-	public Integer get617() {
-		return this._617;
-	}
+    public Integer get_617() {
+	return _617;
+    }
 
-	public void set617(Integer _617) {
-		this._617 = _617;
-	}
+    public void set_617(Integer _617) {
+	this._617 = _617;
+    }
 
-	public Integer get385() {
-		return this._385;
-	}
+    public Integer get_385() {
+	return _385;
+    }
 
-	public void set385(Integer _385) {
-		this._385 = _385;
-	}
+    public void set_385(Integer _385) {
+	this._385 = _385;
+    }
 
-	public Integer get386() {
-		return this._386;
-	}
+    public Integer get_386() {
+	return _386;
+    }
 
-	public void set386(Integer _386) {
-		this._386 = _386;
-	}
+    public void set_386(Integer _386) {
+	this._386 = _386;
+    }
 
-	public Integer get029() {
-		return this._029;
-	}
+    public Integer get_029() {
+	return _029;
+    }
 
-	public void set029(Integer _029) {
-		this._029 = _029;
-	}
+    public void set_029(Integer _029) {
+	this._029 = _029;
+    }
 
-	public Integer get030() {
-		return this._030;
-	}
+    public Integer get_030() {
+	return _030;
+    }
 
-	public void set030(Integer _030) {
-		this._030 = _030;
-	}
+    public void set_030(Integer _030) {
+	this._030 = _030;
+    }
 
-	public Integer get905() {
-		return this._905;
-	}
+    public Integer get_905() {
+	return _905;
+    }
 
-	public void set905(Integer _905) {
-		this._905 = _905;
-	}
+    public void set_905(Integer _905) {
+	this._905 = _905;
+    }
 
-	public Integer get906() {
-		return this._906;
-	}
+    public Integer get_906() {
+	return _906;
+    }
 
-	public void set906(Integer _906) {
-		this._906 = _906;
-	}
+    public void set_906(Integer _906) {
+	this._906 = _906;
+    }
 
-	public Integer get911() {
-		return this._911;
-	}
+    public Integer get_911() {
+	return _911;
+    }
 
-	public void set911(Integer _911) {
-		this._911 = _911;
-	}
+    public void set_911(Integer _911) {
+	this._911 = _911;
+    }
 
-	public Integer get912() {
-		return this._912;
-	}
+    public Integer get_912() {
+	return _912;
+    }
 
-	public void set912(Integer _912) {
-		this._912 = _912;
-	}
+    public void set_912(Integer _912) {
+	this._912 = _912;
+    }
 
-	public Integer get010() {
-		return this._010;
-	}
+    public Integer get_010() {
+	return _010;
+    }
 
-	public void set010(Integer _010) {
-		this._010 = _010;
-	}
+    public void set_010(Integer _010) {
+	this._010 = _010;
+    }
 
-	public Set<E1> getE1s() {
-		return this.e1s;
-	}
+    public Set<E1> getE1s() {
+	return this.e1s;
+    }
 
-	public void setE1s(Set<E1> e1s) {
-		this.e1s = e1s;
-	}
+    public void setE1s(Set<E1> e1s) {
+	this.e1s = e1s;
+    }
 
 }

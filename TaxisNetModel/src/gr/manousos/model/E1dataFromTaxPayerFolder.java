@@ -13,103 +13,103 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class E1dataFromTaxPayerFolder implements java.io.Serializable {
 
-	private static final long serialVersionUID = 1L;
-	private Integer idE1dataFromTaxPayerFolder;
-	private Float _901;
-	private Float _902;
-	private Float _903;
-	private Float _904;
-	private Float _341;
-	private Float _995;
-	private Float _996;
+    private static final long serialVersionUID = 1L;
+    private Integer idE1dataFromTaxPayerFolder;
+    private Float _901;
+    private Float _902;
+    private Float _903;
+    private Float _904;
+    private Float _341;
+    private Float _995;
+    private Float _996;
 
-	private Set<E1> e1s = new HashSet<E1>(0);
+    private Set<E1> e1s = new HashSet<E1>(0);
 
-	public E1dataFromTaxPayerFolder() {
-	}
+    public E1dataFromTaxPayerFolder() {
+    }
 
-	public E1dataFromTaxPayerFolder(Float _901, Float _902, Float _903,
-			Float _904, Float _341, Float _995, Float _996, Set<E1> e1s) {
-		this._901 = _901;
-		this._902 = _902;
-		this._903 = _903;
-		this._904 = _904;
-		this._341 = _341;
-		this._995 = _995;
-		this._996 = _996;
-		this.e1s = e1s;
-	}
+    public E1dataFromTaxPayerFolder(Float _901, Float _902, Float _903,
+	    Float _904, Float _341, Float _995, Float _996, Set<E1> e1s) {
+	this._901 = _901;
+	this._902 = _902;
+	this._903 = _903;
+	this._904 = _904;
+	this._341 = _341;
+	this._995 = _995;
+	this._996 = _996;
+	this.e1s = e1s;
+    }
 
-	public Integer getIdE1dataFromTaxPayerFolder() {
-		return this.idE1dataFromTaxPayerFolder;
-	}
+    public Integer getIdE1dataFromTaxPayerFolder() {
+	return this.idE1dataFromTaxPayerFolder;
+    }
 
-	public void setIdE1dataFromTaxPayerFolder(Integer idE1dataFromTaxPayerFolder) {
-		this.idE1dataFromTaxPayerFolder = idE1dataFromTaxPayerFolder;
-	}
+    public void setIdE1dataFromTaxPayerFolder(Integer idE1dataFromTaxPayerFolder) {
+	this.idE1dataFromTaxPayerFolder = idE1dataFromTaxPayerFolder;
+    }
 
-	public Float get901() {
-		return this._901;
-	}
+    public Float get_901() {
+	return _901;
+    }
 
-	public void set901(Float _901) {
-		this._901 = _901;
-	}
+    public void set_901(Float _901) {
+	this._901 = _901;
+    }
 
-	public Float get902() {
-		return this._902;
-	}
+    public Float get_902() {
+	return _902;
+    }
 
-	public void set902(Float _902) {
-		this._902 = _902;
-	}
+    public void set_902(Float _902) {
+	this._902 = _902;
+    }
 
-	public Float get903() {
-		return this._903;
-	}
+    public Float get_903() {
+	return _903;
+    }
 
-	public void set903(Float _903) {
-		this._903 = _903;
-	}
+    public void set_903(Float _903) {
+	this._903 = _903;
+    }
 
-	public Float get904() {
-		return this._904;
-	}
+    public Float get_904() {
+	return _904;
+    }
 
-	public void set904(Float _904) {
-		this._904 = _904;
-	}
+    public void set_904(Float _904) {
+	this._904 = _904;
+    }
 
-	public Float get341() {
-		return this._341;
-	}
+    public Float get_341() {
+	return _341;
+    }
 
-	public void set341(Float _341) {
-		this._341 = _341;
-	}
+    public void set_341(Float _341) {
+	this._341 = _341;
+    }
 
-	public Float get995() {
-		return this._995;
-	}
+    public Float get_995() {
+	return _995;
+    }
 
-	public void set995(Float _995) {
-		this._995 = _995;
-	}
+    public void set_995(Float _995) {
+	this._995 = _995;
+    }
 
-	public Float get996() {
-		return this._996;
-	}
+    public Float get_996() {
+	return _996;
+    }
 
-	public void set996(Float _996) {
-		this._996 = _996;
-	}
+    public void set_996(Float _996) {
+	this._996 = _996;
+    }
 
-	public Set<E1> getE1s() {
-		return this.e1s;
-	}
+    public Set<E1> getE1s() {
+	return this.e1s;
+    }
 
-	public void setE1s(Set<E1> e1s) {
-		this.e1s = e1s;
-	}
+    public void setE1s(Set<E1> e1s) {
+	this.e1s = e1s;
+    }
 
 }

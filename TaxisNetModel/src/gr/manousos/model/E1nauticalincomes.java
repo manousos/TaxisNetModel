@@ -13,153 +13,153 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class E1nauticalincomes implements java.io.Serializable {
 
-	private static final long serialVersionUID = 1L;
-	private Integer idE1nauticalincomes;
-	private Float _255;
-	private Float _256;
-	private Float _257;
-	private Float _258;
-	private Float _263;
-	private Float _264;
-	private Float _265;
-	private Float _266;
-	private Float _253;
-	private Float _254;
-	private Float _201;
-	private Float _202;
-	private Set<E1> e1s = new HashSet<E1>(0);
+    private static final long serialVersionUID = 1L;
+    private Integer idE1nauticalincomes;
+    private Float _255;
+    private Float _256;
+    private Float _257;
+    private Float _258;
+    private Float _263;
+    private Float _264;
+    private Float _265;
+    private Float _266;
+    private Float _253;
+    private Float _254;
+    private Float _201;
+    private Float _202;
+    private Set<E1> e1s = new HashSet<E1>(0);
 
-	public E1nauticalincomes() {
-	}
+    public E1nauticalincomes() {
+    }
 
-	public E1nauticalincomes(Float _255, Float _256, Float _257, Float _258,
-			Float _263, Float _264, Float _265, Float _266, Float _253,
-			Float _254, Float _201, Float _202, Set<E1> e1s) {
-		this._255 = _255;
-		this._256 = _256;
-		this._257 = _257;
-		this._258 = _258;
-		this._263 = _263;
-		this._264 = _264;
-		this._265 = _265;
-		this._266 = _266;
-		this._253 = _253;
-		this._254 = _254;
-		this._201 = _201;
-		this._202 = _202;
-		this.e1s = e1s;
-	}
+    public E1nauticalincomes(Float _255, Float _256, Float _257, Float _258,
+	    Float _263, Float _264, Float _265, Float _266, Float _253,
+	    Float _254, Float _201, Float _202, Set<E1> e1s) {
+	this._255 = _255;
+	this._256 = _256;
+	this._257 = _257;
+	this._258 = _258;
+	this._263 = _263;
+	this._264 = _264;
+	this._265 = _265;
+	this._266 = _266;
+	this._253 = _253;
+	this._254 = _254;
+	this._201 = _201;
+	this._202 = _202;
+	this.e1s = e1s;
+    }
 
-	public Integer getIdE1nauticalincomes() {
-		return this.idE1nauticalincomes;
-	}
+    public Integer getIdE1nauticalincomes() {
+	return this.idE1nauticalincomes;
+    }
 
-	public void setIdE1nauticalincomes(Integer idE1nauticalincomes) {
-		this.idE1nauticalincomes = idE1nauticalincomes;
-	}
+    public void setIdE1nauticalincomes(Integer idE1nauticalincomes) {
+	this.idE1nauticalincomes = idE1nauticalincomes;
+    }
 
-	public Float _get255() {
-		return this._255;
-	}
+    public Float get_255() {
+	return _255;
+    }
 
-	public void set255(Float _255) {
-		this._255 = _255;
-	}
+    public void set_255(Float _255) {
+	this._255 = _255;
+    }
 
-	public Float _get256() {
-		return this._256;
-	}
+    public Float get_256() {
+	return _256;
+    }
 
-	public void set256(Float _256) {
-		this._256 = _256;
-	}
+    public void set_256(Float _256) {
+	this._256 = _256;
+    }
 
-	public Float _get257() {
-		return this._257;
-	}
+    public Float get_257() {
+	return _257;
+    }
 
-	public void set257(Float _257) {
-		this._257 = _257;
-	}
+    public void set_257(Float _257) {
+	this._257 = _257;
+    }
 
-	public Float _get258() {
-		return this._258;
-	}
+    public Float get_258() {
+	return _258;
+    }
 
-	public void set258(Float _258) {
-		this._258 = _258;
-	}
+    public void set_258(Float _258) {
+	this._258 = _258;
+    }
 
-	public Float _get263() {
-		return this._263;
-	}
+    public Float get_263() {
+	return _263;
+    }
 
-	public void set263(Float _263) {
-		this._263 = _263;
-	}
+    public void set_263(Float _263) {
+	this._263 = _263;
+    }
 
-	public Float _get264() {
-		return this._264;
-	}
+    public Float get_264() {
+	return _264;
+    }
 
-	public void set264(Float _264) {
-		this._264 = _264;
-	}
+    public void set_264(Float _264) {
+	this._264 = _264;
+    }
 
-	public Float _get265() {
-		return this._265;
-	}
+    public Float get_265() {
+	return _265;
+    }
 
-	public void set265(Float _265) {
-		this._265 = _265;
-	}
+    public void set_265(Float _265) {
+	this._265 = _265;
+    }
 
-	public Float _get266() {
-		return this._266;
-	}
+    public Float get_266() {
+	return _266;
+    }
 
-	public void set266(Float _266) {
-		this._266 = _266;
-	}
+    public void set_266(Float _266) {
+	this._266 = _266;
+    }
 
-	public Float _get253() {
-		return this._253;
-	}
+    public Float get_253() {
+	return _253;
+    }
 
-	public void set253(Float _253) {
-		this._253 = _253;
-	}
+    public void set_253(Float _253) {
+	this._253 = _253;
+    }
 
-	public Float _get254() {
-		return this._254;
-	}
+    public Float get_254() {
+	return _254;
+    }
 
-	public void set254(Float _254) {
-		this._254 = _254;
-	}
+    public void set_254(Float _254) {
+	this._254 = _254;
+    }
 
-	public Float _get201() {
-		return this._201;
-	}
+    public Float get_201() {
+	return _201;
+    }
 
-	public void set201(Float _201) {
-		this._201 = _201;
-	}
+    public void set_201(Float _201) {
+	this._201 = _201;
+    }
 
-	public Float _get202() {
-		return this._202;
-	}
+    public Float get_202() {
+	return _202;
+    }
 
-	public void set202(Float _202) {
-		this._202 = _202;
-	}
+    public void set_202(Float _202) {
+	this._202 = _202;
+    }
 
-	public Set<E1> getE1s() {
-		return this.e1s;
-	}
+    public Set<E1> getE1s() {
+	return this.e1s;
+    }
 
-	public void setE1s(Set<E1> e1s) {
-		this.e1s = e1s;
-	}
+    public void setE1s(Set<E1> e1s) {
+	this.e1s = e1s;
+    }
 
 }

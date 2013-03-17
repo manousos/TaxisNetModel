@@ -8,41 +8,41 @@
             <column name="idE1NAUTICALINCOMES" />
             <generator class="identity" />
         </id>
-        <property name="255" type="java.lang.Float">
-            <column name="255" precision="12" scale="0" />
+        <property name="_255" type="java.lang.Float">
+            <column name="_255" precision="12" scale="0" />
         </property>
-        <property name="256" type="java.lang.Float">
-            <column name="256" precision="12" scale="0" />
+        <property name="_256" type="java.lang.Float">
+            <column name="_256" precision="12" scale="0" />
         </property>
-        <property name="257" type="java.lang.Float">
-            <column name="257" precision="12" scale="0" />
+        <property name="_257" type="java.lang.Float">
+            <column name="_257" precision="12" scale="0" />
         </property>
-        <property name="258" type="java.lang.Float">
-            <column name="258" precision="12" scale="0" />
+        <property name="_258" type="java.lang.Float">
+            <column name="_258" precision="12" scale="0" />
         </property>
-        <property name="263" type="java.lang.Float">
-            <column name="263" precision="12" scale="0" />
+        <property name="_263" type="java.lang.Float">
+            <column name="_263" precision="12" scale="0" />
         </property>
-        <property name="264" type="java.lang.Float">
-            <column name="264" precision="12" scale="0" />
+        <property name="_264" type="java.lang.Float">
+            <column name="_264" precision="12" scale="0" />
         </property>
-        <property name="265" type="java.lang.Float">
-            <column name="265" precision="12" scale="0" />
+        <property name="_265" type="java.lang.Float">
+            <column name="_265" precision="12" scale="0" />
         </property>
-        <property name="266" type="java.lang.Float">
-            <column name="266" precision="12" scale="0" />
+        <property name="_266" type="java.lang.Float">
+            <column name="_266" precision="12" scale="0" />
         </property>
-        <property name="253" type="java.lang.Float">
-            <column name="253" precision="12" scale="0" />
+        <property name="_253" type="java.lang.Float">
+            <column name="_253" precision="12" scale="0" />
         </property>
-        <property name="254" type="java.lang.Float">
-            <column name="254" precision="12" scale="0" />
+        <property name="_254" type="java.lang.Float">
+            <column name="_254" precision="12" scale="0" />
         </property>
-        <property name="201" type="java.lang.Float">
-            <column name="201" precision="12" scale="0" />
+        <property name="_201" type="java.lang.Float">
+            <column name="_201" precision="12" scale="0" />
         </property>
-        <property name="202" type="java.lang.Float">
-            <column name="202" precision="12" scale="0" />
+        <property name="_202" type="java.lang.Float">
+            <column name="_202" precision="12" scale="0" />
         </property>
         <set name="e1s" table="E1" inverse="true" lazy="true" fetch="select">
             <key>
