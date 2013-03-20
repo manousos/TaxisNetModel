@@ -6,7 +6,7 @@
 	<class name="gr.manousos.model.E1dataFromTaxPayerFolder" table="E1DataFromTaxPayerFolder"
 		catalog="TaxisDB">
 		<id name="idE1dataFromTaxPayerFolder" type="java.lang.Integer">
-			<column name="_idE1DataFromTaxPayerFolder" />
+			<column name="idE1DataFromTaxPayerFolder" />
 			<generator class="identity" />
 		</id>
 		<property name="_901" type="java.lang.Float">

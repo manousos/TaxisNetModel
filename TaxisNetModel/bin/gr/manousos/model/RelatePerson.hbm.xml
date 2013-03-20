@@ -3,44 +3,45 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated 18 ?????? 2013 12:42:57 ???? by Hibernate Tools 3.4.0.CR1 -->
 <hibernate-mapping>
-    <class name="gr.manousos.model.RelatePerson" table="RelatePerson" catalog="TaxisDB">
-        <id name="idRelatePerson" type="int">
-            <column name="idRelatePerson" />
-            <generator class="assigned" />
-        </id>
-        <many-to-one name="contact" class="gr.manousos.model.Contact" fetch="select">
-            <column name="ContactID" />
-        </many-to-one>
-        <property name="type" type="java.lang.Integer">
-            <column name="Type">
-                <comment>1: WIFE 2: DELEGATE</comment>
-            </column>
-        </property>
-        <property name="address" type="string">
-            <column name="Address" length="500" />
-        </property>
-        <property name="afm" type="string">
-            <column name="AFM" length="45" />
-        </property>
-        <property name="fname" type="string">
-            <column name="FName" length="45" />
-        </property>
-        <property name="lname" type="string">
-            <column name="LName" length="45" />
-        </property>
-        <property name="fatherName" type="string">
-            <column name="FatherName" length="10" />
-        </property>
-        <property name="atid" type="string">
-            <column name="ATID" length="10" />
-        </property>
-        <set name="e1s" table="E1RelatePersons" inverse="true" lazy="true" fetch="select">
-            <key>
-                <column name="idRelatePerson" not-null="true" />
-            </key>
-            <many-to-many entity-name="gr.manousos.model.E1">
-                <column name="TaxpayerID" not-null="true" />
-            </many-to-many>
-        </set>
-    </class>
+	<class name="gr.manousos.model.RelatePerson" table="RelatePerson" catalog="TaxisDB">
+		<id name="idRelatePerson" type="int">
+			<column name="idRelatePerson" />
+			<generator class="assigned" />
+		</id>
+		<many-to-one name="contact" class="gr.manousos.model.Contact" fetch="select">
+			<column name="ContactID" />
+		</many-to-one>
+		<property name="type" type="java.lang.Integer">
+			<column name="Type">
+				<comment>1: WIFE 2: DELEGATE</comment>
+			</column>
+		</property>
+		<property name="address" type="string">
+			<column name="Address" length="500" />
+		</property>
+		<property name="afm" type="string">
+			<column name="AFM" length="45" />
+		</property>
+		<property name="fname" type="string">
+			<column name="FName" length="45" />
+		</property>
+		<property name="lname" type="string">
+			<column name="LName" length="45" />
+		</property>
+		<property name="fatherName" type="string">
+			<column name="FatherName" length="10" />
+		</property>
+		<property name="atid" type="string">
+			<column name="ATID" length="10" />
+		</property>
+		<set name="e1s" table="E1RelatePersons" inverse="true" lazy="true" fetch="select" cascade="all">
+			<key>
+				<column name="idRelatePerson" not-null="true" />
+			</key>
+			<many-to-many entity-name="gr.manousos.model.E1">
+				<column name="TaxpayerID" not-null="true" />
+				<column name="Year" not-null="true" />
+			</many-to-many>
+		</set>
+	</class>
 </hibernate-mapping>

@@ -6,7 +6,7 @@
 	<class name="gr.manousos.model.E1prepaidTaxes" table="E1PrepaidTaxes"
 		catalog="TaxisDB">
 		<id name="idE1prepaidTaxes" type="java.lang.Integer">
-			<column name="_idE1PrepaidTaxes" />
+			<column name="idE1PrepaidTaxes" />
 			<generator class="identity" />
 		</id>
 		<property name="_601" type="java.lang.Float">
@@ -77,7 +77,7 @@
 		</property>
 		<set name="e1s" table="E1" inverse="true" lazy="true" fetch="select">
 			<key>
-				<column name="_idE1PrepaidTaxes" unique="true" />
+				<column name="idE1PrepaidTaxes" unique="true" />
 			</key>
 			<one-to-many class="gr.manousos.model.E1" />
 		</set>
