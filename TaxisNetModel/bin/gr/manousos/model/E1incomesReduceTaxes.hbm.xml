@@ -3,8 +3,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated 17 March 2013 12:29:40 ???? by Hibernate Tools 3.4.0.CR1 -->
 <hibernate-mapping>
-	<class name="gr.manousos.model.E1incomesReduceTaxes" table="E1IncomesReduceTaxes"
-		catalog="TaxisDB">
+	<class name="gr.manousos.model.E1incomesReduceTaxes" table="E1IncomesReduceTaxes" catalog="TaxisDB">
 		<id name="idE1incomesReduceTaxes" type="java.lang.Integer">
 			<column name="idE1IncomesReduceTaxes" />
 			<generator class="identity" />
@@ -90,8 +89,8 @@
 		<property name="_615" type="java.lang.Float">
 			<column name="_615" precision="12" scale="0" />
 		</property>
-		<property name="_616" type="string">
-			<column name="_616" length="45" />
+		<property name="_616" type="java.lang.Float">
+			<column name="_616" precision="12" scale="0" />
 		</property>
 		<property name="lassorNameForStudent" type="string">
 			<column name="LassorNameForStudent" length="45" />

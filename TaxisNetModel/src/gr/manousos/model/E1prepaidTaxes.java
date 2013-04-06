@@ -36,7 +36,7 @@ public class E1prepaidTaxes implements java.io.Serializable {
     private Float _297;
     private Float _298;
     private Float _127;
-    private String _128;
+    private Float _128;
     private Set<E1> e1s = new HashSet<E1>(0);
 
     public E1prepaidTaxes() {
@@ -46,7 +46,7 @@ public class E1prepaidTaxes implements java.io.Serializable {
 	    Float _605, Float _606, Float _607, Float _608, Float _609,
 	    Float _610, Float _651, Float _652, Float _293, Float _294,
 	    Float _313, Float _314, Float _315, Float _316, Float _297,
-	    Float _298, Float _127, String _128, Set<E1> e1s) {
+	    Float _298, Float _127, Float _128, Set<E1> e1s) {
 	this._601 = _601;
 	this._602 = _602;
 	this._603 = _603;
@@ -248,11 +248,11 @@ public class E1prepaidTaxes implements java.io.Serializable {
 	this._127 = _127;
     }
 
-    public String get_128() {
+    public Float get_128() {
 	return _128;
     }
 
-    public void set_128(String _128) {
+    public void set_128(Float _128) {
 	this._128 = _128;
     }
 

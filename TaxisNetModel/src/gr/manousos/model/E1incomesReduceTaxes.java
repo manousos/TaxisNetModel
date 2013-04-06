@@ -42,7 +42,7 @@ public class E1incomesReduceTaxes implements java.io.Serializable {
     private Float _793;
     private Float _794;
     private Float _615;
-    private String _616;
+    private Float _616;
     private String lassorNameForStudent;
     private String _417;
     private Float areaStudentHouse;
@@ -66,7 +66,7 @@ public class E1incomesReduceTaxes implements java.io.Serializable {
 	    Float _662, Float _431, Float _432, Float _433, Float _434,
 	    Float _305, Float _306, Float _477, Float _478, String lessorName1,
 	    String _790, Float _795, String lassorName2, String _791,
-	    Float _796, Float _793, Float _794, Float _615, String _616,
+	    Float _796, Float _793, Float _794, Float _615, Float _616,
 	    String lassorNameForStudent, String _417, Float areaStudentHouse,
 	    Float _419, Float _420, Float _735, Float _736, Float _781,
 	    Float _782, Float _783, Float _784, Float _787, Float _788,
@@ -339,11 +339,11 @@ public class E1incomesReduceTaxes implements java.io.Serializable {
 	this._615 = _615;
     }
 
-    public String get_616() {
+    public Float get_616() {
 	return _616;
     }
 
-    public void set_616(String _616) {
+    public void set_616(Float _616) {
 	this._616 = _616;
     }
 
