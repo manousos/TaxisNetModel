@@ -36,6 +36,7 @@ public class E1 implements java.io.Serializable {
     private Date dateInserted;
     private String doy;
     private Integer marriage;
+    private IncomeTax incomeTax;
     private Set<RelatePerson> relatePersons = new HashSet<RelatePerson>(0);
 
     public E1() {
@@ -61,7 +62,8 @@ public class E1 implements java.io.Serializable {
 	    E1prepaidTaxes e1prepaidTaxes, E1taxableIncomes e1taxableIncomes,
 	    E1incomesReduceTaxes e1incomesReduceTaxes, String taxpayerAddress,
 	    String atid, Integer isComplete, Date dateInserted,
-	    Set<RelatePerson> relatePersons, String doy, Integer marriage) {
+	    IncomeTax incomeTax, Set<RelatePerson> relatePersons, String doy,
+	    Integer marriage) {
 	this.id = id;
 	this.e1reduceTax = e1reduceTax;
 	this.e1objectiveSpending = e1objectiveSpending;
@@ -78,9 +80,15 @@ public class E1 implements java.io.Serializable {
 	this.atid = atid;
 	this.isComplete = isComplete;
 	this.dateInserted = dateInserted;
+	this.incomeTax = incomeTax;
 	this.relatePersons = relatePersons;
 	this.doy = doy;
 	this.marriage = marriage;
+    }
+
+    public E1(E1Id id, IncomeTax incomeTax) {
+	this.id = id;
+	this.incomeTax = incomeTax;
     }
 
     public E1Id getId() {
@@ -238,6 +246,14 @@ public class E1 implements java.io.Serializable {
 
     public void setMarriage(Integer marriage) {
 	this.marriage = marriage;
+    }
+
+    public IncomeTax getIncomeTax() {
+	return incomeTax;
+    }
+
+    public void setIncomeTax(IncomeTax incomeTax) {
+	this.incomeTax = incomeTax;
     }
 
     public Set<RelatePerson> getRelatePersons() {
