@@ -62,7 +62,7 @@ public class E1 implements java.io.Serializable {
 	    E1prepaidTaxes e1prepaidTaxes, E1taxableIncomes e1taxableIncomes,
 	    E1incomesReduceTaxes e1incomesReduceTaxes, String taxpayerAddress,
 	    String atid, Integer isComplete, Date dateInserted,
-	    IncomeTax incomeTax, Set<RelatePerson> relatePersons, String doy,
+	    Set<RelatePerson> relatePersons, String doy,
 	    Integer marriage) {
 	this.id = id;
 	this.e1reduceTax = e1reduceTax;
@@ -79,16 +79,10 @@ public class E1 implements java.io.Serializable {
 	this.taxpayerAddress = taxpayerAddress;
 	this.atid = atid;
 	this.isComplete = isComplete;
-	this.dateInserted = dateInserted;
-	this.incomeTax = incomeTax;
+	this.dateInserted = dateInserted;	
 	this.relatePersons = relatePersons;
 	this.doy = doy;
 	this.marriage = marriage;
-    }
-
-    public E1(E1Id id, IncomeTax incomeTax) {
-	this.id = id;
-	this.incomeTax = incomeTax;
     }
 
     public E1Id getId() {

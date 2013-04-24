@@ -6,7 +6,7 @@
     <class name="gr.manousos.model.IncomeTax" table="IncomeTax" catalog="TaxisDB">
         <composite-id name="id" class="gr.manousos.model.IncomeTaxId">
             <key-property name="taxPayerId" type="int">
-                <column name="TaxPayerId" />
+                <column name="TaxPayerID" />
             </key-property>
             <key-property name="year" type="int">
                 <column name="Year" />

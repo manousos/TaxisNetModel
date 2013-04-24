@@ -19,12 +19,12 @@ public class IncomeTax implements java.io.Serializable {
     public IncomeTax() {
     }
 
-    public IncomeTax(E1 e1) {
-	this.e1 = e1;
+    public IncomeTax(IncomeTaxId id) {
+	this.id = id;
     }
 
-    public IncomeTax(E1 e1, Float principalTax, Float wifeTax) {
-	this.e1 = e1;
+    public IncomeTax(IncomeTaxId id, Float principalTax, Float wifeTax) {
+	this.id = id;
 	this.principalTax = principalTax;
 	this.wifeTax = wifeTax;
     }

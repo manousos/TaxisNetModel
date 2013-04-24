@@ -66,7 +66,7 @@
 		<property name="marriage" type="java.lang.Integer">
 			<column name="Marriage" />
 		</property>
-		<one-to-one name="incomeTax" class="gr.manousos.model.IncomeTax" cascade="all"></one-to-one>
+		<one-to-one name="incomeTax" class="gr.manousos.model.IncomeTax"></one-to-one>
 		<set name="relatePersons" table="E1RelatePersons" inverse="false" lazy="true" fetch="select" cascade="all">
 			<key>
 				<column name="TaxpayerID" not-null="true" />
