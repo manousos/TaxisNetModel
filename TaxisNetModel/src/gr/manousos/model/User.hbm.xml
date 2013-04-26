@@ -3,7 +3,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated 27 ?????? 2013 12:29:40 ???? by Hibernate Tools 3.4.0.CR1 -->
 <hibernate-mapping>
-    <class name="gr.manousos.model.User" table="User" catalog="TaxisDB">
+    <class name="gr.manousos.model.User" table='"User"' catalog="TaxisDB">
         <id name="userId" type="java.lang.Integer">
             <column name="UserID" />
             <generator class="identity" />
