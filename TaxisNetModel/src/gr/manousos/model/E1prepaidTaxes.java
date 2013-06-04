@@ -1,9 +1,6 @@
 package gr.manousos.model;
 
-// Generated 27 Φεβ 2013 12:29:40 πμ by Hibernate Tools 3.4.0.CR1
-
-import java.util.HashSet;
-import java.util.Set;
+// Generated 3 Ιουν 2013 11:58:42 μμ by Hibernate Tools 3.4.0.CR1
 
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -14,7 +11,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class E1prepaidTaxes implements java.io.Serializable {
 
     private static final long serialVersionUID = 1L;
-    private Integer idE1prepaidTaxes;
+    private E1prepaidTaxesId id;
+    private E1 e1;
     private Float _601;
     private Float _602;
     private Float _603;
@@ -37,16 +35,20 @@ public class E1prepaidTaxes implements java.io.Serializable {
     private Float _298;
     private Float _127;
     private Float _128;
-    private Set<E1> e1s = new HashSet<E1>(0);
 
     public E1prepaidTaxes() {
     }
 
-    public E1prepaidTaxes(Float _601, Float _602, Float _603, Float _604,
-	    Float _605, Float _606, Float _607, Float _608, Float _609,
-	    Float _610, Float _651, Float _652, Float _293, Float _294,
-	    Float _313, Float _314, Float _315, Float _316, Float _297,
-	    Float _298, Float _127, Float _128, Set<E1> e1s) {
+    public E1prepaidTaxes(E1 e1) {
+	this.e1 = e1;
+    }
+
+    public E1prepaidTaxes(E1 e1, Float _601, Float _602, Float _603,
+	    Float _604, Float _605, Float _606, Float _607, Float _608,
+	    Float _609, Float _610, Float _651, Float _652, Float _293,
+	    Float _294, Float _313, Float _314, Float _315, Float _316,
+	    Float _297, Float _298, Float _127, Float _128) {
+	this.e1 = e1;
 	this._601 = _601;
 	this._602 = _602;
 	this._603 = _603;
@@ -69,15 +71,23 @@ public class E1prepaidTaxes implements java.io.Serializable {
 	this._298 = _298;
 	this._127 = _127;
 	this._128 = _128;
-	this.e1s = e1s;
+
     }
 
-    public Integer getIdE1prepaidTaxes() {
-	return idE1prepaidTaxes;
+    public E1prepaidTaxesId getId() {
+	return this.id;
     }
 
-    public void setIdE1prepaidTaxes(Integer idE1prepaidTaxes) {
-	this.idE1prepaidTaxes = idE1prepaidTaxes;
+    public void setId(E1prepaidTaxesId id) {
+	this.id = id;
+    }
+
+    public E1 getE1() {
+	return this.e1;
+    }
+
+    public void setE1(E1 e1) {
+	this.e1 = e1;
     }
 
     public Float get_601() {
@@ -254,14 +264,6 @@ public class E1prepaidTaxes implements java.io.Serializable {
 
     public void set_128(Float _128) {
 	this._128 = _128;
-    }
-
-    public Set<E1> getE1s() {
-	return this.e1s;
-    }
-
-    public void setE1s(Set<E1> e1s) {
-	this.e1s = e1s;
     }
 
 }

@@ -1,9 +1,6 @@
 package gr.manousos.model;
 
-// Generated 27 Φεβ 2013 12:29:40 πμ by Hibernate Tools 3.4.0.CR1
-
-import java.util.HashSet;
-import java.util.Set;
+//Generated 3 Ιουν 2013 11:58:42 μμ by Hibernate Tools 3.4.0.CR1
 
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -14,7 +11,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class E1incomesReduceTaxes implements java.io.Serializable {
 
     private static final long serialVersionUID = 1L;
-    private Integer idE1incomesReduceTaxes;
+    private E1incomesReduceTaxesId id;
+    private E1 e1;
     private Float _655;
     private Float _656;
     private Float _693;
@@ -56,21 +54,25 @@ public class E1incomesReduceTaxes implements java.io.Serializable {
     private Float _784;
     private Float _787;
     private Float _788;
-    private Set<E1> e1s = new HashSet<E1>(0);
 
     public E1incomesReduceTaxes() {
     }
 
-    public E1incomesReduceTaxes(Float _655, Float _656, Float _693, Float _694,
-	    Float _659, Float _660, Float _657, Float _658, Float _661,
-	    Float _662, Float _431, Float _432, Float _433, Float _434,
-	    Float _305, Float _306, Float _477, Float _478, String lessorName1,
-	    String _790, Float _795, String lassorName2, String _791,
-	    Float _796, Float _793, Float _794, Float _615, Float _616,
-	    String lassorNameForStudent, String _417, Float areaStudentHouse,
-	    Float _419, Float _420, Float _735, Float _736, Float _781,
-	    Float _782, Float _783, Float _784, Float _787, Float _788,
-	    Set<E1> e1s) {
+    public E1incomesReduceTaxes(E1 e1) {
+	this.e1 = e1;
+    }
+
+    public E1incomesReduceTaxes(E1 e1, Float _655, Float _656, Float _693,
+	    Float _694, Float _659, Float _660, Float _657, Float _658,
+	    Float _661, Float _662, Float _431, Float _432, Float _433,
+	    Float _434, Float _305, Float _306, Float _477, Float _478,
+	    String lessorName1, String _790, Float _795, String lassorName2,
+	    String _791, Float _796, Float _793, Float _794, Float _615,
+	    Float _616, String lassorNameForStudent, String _417,
+	    Float areaStudentHouse, Float _419, Float _420, Float _735,
+	    Float _736, Float _781, Float _782, Float _783, Float _784,
+	    Float _787, Float _788) {
+	this.e1 = e1;
 	this._655 = _655;
 	this._656 = _656;
 	this._693 = _693;
@@ -112,15 +114,22 @@ public class E1incomesReduceTaxes implements java.io.Serializable {
 	this._784 = _784;
 	this._787 = _787;
 	this._788 = _788;
-	this.e1s = e1s;
     }
 
-    public Integer getIdE1incomesReduceTaxes() {
-	return idE1incomesReduceTaxes;
+    public E1incomesReduceTaxesId getId() {
+	return this.id;
     }
 
-    public void setIdE1incomesReduceTaxes(Integer idE1incomesReduceTaxes) {
-	this.idE1incomesReduceTaxes = idE1incomesReduceTaxes;
+    public void setId(E1incomesReduceTaxesId id) {
+	this.id = id;
+    }
+
+    public E1 getE1() {
+	return this.e1;
+    }
+
+    public void setE1(E1 e1) {
+	this.e1 = e1;
     }
 
     public Float get_655() {
@@ -449,14 +458,6 @@ public class E1incomesReduceTaxes implements java.io.Serializable {
 
     public void set_788(Float _788) {
 	this._788 = _788;
-    }
-
-    public Set<E1> getE1s() {
-	return this.e1s;
-    }
-
-    public void setE1s(Set<E1> e1s) {
-	this.e1s = e1s;
     }
 
 }

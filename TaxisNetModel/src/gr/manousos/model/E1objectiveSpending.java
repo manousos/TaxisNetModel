@@ -1,9 +1,6 @@
 package gr.manousos.model;
 
-// Generated 27 Φεβ 2013 12:29:40 πμ by Hibernate Tools 3.4.0.CR1
-
-import java.util.HashSet;
-import java.util.Set;
+//Generated 3 Ιουν 2013 11:58:42 μμ by Hibernate Tools 3.4.0.CR1
 
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -14,7 +11,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class E1objectiveSpending implements java.io.Serializable {
 
     private static final long serialVersionUID = 1L;
-    private Integer idE1objectiveSpending;
+    private E1objectiveSpendingId id;
+    private E1 e1;
     private String _205;
     private String houseAddr1;
     private String floor1;
@@ -135,26 +133,29 @@ public class E1objectiveSpending implements java.io.Serializable {
     private Float _726;
     private Float _727;
     private Float _728;
-    private Set<E1> e1s = new HashSet<E1>(0);
 
     public E1objectiveSpending() {
     }
 
-    public E1objectiveSpending(String _205, String houseAddr1, String floor1,
-	    Integer _203, Integer _240, Float _211, Float _212, Float _213,
-	    Float _214, Integer _215, Float _216, String houseAddr2,
-	    String floor2, Integer _207, Integer _241, Float _218, Float _219,
-	    Float _220, Float _221, Integer _222, Float _223,
-	    String houseAddr3, String floor3, Integer _209, Integer _242,
-	    Float _225, Float _226, Float _227, Float _228, Integer _229,
-	    Float _230, Float _707, Float _708, String afm1, String _750,
-	    Integer _703, Integer _761, Float _771, Integer _775, String afm2,
-	    String _751, Integer _704, Integer _762, Float _772, Integer _776,
-	    String afm3, String _752, Integer _705, Integer _763, Float _773,
-	    Integer _777, String afm4, String _753, Integer _706, Integer _764,
-	    Float _774, Integer _778, Float _851, Float _852, Float _853,
-	    Float _854, Float _855, Float _856, Float _857, Float _858,
-	    String shippingName1, String shippingRegister1,
+    public E1objectiveSpending(E1 e1) {
+	this.e1 = e1;
+    }
+
+    public E1objectiveSpending(E1 e1, String _205, String houseAddr1,
+	    String floor1, Integer _203, Integer _240, Float _211, Float _212,
+	    Float _213, Float _214, Integer _215, Float _216,
+	    String houseAddr2, String floor2, Integer _207, Integer _241,
+	    Float _218, Float _219, Float _220, Float _221, Integer _222,
+	    Float _223, String houseAddr3, String floor3, Integer _209,
+	    Integer _242, Float _225, Float _226, Float _227, Float _228,
+	    Integer _229, Float _230, Float _707, Float _708, String afm1,
+	    String _750, Integer _703, Integer _761, Float _771, Integer _775,
+	    String afm2, String _751, Integer _704, Integer _762, Float _772,
+	    Integer _776, String afm3, String _752, Integer _705, Integer _763,
+	    Float _773, Integer _777, String afm4, String _753, Integer _706,
+	    Integer _764, Float _774, Integer _778, Float _851, Float _852,
+	    Float _853, Float _854, Float _855, Float _856, Float _857,
+	    Float _858, String shippingName1, String shippingRegister1,
 	    String shippingCountry1, Integer sailShip1,
 	    Integer accommodationSpace1, Float percentPrincipalCoOwner1,
 	    Float percentWifeCoOwner1, Integer firstRegister1,
@@ -173,7 +174,8 @@ public class E1objectiveSpending implements java.io.Serializable {
 	    Float poolWifeCoOwnerIndoor, Float _765, Float _766, Float _769,
 	    Float _770, Float _719, Float _720, Float _721, Float _722,
 	    Float _723, Float _724, Float _725, Float _726, Float _727,
-	    Float _728, Set<E1> e1s) {
+	    Float _728) {
+	this.e1 = e1;
 	this._205 = _205;
 	this.houseAddr1 = houseAddr1;
 	this.floor1 = floor1;
@@ -294,15 +296,22 @@ public class E1objectiveSpending implements java.io.Serializable {
 	this._726 = _726;
 	this._727 = _727;
 	this._728 = _728;
-	this.e1s = e1s;
     }
 
-    public Integer getIdE1objectiveSpending() {
-	return idE1objectiveSpending;
+    public E1objectiveSpendingId getId() {
+	return this.id;
     }
 
-    public void setIdE1objectiveSpending(Integer idE1objectiveSpending) {
-	this.idE1objectiveSpending = idE1objectiveSpending;
+    public void setId(E1objectiveSpendingId id) {
+	this.id = id;
+    }
+
+    public E1 getE1() {
+	return this.e1;
+    }
+
+    public void setE1(E1 e1) {
+	this.e1 = e1;
     }
 
     public String get_205() {
@@ -1263,14 +1272,6 @@ public class E1objectiveSpending implements java.io.Serializable {
 
     public void set_728(Float _728) {
 	this._728 = _728;
-    }
-
-    public Set<E1> getE1s() {
-	return this.e1s;
-    }
-
-    public void setE1s(Set<E1> e1s) {
-	this.e1s = e1s;
     }
 
 }

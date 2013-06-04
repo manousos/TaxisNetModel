@@ -1,9 +1,6 @@
 package gr.manousos.model;
 
-// Generated 27 Φεβ 2013 12:29:40 πμ by Hibernate Tools 3.4.0.CR1
-
-import java.util.HashSet;
-import java.util.Set;
+// Generated 3 Ιουν 2013 11:58:42 μμ by Hibernate Tools 3.4.0.CR1
 
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -13,51 +10,55 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class E1taxPayerBankAccount implements java.io.Serializable {
 
-	private static final long serialVersionUID = 1L;
-	private Integer idE1taxPayerBankAccount;
-	private String bic;
-	private String iban;
-	private Set<E1> e1s = new HashSet<E1>(0);
+    private static final long serialVersionUID = 1L;
+    private E1taxPayerBankAccountId id;
+    private E1 e1;
+    private String bic;
+    private String iban;
 
-	public E1taxPayerBankAccount() {
-	}
+    public E1taxPayerBankAccount() {
+    }
 
-	public E1taxPayerBankAccount(String bic, String iban, Set<E1> e1s) {
-		this.bic = bic;
-		this.iban = iban;
-		this.e1s = e1s;
-	}
+    public E1taxPayerBankAccount(E1 e1) {
+	this.e1 = e1;
+    }
 
-	public Integer getIdE1taxPayerBankAccount() {
-		return this.idE1taxPayerBankAccount;
-	}
+    public E1taxPayerBankAccount(E1 e1, String bic, String iban) {
+	this.e1 = e1;
+	this.bic = bic;
+	this.iban = iban;
+    }
 
-	public void setIdE1taxPayerBankAccount(Integer idE1taxPayerBankAccount) {
-		this.idE1taxPayerBankAccount = idE1taxPayerBankAccount;
-	}
+    public E1taxPayerBankAccountId getId() {
+	return this.id;
+    }
 
-	public String getBic() {
-		return this.bic;
-	}
+    public void setId(E1taxPayerBankAccountId id) {
+	this.id = id;
+    }
 
-	public void setBic(String bic) {
-		this.bic = bic;
-	}
+    public E1 getE1() {
+	return this.e1;
+    }
 
-	public String getIban() {
-		return this.iban;
-	}
+    public void setE1(E1 e1) {
+	this.e1 = e1;
+    }
 
-	public void setIban(String iban) {
-		this.iban = iban;
-	}
+    public String getBic() {
+	return this.bic;
+    }
 
-	public Set<E1> getE1s() {
-		return this.e1s;
-	}
+    public void setBic(String bic) {
+	this.bic = bic;
+    }
 
-	public void setE1s(Set<E1> e1s) {
-		this.e1s = e1s;
-	}
+    public String getIban() {
+	return this.iban;
+    }
+
+    public void setIban(String iban) {
+	this.iban = iban;
+    }
 
 }

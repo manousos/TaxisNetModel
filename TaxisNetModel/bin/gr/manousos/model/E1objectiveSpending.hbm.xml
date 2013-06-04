@@ -1,381 +1,377 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<!-- Generated 17 March 2013 11:51:58 ???? by Hibernate Tools 3.4.0.CR1 -->
+<!-- Generated 3 ???????? 2013 11:58:43 ???? by Hibernate Tools 3.4.0.CR1 -->
 <hibernate-mapping>
-	<class name="gr.manousos.model.E1objectiveSpending" table="E1ObjectiveSpending"
-		catalog="TaxisDB">
-		<id name="idE1objectiveSpending" type="java.lang.Integer">
-			<column name="idE1ObjectiveSpending" />
-			<generator class="identity" />
-		</id>
-		<property name="_205" type="string">
-			<column name="_205" length="45" />
-		</property>
-		<property name="houseAddr1" type="string">
-			<column name="HouseAddr1" length="200" />
-		</property>
-		<property name="floor1" type="string">
-			<column name="Floor1" />
-		</property>
-		<property name="_203" type="java.lang.Integer">
-			<column name="_203" />
-		</property>
-		<property name="_240" type="java.lang.Integer">
-			<column name="_240" />
-		</property>
-		<property name="_211" type="java.lang.Float">
-			<column name="_211" precision="12" scale="0" />
-		</property>
-		<property name="_212" type="java.lang.Float">
-			<column name="_212" precision="12" scale="0" />
-		</property>
-		<property name="_213" type="java.lang.Float">
-			<column name="_213" precision="12" scale="0" />
-		</property>
-		<property name="_214" type="java.lang.Float">
-			<column name="_214" precision="12" scale="0" />
-		</property>
-		<property name="_215" type="java.lang.Integer">
-			<column name="_215" />
-		</property>
-		<property name="_216" type="java.lang.Float">
-			<column name="_216" precision="12" scale="0" />
-		</property>
-		<property name="houseAddr2" type="string">
-			<column name="HouseAddr2" length="200" />
-		</property>
-		<property name="floor2" type="string">
-			<column name="Floor2" />
-		</property>
-		<property name="_207" type="java.lang.Integer">
-			<column name="_207" />
-		</property>
-		<property name="_241" type="java.lang.Integer">
-			<column name="_241" />
-		</property>
-		<property name="_218" type="java.lang.Float">
-			<column name="_218" precision="12" scale="0" />
-		</property>
-		<property name="_219" type="java.lang.Float">
-			<column name="_219" precision="12" scale="0" />
-		</property>
-		<property name="_220" type="java.lang.Float">
-			<column name="_220" precision="12" scale="0" />
-		</property>
-		<property name="_221" type="java.lang.Float">
-			<column name="_221" precision="12" scale="0" />
-		</property>
-		<property name="_222" type="java.lang.Integer">
-			<column name="_222" />
-		</property>
-		<property name="_223" type="java.lang.Float">
-			<column name="_223" precision="12" scale="0" />
-		</property>
-		<property name="houseAddr3" type="string">
-			<column name="HouseAddr3" length="200" />
-		</property>
-		<property name="floor3" type="string">
-			<column name="Floor3" />
-		</property>
-		<property name="_209" type="java.lang.Integer">
-			<column name="_209" />
-		</property>
-		<property name="_242" type="java.lang.Integer">
-			<column name="_242" />
-		</property>
-		<property name="_225" type="java.lang.Float">
-			<column name="_225" precision="12" scale="0" />
-		</property>
-		<property name="_226" type="java.lang.Float">
-			<column name="_226" precision="12" scale="0" />
-		</property>
-		<property name="_227" type="java.lang.Float">
-			<column name="_227" precision="12" scale="0" />
-		</property>
-		<property name="_228" type="java.lang.Float">
-			<column name="_228" precision="12" scale="0" />
-		</property>
-		<property name="_229" type="java.lang.Integer">
-			<column name="_229" />
-		</property>
-		<property name="_230" type="java.lang.Float">
-			<column name="_230" precision="12" scale="0" />
-		</property>
-		<property name="_707" type="java.lang.Float">
-			<column name="_707" precision="12" scale="0" />
-		</property>
-		<property name="_708" type="java.lang.Float">
-			<column name="_708" precision="12" scale="0" />
-		</property>
-		<property name="afm1" type="string">
-			<column name="AFM1" length="10" />
-		</property>
-		<property name="_750" type="string">
-			<column name="_750" length="7" />
-		</property>
-		<property name="_703" type="java.lang.Integer">
-			<column name="_703" />
-		</property>
-		<property name="_761" type="java.lang.Integer">
-			<column name="_761" />
-		</property>
-		<property name="_771" type="java.lang.Float">
-			<column name="_771" precision="12" scale="0" />
-		</property>
-		<property name="_775" type="java.lang.Integer">
-			<column name="_775" />
-		</property>
-		<property name="afm2" type="string">
-			<column name="AFM2" length="10" />
-		</property>
-		<property name="_751" type="string">
-			<column name="_751" length="7" />
-		</property>
-		<property name="_704" type="java.lang.Integer">
-			<column name="_704" />
-		</property>
-		<property name="_762" type="java.lang.Integer">
-			<column name="_762" />
-		</property>
-		<property name="_772" type="java.lang.Float">
-			<column name="_772" precision="12" scale="0" />
-		</property>
-		<property name="_776" type="java.lang.Integer">
-			<column name="_776" />
-		</property>
-		<property name="afm3" type="string">
-			<column name="AFM3" length="10" />
-		</property>
-		<property name="_752" type="string">
-			<column name="_752" length="7" />
-		</property>
-		<property name="_705" type="java.lang.Integer">
-			<column name="_705" />
-		</property>
-		<property name="_763" type="java.lang.Integer">
-			<column name="_763" />
-		</property>
-		<property name="_773" type="java.lang.Float">
-			<column name="_773" precision="12" scale="0" />
-		</property>
-		<property name="_777" type="java.lang.Integer">
-			<column name="_777" />
-		</property>
-		<property name="afm4" type="string">
-			<column name="AFM4" length="10" />
-		</property>
-		<property name="_753" type="string">
-			<column name="_753" length="7" />
-		</property>
-		<property name="_706" type="java.lang.Integer">
-			<column name="_706" />
-		</property>
-		<property name="_764" type="java.lang.Integer">
-			<column name="_764" />
-		</property>
-		<property name="_774" type="java.lang.Float">
-			<column name="_774" precision="12" scale="0" />
-		</property>
-		<property name="_778" type="java.lang.Integer">
-			<column name="_778" />
-		</property>
-		<property name="_851" type="java.lang.Float">
-			<column name="_851" precision="12" scale="0" />
-		</property>
-		<property name="_852" type="java.lang.Float">
-			<column name="_852" precision="12" scale="0" />
-		</property>
-		<property name="_853" type="java.lang.Float">
-			<column name="_853" precision="12" scale="0" />
-		</property>
-		<property name="_854" type="java.lang.Float">
-			<column name="_854" precision="12" scale="0" />
-		</property>
-		<property name="_855" type="java.lang.Float">
-			<column name="_855" precision="12" scale="0" />
-		</property>
-		<property name="_856" type="java.lang.Float">
-			<column name="_856" precision="12" scale="0" />
-		</property>
-		<property name="_857" type="java.lang.Float">
-			<column name="_857" precision="12" scale="0" />
-		</property>
-		<property name="_858" type="java.lang.Float">
-			<column name="_858" precision="12" scale="0" />
-		</property>
-		<property name="shippingName1" type="string">
-			<column name="ShippingName1" length="45" />
-		</property>
-		<property name="shippingRegister1" type="string">
-			<column name="ShippingRegister1" length="100" />
-		</property>
-		<property name="shippingCountry1" type="string">
-			<column name="ShippingCountry1" length="45" />
-		</property>
-		<property name="sailShip1" type="java.lang.Integer">
-			<column name="SailShip1" />
-		</property>
-		<property name="accommodationSpace1" type="java.lang.Integer">
-			<column name="AccommodationSpace1" />
-		</property>
-		<property name="percentPrincipalCoOwner1" type="java.lang.Float">
-			<column name="PercentPrincipalCoOwner1" precision="12" scale="0" />
-		</property>
-		<property name="percentWifeCoOwner1" type="java.lang.Float">
-			<column name="PercentWifeCoOwner1" precision="12" scale="0" />
-		</property>
-		<property name="firstRegister1" type="java.lang.Integer">
-			<column name="FirstRegister1" />
-		</property>
-		<property name="ownershipMonths1" type="java.lang.Integer">
-			<column name="OwnershipMonths1" />
-		</property>
-		<property name="_747" type="java.lang.Float">
-			<column name="_747" precision="12" scale="0" />
-		</property>
-		<property name="shippingName2" type="string">
-			<column name="ShippingName2" length="45" />
-		</property>
-		<property name="shippingRegister2" type="string">
-			<column name="ShippingRegister2" length="100" />
-		</property>
-		<property name="shippingCountry2" type="string">
-			<column name="ShippingCountry2" length="45" />
-		</property>
-		<property name="sailShip2" type="java.lang.Integer">
-			<column name="SailShip2" />
-		</property>
-		<property name="accommodationSpace2" type="java.lang.Integer">
-			<column name="AccommodationSpace2" />
-		</property>
-		<property name="percentPrincipalCoOwner2" type="java.lang.Float">
-			<column name="PercentPrincipalCoOwner2" precision="12" scale="0" />
-		</property>
-		<property name="percentWifeCoOwner2" type="java.lang.Float">
-			<column name="PercentWifeCoOwner2" precision="12" scale="0" />
-		</property>
-		<property name="firstRegister2" type="java.lang.Integer">
-			<column name="FirstRegister2" />
-		</property>
-		<property name="ownershipMonths2" type="java.lang.Integer">
-			<column name="OwnershipMonths2" />
-		</property>
-		<property name="_748" type="java.lang.Float">
-			<column name="_748" precision="12" scale="0" />
-		</property>
-		<property name="_711" type="java.lang.Float">
-			<column name="_711" precision="12" scale="0" />
-		</property>
-		<property name="_712" type="java.lang.Float">
-			<column name="_712" precision="12" scale="0" />
-		</property>
-		<property name="_713" type="java.lang.Float">
-			<column name="_713" precision="12" scale="0" />
-		</property>
-		<property name="_714" type="java.lang.Float">
-			<column name="_714" precision="12" scale="0" />
-		</property>
-		<property name="_731" type="java.lang.Float">
-			<column name="_731" precision="12" scale="0" />
-		</property>
-		<property name="_732" type="java.lang.Float">
-			<column name="_732" precision="12" scale="0" />
-		</property>
-		<property name="aircraftRegisterData" type="string">
-			<column name="AircraftRegisterData" length="100" />
-		</property>
-		<property name="aircraftType" type="string">
-			<column name="AircraftType" length="45" />
-		</property>
-		<property name="aircraftSn" type="string">
-			<column name="AircraftSN" length="45" />
-		</property>
-		<property name="airportBase" type="string">
-			<column name="AirportBase" length="45" />
-		</property>
-		<property name="aircraftOwnerShip" type="java.lang.Integer">
-			<column name="AircraftOwnerShip" />
-		</property>
-		<property name="aircraftPowerLibres" type="java.lang.Integer">
-			<column name="AircraftPowerLibres" />
-		</property>
-		<property name="aircraftFirstRegister" type="java.lang.Integer">
-			<column name="AircraftFirstRegister" />
-		</property>
-		<property name="_715" type="java.lang.Float">
-			<column name="_715" precision="12" scale="0" />
-		</property>
-		<property name="_716" type="java.lang.Float">
-			<column name="_716" precision="12" scale="0" />
-		</property>
-		<property name="_767" type="java.lang.Float">
-			<column name="_767" precision="12" scale="0" />
-		</property>
-		<property name="poolPrincipalCoOwnerOutdoor" type="java.lang.Float">
-			<column name="PoolPrincipalCoOwnerOutdoor" precision="12"
-				scale="0" />
-		</property>
-		<property name="poolWifeCoOwnerOutdoor" type="java.lang.Float">
-			<column name="PoolWifeCoOwnerOutdoor" precision="12" scale="0" />
-		</property>
-		<property name="_768" type="java.lang.Float">
-			<column name="_768" precision="12" scale="0" />
-		</property>
-		<property name="poolPrincipalCoOwnerIndoor" type="java.lang.Float">
-			<column name="PoolPrincipalCoOwnerIndoor" precision="12"
-				scale="0" />
-		</property>
-		<property name="poolWifeCoOwnerIndoor" type="java.lang.Float">
-			<column name="PoolWifeCoOwnerIndoor" precision="12" scale="0" />
-		</property>
-		<property name="_765" type="java.lang.Float">
-			<column name="_765" precision="12" scale="0" />
-		</property>
-		<property name="_766" type="java.lang.Float">
-			<column name="_766" precision="12" scale="0" />
-		</property>
-		<property name="_769" type="java.lang.Float">
-			<column name="_769" precision="12" scale="0" />
-		</property>
-		<property name="_770" type="java.lang.Float">
-			<column name="_770" precision="12" scale="0" />
-		</property>
-		<property name="_719" type="java.lang.Float">
-			<column name="_719" precision="12" scale="0" />
-		</property>
-		<property name="_720" type="java.lang.Float">
-			<column name="_720" precision="12" scale="0" />
-		</property>
-		<property name="_721" type="java.lang.Float">
-			<column name="_721" precision="12" scale="0" />
-		</property>
-		<property name="_722" type="java.lang.Float">
-			<column name="_722" precision="12" scale="0" />
-		</property>
-		<property name="_723" type="java.lang.Float">
-			<column name="_723" precision="12" scale="0" />
-		</property>
-		<property name="_724" type="java.lang.Float">
-			<column name="_724" precision="12" scale="0" />
-		</property>
-		<property name="_725" type="java.lang.Float">
-			<column name="_725" precision="12" scale="0" />
-		</property>
-		<property name="_726" type="java.lang.Float">
-			<column name="_726" precision="12" scale="0" />
-		</property>
-		<property name="_727" type="java.lang.Float">
-			<column name="_727" precision="12" scale="0" />
-		</property>
-		<property name="_728" type="java.lang.Float">
-			<column name="_728" precision="12" scale="0" />
-		</property>
-		<set name="e1s" table="E1" inverse="true" lazy="true" fetch="select">
-			<key>
-				<column name="idE1ObjectiveSpending" unique="true" />
-			</key>
-			<one-to-many class="gr.manousos.model.E1" />
-		</set>
-	</class>
+    <class name="gr.manousos.model.E1objectiveSpending" table="E1ObjectiveSpending" catalog="TaxisDB">
+        <composite-id name="id" class="gr.manousos.model.E1objectiveSpendingId">
+            <key-property name="tid" type="int">
+                <column name="tID" />
+            </key-property>
+            <key-property name="year" type="int">
+                <column name="Year" />
+            </key-property>
+        </composite-id>
+        <one-to-one name="e1" class="gr.manousos.model.E1" constrained="true"></one-to-one>
+        <property name="_205" type="string">
+            <column name="_205" length="45" />
+        </property>
+        <property name="houseAddr1" type="string">
+            <column name="HouseAddr1" length="200" />
+        </property>
+        <property name="floor1" type="string">
+            <column name="Floor1" length="45" />
+        </property>
+        <property name="_203" type="java.lang.Integer">
+            <column name="_203" />
+        </property>
+        <property name="_240" type="java.lang.Integer">
+            <column name="_240" />
+        </property>
+        <property name="_211" type="java.lang.Float">
+            <column name="_211" precision="12" scale="0" />
+        </property>
+        <property name="_212" type="java.lang.Float">
+            <column name="_212" precision="12" scale="0" />
+        </property>
+        <property name="_213" type="java.lang.Float">
+            <column name="_213" precision="12" scale="0" />
+        </property>
+        <property name="_214" type="java.lang.Float">
+            <column name="_214" precision="12" scale="0" />
+        </property>
+        <property name="_215" type="java.lang.Integer">
+            <column name="_215" />
+        </property>
+        <property name="_216" type="java.lang.Float">
+            <column name="_216" precision="12" scale="0" />
+        </property>
+        <property name="houseAddr2" type="string">
+            <column name="HouseAddr2" length="200" />
+        </property>
+        <property name="floor2" type="string">
+            <column name="Floor2" length="45" />
+        </property>
+        <property name="_207" type="java.lang.Integer">
+            <column name="_207" />
+        </property>
+        <property name="_241" type="java.lang.Integer">
+            <column name="_241" />
+        </property>
+        <property name="_218" type="java.lang.Float">
+            <column name="_218" precision="12" scale="0" />
+        </property>
+        <property name="_219" type="java.lang.Float">
+            <column name="_219" precision="12" scale="0" />
+        </property>
+        <property name="_220" type="java.lang.Float">
+            <column name="_220" precision="12" scale="0" />
+        </property>
+        <property name="_221" type="java.lang.Float">
+            <column name="_221" precision="12" scale="0" />
+        </property>
+        <property name="_222" type="java.lang.Integer">
+            <column name="_222" />
+        </property>
+        <property name="_223" type="java.lang.Float">
+            <column name="_223" precision="12" scale="0" />
+        </property>
+        <property name="houseAddr3" type="string">
+            <column name="HouseAddr3" length="200" />
+        </property>
+        <property name="floor3" type="string">
+            <column name="Floor3" length="45" />
+        </property>
+        <property name="_209" type="java.lang.Integer">
+            <column name="_209" />
+        </property>
+        <property name="_242" type="java.lang.Integer">
+            <column name="_242" />
+        </property>
+        <property name="_225" type="java.lang.Float">
+            <column name="_225" precision="12" scale="0" />
+        </property>
+        <property name="_226" type="java.lang.Float">
+            <column name="_226" precision="12" scale="0" />
+        </property>
+        <property name="_227" type="java.lang.Float">
+            <column name="_227" precision="12" scale="0" />
+        </property>
+        <property name="_228" type="java.lang.Float">
+            <column name="_228" precision="12" scale="0" />
+        </property>
+        <property name="_229" type="java.lang.Integer">
+            <column name="_229" />
+        </property>
+        <property name="_230" type="java.lang.Float">
+            <column name="_230" precision="12" scale="0" />
+        </property>
+        <property name="_707" type="java.lang.Float">
+            <column name="_707" precision="12" scale="0" />
+        </property>
+        <property name="_708" type="java.lang.Float">
+            <column name="_708" precision="12" scale="0" />
+        </property>
+        <property name="afm1" type="string">
+            <column name="AFM1" length="10" />
+        </property>
+        <property name="_750" type="string">
+            <column name="_750" length="7" />
+        </property>
+        <property name="_703" type="java.lang.Integer">
+            <column name="_703" />
+        </property>
+        <property name="_761" type="java.lang.Integer">
+            <column name="_761" />
+        </property>
+        <property name="_771" type="java.lang.Float">
+            <column name="_771" precision="12" scale="0" />
+        </property>
+        <property name="_775" type="java.lang.Integer">
+            <column name="_775" />
+        </property>
+        <property name="afm2" type="string">
+            <column name="AFM2" length="10" />
+        </property>
+        <property name="_751" type="string">
+            <column name="_751" length="7" />
+        </property>
+        <property name="_704" type="java.lang.Integer">
+            <column name="_704" />
+        </property>
+        <property name="_762" type="java.lang.Integer">
+            <column name="_762" />
+        </property>
+        <property name="_772" type="java.lang.Float">
+            <column name="_772" precision="12" scale="0" />
+        </property>
+        <property name="_776" type="java.lang.Integer">
+            <column name="_776" />
+        </property>
+        <property name="afm3" type="string">
+            <column name="AFM3" length="10" />
+        </property>
+        <property name="_752" type="string">
+            <column name="_752" length="7" />
+        </property>
+        <property name="_705" type="java.lang.Integer">
+            <column name="_705" />
+        </property>
+        <property name="_763" type="java.lang.Integer">
+            <column name="_763" />
+        </property>
+        <property name="_773" type="java.lang.Float">
+            <column name="_773" precision="12" scale="0" />
+        </property>
+        <property name="_777" type="java.lang.Integer">
+            <column name="_777" />
+        </property>
+        <property name="afm4" type="string">
+            <column name="AFM4" length="10" />
+        </property>
+        <property name="_753" type="string">
+            <column name="_753" length="7" />
+        </property>
+        <property name="_706" type="java.lang.Integer">
+            <column name="_706" />
+        </property>
+        <property name="_764" type="java.lang.Integer">
+            <column name="_764" />
+        </property>
+        <property name="_774" type="java.lang.Float">
+            <column name="_774" precision="12" scale="0" />
+        </property>
+        <property name="_778" type="java.lang.Integer">
+            <column name="_778" />
+        </property>
+        <property name="_851" type="java.lang.Float">
+            <column name="_851" precision="12" scale="0" />
+        </property>
+        <property name="_852" type="java.lang.Float">
+            <column name="_852" precision="12" scale="0" />
+        </property>
+        <property name="_853" type="java.lang.Float">
+            <column name="_853" precision="12" scale="0" />
+        </property>
+        <property name="_854" type="java.lang.Float">
+            <column name="_854" precision="12" scale="0" />
+        </property>
+        <property name="_855" type="java.lang.Float">
+            <column name="_855" precision="12" scale="0" />
+        </property>
+        <property name="_856" type="java.lang.Float">
+            <column name="_856" precision="12" scale="0" />
+        </property>
+        <property name="_857" type="java.lang.Float">
+            <column name="_857" precision="12" scale="0" />
+        </property>
+        <property name="_858" type="java.lang.Float">
+            <column name="_858" precision="12" scale="0" />
+        </property>
+        <property name="shippingName1" type="string">
+            <column name="ShippingName1" length="45" />
+        </property>
+        <property name="shippingRegister1" type="string">
+            <column name="ShippingRegister1" length="100" />
+        </property>
+        <property name="shippingCountry1" type="string">
+            <column name="ShippingCountry1" length="45" />
+        </property>
+        <property name="sailShip1" type="java.lang.Integer">
+            <column name="SailShip1" />
+        </property>
+        <property name="accommodationSpace1" type="java.lang.Integer">
+            <column name="AccommodationSpace1" />
+        </property>
+        <property name="percentPrincipalCoOwner1" type="java.lang.Float">
+            <column name="PercentPrincipalCoOwner1" precision="12" scale="0" />
+        </property>
+        <property name="percentWifeCoOwner1" type="java.lang.Float">
+            <column name="PercentWifeCoOwner1" precision="12" scale="0" />
+        </property>
+        <property name="firstRegister1" type="java.lang.Integer">
+            <column name="FirstRegister1" />
+        </property>
+        <property name="ownershipMonths1" type="java.lang.Integer">
+            <column name="OwnershipMonths1" />
+        </property>
+        <property name="_747" type="java.lang.Float">
+            <column name="_747" precision="12" scale="0" />
+        </property>
+        <property name="shippingName2" type="string">
+            <column name="ShippingName2" length="45" />
+        </property>
+        <property name="shippingRegister2" type="string">
+            <column name="ShippingRegister2" length="100" />
+        </property>
+        <property name="shippingCountry2" type="string">
+            <column name="ShippingCountry2" length="45" />
+        </property>
+        <property name="sailShip2" type="java.lang.Integer">
+            <column name="SailShip2" />
+        </property>
+        <property name="accommodationSpace2" type="java.lang.Integer">
+            <column name="AccommodationSpace2" />
+        </property>
+        <property name="percentPrincipalCoOwner2" type="java.lang.Float">
+            <column name="PercentPrincipalCoOwner2" precision="12" scale="0" />
+        </property>
+        <property name="percentWifeCoOwner2" type="java.lang.Float">
+            <column name="PercentWifeCoOwner2" precision="12" scale="0" />
+        </property>
+        <property name="firstRegister2" type="java.lang.Integer">
+            <column name="FirstRegister2" />
+        </property>
+        <property name="ownershipMonths2" type="java.lang.Integer">
+            <column name="OwnershipMonths2" />
+        </property>
+        <property name="_748" type="java.lang.Float">
+            <column name="_748" precision="12" scale="0" />
+        </property>
+        <property name="_711" type="java.lang.Float">
+            <column name="_711" precision="12" scale="0" />
+        </property>
+        <property name="_712" type="java.lang.Float">
+            <column name="_712" precision="12" scale="0" />
+        </property>
+        <property name="_713" type="java.lang.Float">
+            <column name="_713" precision="12" scale="0" />
+        </property>
+        <property name="_714" type="java.lang.Float">
+            <column name="_714" precision="12" scale="0" />
+        </property>
+        <property name="_731" type="java.lang.Float">
+            <column name="_731" precision="12" scale="0" />
+        </property>
+        <property name="_732" type="java.lang.Float">
+            <column name="_732" precision="12" scale="0" />
+        </property>
+        <property name="aircraftRegisterData" type="string">
+            <column name="AircraftRegisterData" length="100" />
+        </property>
+        <property name="aircraftType" type="string">
+            <column name="AircraftType" length="45" />
+        </property>
+        <property name="aircraftSn" type="string">
+            <column name="AircraftSN" length="45" />
+        </property>
+        <property name="airportBase" type="string">
+            <column name="AirportBase" length="45" />
+        </property>
+        <property name="aircraftOwnerShip" type="java.lang.Integer">
+            <column name="AircraftOwnerShip" />
+        </property>
+        <property name="aircraftPowerLibres" type="java.lang.Integer">
+            <column name="AircraftPowerLibres" />
+        </property>
+        <property name="aircraftFirstRegister" type="java.lang.Integer">
+            <column name="AircraftFirstRegister" />
+        </property>
+        <property name="_715" type="java.lang.Float">
+            <column name="_715" precision="12" scale="0" />
+        </property>
+        <property name="_716" type="java.lang.Float">
+            <column name="_716" precision="12" scale="0" />
+        </property>
+        <property name="_767" type="java.lang.Float">
+            <column name="_767" precision="12" scale="0" />
+        </property>
+        <property name="poolPrincipalCoOwnerOutdoor" type="java.lang.Float">
+            <column name="PoolPrincipalCoOwnerOutdoor" precision="12" scale="0" />
+        </property>
+        <property name="poolWifeCoOwnerOutdoor" type="java.lang.Float">
+            <column name="PoolWifeCoOwnerOutdoor" precision="12" scale="0" />
+        </property>
+        <property name="_768" type="java.lang.Float">
+            <column name="_768" precision="12" scale="0" />
+        </property>
+        <property name="poolPrincipalCoOwnerIndoor" type="java.lang.Float">
+            <column name="PoolPrincipalCoOwnerIndoor" precision="12" scale="0" />
+        </property>
+        <property name="poolWifeCoOwnerIndoor" type="java.lang.Float">
+            <column name="PoolWifeCoOwnerIndoor" precision="12" scale="0" />
+        </property>
+        <property name="_765" type="java.lang.Float">
+            <column name="_765" precision="12" scale="0" />
+        </property>
+        <property name="_766" type="java.lang.Float">
+            <column name="_766" precision="12" scale="0" />
+        </property>
+        <property name="_769" type="java.lang.Float">
+            <column name="_769" precision="12" scale="0" />
+        </property>
+        <property name="_770" type="java.lang.Float">
+            <column name="_770" precision="12" scale="0" />
+        </property>
+        <property name="_719" type="java.lang.Float">
+            <column name="_719" precision="12" scale="0" />
+        </property>
+        <property name="_720" type="java.lang.Float">
+            <column name="_720" precision="12" scale="0" />
+        </property>
+        <property name="_721" type="java.lang.Float">
+            <column name="_721" precision="12" scale="0" />
+        </property>
+        <property name="_722" type="java.lang.Float">
+            <column name="_722" precision="12" scale="0" />
+        </property>
+        <property name="_723" type="java.lang.Float">
+            <column name="_723" precision="12" scale="0" />
+        </property>
+        <property name="_724" type="java.lang.Float">
+            <column name="_724" precision="12" scale="0" />
+        </property>
+        <property name="_725" type="java.lang.Float">
+            <column name="_725" precision="12" scale="0" />
+        </property>
+        <property name="_726" type="java.lang.Float">
+            <column name="_726" precision="12" scale="0" />
+        </property>
+        <property name="_727" type="java.lang.Float">
+            <column name="_727" precision="12" scale="0" />
+        </property>
+        <property name="_728" type="java.lang.Float">
+            <column name="_728" precision="12" scale="0" />
+        </property>
+    </class>
 </hibernate-mapping>

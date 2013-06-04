@@ -1,9 +1,6 @@
 package gr.manousos.model;
 
-// Generated 27 Φεβ 2013 12:29:40 πμ by Hibernate Tools 3.4.0.CR1
-
-import java.util.HashSet;
-import java.util.Set;
+// Generated 3 Ιουν 2013 11:58:42 μμ by Hibernate Tools 3.4.0.CR1
 
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -14,7 +11,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class E1infoData implements java.io.Serializable {
 
     private static final long serialVersionUID = 1L;
-    private Integer e1infoDataId;
+    private E1infoDataId id;
+    private E1 e1;
     private Integer _327;
     private Integer _328;
     private Integer _319;
@@ -48,20 +46,24 @@ public class E1infoData implements java.io.Serializable {
     private Integer _911;
     private Integer _912;
     private Integer _010;
-    private Set<E1> e1s = new HashSet<E1>(0);
 
     public E1infoData() {
     }
 
-    public E1infoData(Integer _327, Integer _328, Integer _319, Integer _320,
-	    Integer _023, Integer _024, Integer _329, Integer _330,
-	    Integer _331, Integer _011, Integer _012, Integer _013,
-	    Integer _014, Integer _015, Integer _016, Integer _017,
-	    Integer _018, Integer _021, Integer _022, Integer _025,
-	    Integer _026, Integer _007, Integer _008, Integer _617,
-	    Integer _385, Integer _386, Integer _029, Integer _030,
-	    Integer _905, Integer _906, Integer _911, Integer _912,
-	    Integer _010, Set<E1> e1s) {
+    public E1infoData(E1 e1) {
+	this.e1 = e1;
+    }
+
+    public E1infoData(E1 e1, Integer _327, Integer _328, Integer _319,
+	    Integer _320, Integer _023, Integer _024, Integer _329,
+	    Integer _330, Integer _331, Integer _011, Integer _012,
+	    Integer _013, Integer _014, Integer _015, Integer _016,
+	    Integer _017, Integer _018, Integer _021, Integer _022,
+	    Integer _025, Integer _026, Integer _007, Integer _008,
+	    Integer _617, Integer _385, Integer _386, Integer _029,
+	    Integer _030, Integer _905, Integer _906, Integer _911,
+	    Integer _912, Integer _010) {
+	this.e1 = e1;
 	this._327 = _327;
 	this._328 = _328;
 	this._319 = _319;
@@ -95,15 +97,22 @@ public class E1infoData implements java.io.Serializable {
 	this._911 = _911;
 	this._912 = _912;
 	this._010 = _010;
-	this.e1s = e1s;
     }
 
-    public Integer getE1infoDataId() {
-	return this.e1infoDataId;
+    public E1infoDataId getId() {
+	return this.id;
     }
 
-    public void setE1infoDataId(Integer e1infoDataId) {
-	this.e1infoDataId = e1infoDataId;
+    public void setId(E1infoDataId id) {
+	this.id = id;
+    }
+
+    public E1 getE1() {
+	return this.e1;
+    }
+
+    public void setE1(E1 e1) {
+	this.e1 = e1;
     }
 
     public Integer get_327() {
@@ -368,14 +377,6 @@ public class E1infoData implements java.io.Serializable {
 
     public void set_010(Integer _010) {
 	this._010 = _010;
-    }
-
-    public Set<E1> getE1s() {
-	return this.e1s;
-    }
-
-    public void setE1s(Set<E1> e1s) {
-	this.e1s = e1s;
     }
 
 }

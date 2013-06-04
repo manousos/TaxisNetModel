@@ -1,9 +1,6 @@
 package gr.manousos.model;
 
-// Generated 27 Φεβ 2013 12:29:40 πμ by Hibernate Tools 3.4.0.CR1
-
-import java.util.HashSet;
-import java.util.Set;
+//Generated 3 Ιουν 2013 11:58:42 μμ by Hibernate Tools 3.4.0.CR1
 
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -14,7 +11,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class E1expensesRemovedFromTotalIncome implements java.io.Serializable {
 
     private static final long serialVersionUID = 1L;
-    private Integer idE1expensesRemovedFromTotalIncome;
+    private E1expensesRemovedFromTotalIncomeId id;
+    private E1 e1;
     private Float _049;
     private Float _051;
     private Float _052;
@@ -89,19 +87,23 @@ public class E1expensesRemovedFromTotalIncome implements java.io.Serializable {
     private Integer _034;
     private Integer _035;
     private Integer _036;
-    private Set<E1> e1s = new HashSet<E1>(0);
 
     public E1expensesRemovedFromTotalIncome() {
     }
 
-    public E1expensesRemovedFromTotalIncome(Float _049, Float _051, Float _052,
-	    Float _053, Float _054, Float _057, Float _058, Float _031,
-	    Float _032, Float _059, Float _060, Float _075, Float _076,
-	    Float _061, Float _062, Float _071, Float _063, Float _064,
-	    Float _069, Float _070, String rentalForFamilyOwnerName1,
-	    String _801, Integer _092, Float _091, Integer _097, Float _811,
-	    Float _812, String rentalForFamilyOwnerName2, String _802,
-	    Integer _094, Float _093, Integer _098, Float _813, Float _814,
+    public E1expensesRemovedFromTotalIncome(E1 e1) {
+	this.e1 = e1;
+    }
+
+    public E1expensesRemovedFromTotalIncome(E1 e1, Float _049, Float _051,
+	    Float _052, Float _053, Float _054, Float _057, Float _058,
+	    Float _031, Float _032, Float _059, Float _060, Float _075,
+	    Float _076, Float _061, Float _062, Float _071, Float _063,
+	    Float _064, Float _069, Float _070,
+	    String rentalForFamilyOwnerName1, String _801, Integer _092,
+	    Float _091, Integer _097, Float _811, Float _812,
+	    String rentalForFamilyOwnerName2, String _802, Integer _094,
+	    Float _093, Integer _098, Float _813, Float _814,
 	    String rentalForFamilyOwnerName3, String _803, Integer _096,
 	    Float _095, Float _099, Float _815, Float _816,
 	    String rentalForStudyOwnerName1, String _804, Float _817,
@@ -112,7 +114,8 @@ public class E1expensesRemovedFromTotalIncome implements java.io.Serializable {
 	    Float _088, Float _079, Float _080, Float _081, Float _082,
 	    Float _083, Float _084, Float _085, Float _077, Float _078,
 	    Float _663, Float _664, Integer _033, Integer _034, Integer _035,
-	    Integer _036, Set<E1> e1s) {
+	    Integer _036) {
+	this.e1 = e1;
 	this._049 = _049;
 	this._051 = _051;
 	this._052 = _052;
@@ -187,16 +190,22 @@ public class E1expensesRemovedFromTotalIncome implements java.io.Serializable {
 	this._034 = _034;
 	this._035 = _035;
 	this._036 = _036;
-	this.e1s = e1s;
     }
 
-    public Integer getIdE1expensesRemovedFromTotalIncome() {
-	return idE1expensesRemovedFromTotalIncome;
+    public E1expensesRemovedFromTotalIncomeId getId() {
+	return this.id;
     }
 
-    public void setIdE1expensesRemovedFromTotalIncome(
-	    Integer idE1expensesRemovedFromTotalIncome) {
-	this.idE1expensesRemovedFromTotalIncome = idE1expensesRemovedFromTotalIncome;
+    public void setId(E1expensesRemovedFromTotalIncomeId id) {
+	this.id = id;
+    }
+
+    public E1 getE1() {
+	return this.e1;
+    }
+
+    public void setE1(E1 e1) {
+	this.e1 = e1;
     }
 
     public Float get_049() {
@@ -791,11 +800,4 @@ public class E1expensesRemovedFromTotalIncome implements java.io.Serializable {
 	this._036 = _036;
     }
 
-    public Set<E1> getE1s() {
-	return this.e1s;
-    }
-
-    public void setE1s(Set<E1> e1s) {
-	this.e1s = e1s;
-    }
 }

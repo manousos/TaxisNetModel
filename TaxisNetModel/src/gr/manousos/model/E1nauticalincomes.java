@@ -1,9 +1,6 @@
 package gr.manousos.model;
 
-// Generated 12 Μαρ 2013 11:51:58 μμ by Hibernate Tools 3.4.0.CR1
-
-import java.util.HashSet;
-import java.util.Set;
+//Generated 3 Ιουν 2013 11:58:42 μμ by Hibernate Tools 3.4.0.CR1
 
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -14,7 +11,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class E1nauticalincomes implements java.io.Serializable {
 
     private static final long serialVersionUID = 1L;
-    private Integer idE1nauticalincomes;
+    private E1nauticalincomesId id;
+    private E1 e1;
     private Float _255;
     private Float _256;
     private Float _257;
@@ -27,14 +25,18 @@ public class E1nauticalincomes implements java.io.Serializable {
     private Float _254;
     private Float _201;
     private Float _202;
-    private Set<E1> e1s = new HashSet<E1>(0);
 
     public E1nauticalincomes() {
     }
 
-    public E1nauticalincomes(Float _255, Float _256, Float _257, Float _258,
-	    Float _263, Float _264, Float _265, Float _266, Float _253,
-	    Float _254, Float _201, Float _202, Set<E1> e1s) {
+    public E1nauticalincomes(E1 e1) {
+	this.e1 = e1;
+    }
+
+    public E1nauticalincomes(E1 e1, Float _255, Float _256, Float _257,
+	    Float _258, Float _263, Float _264, Float _265, Float _266,
+	    Float _253, Float _254, Float _201, Float _202) {
+	this.e1 = e1;
 	this._255 = _255;
 	this._256 = _256;
 	this._257 = _257;
@@ -47,15 +49,22 @@ public class E1nauticalincomes implements java.io.Serializable {
 	this._254 = _254;
 	this._201 = _201;
 	this._202 = _202;
-	this.e1s = e1s;
     }
 
-    public Integer getIdE1nauticalincomes() {
-	return this.idE1nauticalincomes;
+    public E1nauticalincomesId getId() {
+	return this.id;
     }
 
-    public void setIdE1nauticalincomes(Integer idE1nauticalincomes) {
-	this.idE1nauticalincomes = idE1nauticalincomes;
+    public void setId(E1nauticalincomesId id) {
+	this.id = id;
+    }
+
+    public E1 getE1() {
+	return this.e1;
+    }
+
+    public void setE1(E1 e1) {
+	this.e1 = e1;
     }
 
     public Float get_255() {
@@ -152,14 +161,6 @@ public class E1nauticalincomes implements java.io.Serializable {
 
     public void set_202(Float _202) {
 	this._202 = _202;
-    }
-
-    public Set<E1> getE1s() {
-	return this.e1s;
-    }
-
-    public void setE1s(Set<E1> e1s) {
-	this.e1s = e1s;
     }
 
 }

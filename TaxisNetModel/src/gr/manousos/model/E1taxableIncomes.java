@@ -1,9 +1,6 @@
 package gr.manousos.model;
 
-// Generated 27 Φεβ 2013 12:29:40 πμ by Hibernate Tools 3.4.0.CR1
-
-import java.util.HashSet;
-import java.util.Set;
+// Generated 3 Ιουν 2013 11:58:42 μμ by Hibernate Tools 3.4.0.CR1
 
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -14,7 +11,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class E1taxableIncomes implements java.io.Serializable {
 
     private static final long serialVersionUID = 1L;
-    private Integer e1taxableIncome;
+    private E1taxableIncomesId id;
+    private E1 e1;
     private Float _301;
     private Float _302;
     private Float _303;
@@ -186,44 +184,47 @@ public class E1taxableIncomes implements java.io.Serializable {
     private Float agrNetIncome4;
     private Float agrTotalNetincome4;
     private Float agrTotalWifeNetincome4;
-    private Set<E1> e1s = new HashSet<E1>(0);
 
     public E1taxableIncomes() {
     }
 
-    public E1taxableIncomes(Float _301, Float _302, Float _303, Float _304,
-	    Float _321, Float _322, Float _317, Float _318, Float _461,
-	    Float _462, Float _921, Float _922, Float _919, Float _920,
-	    Float _915, Float _916, Float _923, Float _924, Float _335,
-	    Float _336, Float _326, Float _337, Float _338, Float _339,
-	    Float _340, Float _465, Float _466, Float _467, Float _468,
-	    Float _475, Float _476, Float _479, Float _480, Float _481,
-	    Float _482, Float _401, Float _402, Float _403, Float _404,
-	    Float _405, Float _406, Float _407, Float _408, Float _413,
-	    Float _414, Float _415, Float _416, Float _425, Float _426,
-	    Float _501, Float _502, Float _503, Float _504, Float _505,
-	    Float _506, Float _507, Float _508, Float _511, Float _512,
-	    Float _515, Float _516, Float _517, Float _518, Float _103,
-	    Float _104, Float _121, Float _122, Float _105, Float _106,
-	    Float _107, Float _108, Float _109, Float _110, Float _101,
-	    Float _102, Float _909, Float _910, Float _111, Float _112,
-	    Float _113, Float _114, Float _129, Float _130, Float _143,
-	    Float _144, Float _145, Float _146, Float _147, Float _148,
-	    Float _141, Float _142, Float _701, Float _702, Float _123,
-	    Float _124, Float _125, Float _126, Float _151, Float _152,
-	    Float _163, Float _164, Float _165, Float _166, Float _159,
-	    Float _160, Float _175, Float _176, Float _131, Float _132,
-	    Float _133, Float _134, Float _741, Float _742, Float _291,
-	    Float _292, Float _389, Float _390, Float _391, Float _392,
-	    Float _463, Float _464, Float _471, Float _472, Float _411,
-	    Float _412, Float _421, Float _422, Float _509, Float _510,
-	    Float _513, Float _514, Float _295, Float _296, Float _171,
-	    Float _172, Float _173, Float _174, Float _395, Float _396,
-	    String agrLocation1, String agrProdKind1, Float agrPopulation1,
-	    Integer agrLocationType1, Integer agrHasWater1,
-	    Float agrNetIncome1, Float agrTotalNetincome1,
-	    Float agrTotalWifeNetincome1, String agrLocation2,
-	    String agrProdKind2, Float agrPopulation2,
+    public E1taxableIncomes(E1 e1) {
+	this.e1 = e1;
+    }
+
+    public E1taxableIncomes(E1 e1, Float _301, Float _302, Float _303,
+	    Float _304, Float _321, Float _322, Float _317, Float _318,
+	    Float _461, Float _462, Float _921, Float _922, Float _919,
+	    Float _920, Float _915, Float _916, Float _923, Float _924,
+	    Float _335, Float _336, Float _326, Float _337, Float _338,
+	    Float _339, Float _340, Float _465, Float _466, Float _467,
+	    Float _468, Float _475, Float _476, Float _479, Float _480,
+	    Float _481, Float _482, Float _401, Float _402, Float _403,
+	    Float _404, Float _405, Float _406, Float _407, Float _408,
+	    Float _413, Float _414, Float _415, Float _416, Float _425,
+	    Float _426, Float _501, Float _502, Float _503, Float _504,
+	    Float _505, Float _506, Float _507, Float _508, Float _511,
+	    Float _512, Float _515, Float _516, Float _517, Float _518,
+	    Float _103, Float _104, Float _121, Float _122, Float _105,
+	    Float _106, Float _107, Float _108, Float _109, Float _110,
+	    Float _101, Float _102, Float _909, Float _910, Float _111,
+	    Float _112, Float _113, Float _114, Float _129, Float _130,
+	    Float _143, Float _144, Float _145, Float _146, Float _147,
+	    Float _148, Float _141, Float _142, Float _701, Float _702,
+	    Float _123, Float _124, Float _125, Float _126, Float _151,
+	    Float _152, Float _163, Float _164, Float _165, Float _166,
+	    Float _159, Float _160, Float _175, Float _176, Float _131,
+	    Float _132, Float _133, Float _134, Float _741, Float _742,
+	    Float _291, Float _292, Float _389, Float _390, Float _391,
+	    Float _392, Float _463, Float _464, Float _471, Float _472,
+	    Float _411, Float _412, Float _421, Float _422, Float _509,
+	    Float _510, Float _513, Float _514, Float _295, Float _296,
+	    Float _171, Float _172, Float _173, Float _174, Float _395,
+	    Float _396, String agrLocation1, String agrProdKind1,
+	    Float agrPopulation1, Integer agrLocationType1,
+	    Integer agrHasWater1, Float agrNetIncome1,
+	    Float agrTotalNetincome1, Float agrTotalWifeNetincome1,
+	    String agrLocation2, String agrProdKind2, Float agrPopulation2,
 	    Integer agrLocationType2, Integer agrHasWater2,
 	    Float agrNetIncome2, Float agrTotalNetincome2,
 	    Float agrTotalWifeNetincome2, String agrLocation3,
@@ -234,7 +235,8 @@ public class E1taxableIncomes implements java.io.Serializable {
 	    String agrProdKind4, Float agrPopulation4,
 	    Integer agrLocationType4, Integer agrHasWater4,
 	    Float agrNetIncome4, Float agrTotalNetincome4,
-	    Float agrTotalWifeNetincome4, Set<E1> e1s) {
+	    Float agrTotalWifeNetincome4) {
+	this.e1 = e1;
 	this._301 = _301;
 	this._302 = _302;
 	this._303 = _303;
@@ -406,15 +408,22 @@ public class E1taxableIncomes implements java.io.Serializable {
 	this.agrNetIncome4 = agrNetIncome4;
 	this.agrTotalNetincome4 = agrTotalNetincome4;
 	this.agrTotalWifeNetincome4 = agrTotalWifeNetincome4;
-	this.e1s = e1s;
     }
 
-    public Integer getE1taxableIncome() {
-	return this.e1taxableIncome;
+    public E1taxableIncomesId getId() {
+	return this.id;
     }
 
-    public void setE1taxableIncome(Integer e1taxableIncome) {
-	this.e1taxableIncome = e1taxableIncome;
+    public void setId(E1taxableIncomesId id) {
+	this.id = id;
+    }
+
+    public E1 getE1() {
+	return this.e1;
+    }
+
+    public void setE1(E1 e1) {
+	this.e1 = e1;
     }
 
     public Float get_301() {
@@ -1784,13 +1793,4 @@ public class E1taxableIncomes implements java.io.Serializable {
     public void setAgrTotalWifeNetincome4(Float agrTotalWifeNetincome4) {
 	this.agrTotalWifeNetincome4 = agrTotalWifeNetincome4;
     }
-
-    public Set<E1> getE1s() {
-	return this.e1s;
-    }
-
-    public void setE1s(Set<E1> e1s) {
-	this.e1s = e1s;
-    }
-
 }

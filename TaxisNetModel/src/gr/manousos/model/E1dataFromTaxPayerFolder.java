@@ -1,9 +1,6 @@
 package gr.manousos.model;
 
-// Generated 27 Φεβ 2013 12:29:40 πμ by Hibernate Tools 3.4.0.CR1
-
-import java.util.HashSet;
-import java.util.Set;
+// Generated 3 Ιουν 2013 11:58:42 μμ by Hibernate Tools 3.4.0.CR1
 
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -14,7 +11,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class E1dataFromTaxPayerFolder implements java.io.Serializable {
 
     private static final long serialVersionUID = 1L;
-    private Integer idE1dataFromTaxPayerFolder;
+    private E1dataFromTaxPayerFolderId id;
+    private E1 e1;
     private Float _901;
     private Float _902;
     private Float _903;
@@ -23,13 +21,16 @@ public class E1dataFromTaxPayerFolder implements java.io.Serializable {
     private Float _995;
     private Float _996;
 
-    private Set<E1> e1s = new HashSet<E1>(0);
-
     public E1dataFromTaxPayerFolder() {
     }
 
-    public E1dataFromTaxPayerFolder(Float _901, Float _902, Float _903,
-	    Float _904, Float _341, Float _995, Float _996, Set<E1> e1s) {
+    public E1dataFromTaxPayerFolder(E1 e1) {
+	this.e1 = e1;
+    }
+
+    public E1dataFromTaxPayerFolder(E1 e1, Float _901, Float _902, Float _903,
+	    Float _904, Float _341, Float _995, Float _996) {
+	this.e1 = e1;
 	this._901 = _901;
 	this._902 = _902;
 	this._903 = _903;
@@ -37,15 +38,22 @@ public class E1dataFromTaxPayerFolder implements java.io.Serializable {
 	this._341 = _341;
 	this._995 = _995;
 	this._996 = _996;
-	this.e1s = e1s;
     }
 
-    public Integer getIdE1dataFromTaxPayerFolder() {
-	return this.idE1dataFromTaxPayerFolder;
+    public E1dataFromTaxPayerFolderId getId() {
+	return this.id;
     }
 
-    public void setIdE1dataFromTaxPayerFolder(Integer idE1dataFromTaxPayerFolder) {
-	this.idE1dataFromTaxPayerFolder = idE1dataFromTaxPayerFolder;
+    public void setId(E1dataFromTaxPayerFolderId id) {
+	this.id = id;
+    }
+
+    public E1 getE1() {
+	return this.e1;
+    }
+
+    public void setE1(E1 e1) {
+	this.e1 = e1;
     }
 
     public Float get_901() {
@@ -102,14 +110,6 @@ public class E1dataFromTaxPayerFolder implements java.io.Serializable {
 
     public void set_996(Float _996) {
 	this._996 = _996;
-    }
-
-    public Set<E1> getE1s() {
-	return this.e1s;
-    }
-
-    public void setE1s(Set<E1> e1s) {
-	this.e1s = e1s;
     }
 
 }
