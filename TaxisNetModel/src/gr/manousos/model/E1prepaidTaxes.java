@@ -11,7 +11,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class E1prepaidTaxes implements java.io.Serializable {
 
     private static final long serialVersionUID = 1L;
-    private E1prepaidTaxesId id;
+    private E1Id id;
     private E1 e1;
     private Float _601;
     private Float _602;
@@ -74,11 +74,11 @@ public class E1prepaidTaxes implements java.io.Serializable {
 
     }
 
-    public E1prepaidTaxesId getId() {
+    public E1Id getId() {
 	return this.id;
     }
 
-    public void setId(E1prepaidTaxesId id) {
+    public void setId(E1Id id) {
 	this.id = id;
     }
 

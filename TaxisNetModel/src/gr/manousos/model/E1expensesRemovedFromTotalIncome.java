@@ -11,7 +11,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class E1expensesRemovedFromTotalIncome implements java.io.Serializable {
 
     private static final long serialVersionUID = 1L;
-    private E1expensesRemovedFromTotalIncomeId id;
+    // private E1expensesRemovedFromTotalIncomeId id;
+    private E1Id id;
     private E1 e1;
     private Float _049;
     private Float _051;
@@ -192,12 +193,20 @@ public class E1expensesRemovedFromTotalIncome implements java.io.Serializable {
 	this._036 = _036;
     }
 
-    public E1expensesRemovedFromTotalIncomeId getId() {
-	return this.id;
+//    public E1expensesRemovedFromTotalIncomeId getId() {
+//	return this.id;
+//    }
+//
+//    public void setId(E1expensesRemovedFromTotalIncomeId id) {
+//	this.id = id;
+//    }
+
+    public E1Id getId() {
+        return id;
     }
 
-    public void setId(E1expensesRemovedFromTotalIncomeId id) {
-	this.id = id;
+    public void setId(E1Id id) {
+        this.id = id;
     }
 
     public E1 getE1() {

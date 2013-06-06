@@ -11,7 +11,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class E1reduceTax implements java.io.Serializable {
 
     private static final long serialVersionUID = 1L;
-    private E1reduceTaxId id;
+    private E1Id id;
     private E1 e1;
     private Integer _001;
     private Integer _002;
@@ -38,11 +38,11 @@ public class E1reduceTax implements java.io.Serializable {
 	this._006 = _006;
     }
 
-    public E1reduceTaxId getId() {
+    public E1Id getId() {
 	return this.id;
     }
 
-    public void setId(E1reduceTaxId id) {
+    public void setId(E1Id id) {
 	this.id = id;
     }
 

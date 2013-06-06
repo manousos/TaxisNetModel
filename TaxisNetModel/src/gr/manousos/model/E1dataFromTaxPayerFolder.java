@@ -11,7 +11,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class E1dataFromTaxPayerFolder implements java.io.Serializable {
 
     private static final long serialVersionUID = 1L;
-    private E1dataFromTaxPayerFolderId id;
+    // private E1dataFromTaxPayerFolderId id;
+    private E1Id id;
     private E1 e1;
     private Float _901;
     private Float _902;
@@ -40,12 +41,12 @@ public class E1dataFromTaxPayerFolder implements java.io.Serializable {
 	this._996 = _996;
     }
 
-    public E1dataFromTaxPayerFolderId getId() {
-	return this.id;
+    public void setId(E1Id id) {
+	this.id = id;
     }
 
-    public void setId(E1dataFromTaxPayerFolderId id) {
-	this.id = id;
+    public E1Id getId() {
+	return this.id;
     }
 
     public E1 getE1() {

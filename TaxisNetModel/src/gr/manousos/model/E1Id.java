@@ -10,53 +10,62 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class E1Id implements java.io.Serializable {
 
-	private static final long serialVersionUID = 1L;
-	private int taxpayerId;
-	private int year;
+    private static final long serialVersionUID = 1L;
+    private int taxpayerId;
+    private int year;
+    private int tid;
 
-	public E1Id() {
-	}
+    public E1Id() {
+    }
 
-	public E1Id(int taxpayerId, int year) {
-		this.taxpayerId = taxpayerId;
-		this.year = year;
-	}
+    public E1Id(int taxpayerId, int year) {
+	this.taxpayerId = taxpayerId;
+	this.year = year;
+    }
 
-	public int getTaxpayerId() {
-		return this.taxpayerId;
-	}
+    public int getTaxpayerId() {
+	return this.taxpayerId;
+    }
 
-	public void setTaxpayerId(int taxpayerId) {
-		this.taxpayerId = taxpayerId;
-	}
+    public void setTaxpayerId(int taxpayerId) {
+	this.taxpayerId = taxpayerId;
+    }
 
-	public int getYear() {
-		return this.year;
-	}
+    public int getTid() {
+	return tid;
+    }
 
-	public void setYear(int year) {
-		this.year = year;
-	}
+    public void setTid(int tid) {
+	this.tid = tid;
+    }
 
-	public boolean equals(Object other) {
-		if ((this == other))
-			return true;
-		if ((other == null))
-			return false;
-		if (!(other instanceof E1Id))
-			return false;
-		E1Id castOther = (E1Id) other;
+    public int getYear() {
+	return this.year;
+    }
 
-		return (this.getTaxpayerId() == castOther.getTaxpayerId())
-				&& (this.getYear() == castOther.getYear());
-	}
+    public void setYear(int year) {
+	this.year = year;
+    }
 
-	public int hashCode() {
-		int result = 17;
+    public boolean equals(Object other) {
+	if ((this == other))
+	    return true;
+	if ((other == null))
+	    return false;
+	if (!(other instanceof E1Id))
+	    return false;
+	E1Id castOther = (E1Id) other;
 
-		result = 37 * result + this.getTaxpayerId();
-		result = 37 * result + this.getYear();
-		return result;
-	}
+	return (this.getTaxpayerId() == castOther.getTaxpayerId())
+		&& (this.getYear() == castOther.getYear());
+    }
+
+    public int hashCode() {
+	int result = 17;
+
+	result = 37 * result + this.getTaxpayerId();
+	result = 37 * result + this.getYear();
+	return result;
+    }
 
 }

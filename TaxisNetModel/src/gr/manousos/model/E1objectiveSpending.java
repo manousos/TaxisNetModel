@@ -11,7 +11,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class E1objectiveSpending implements java.io.Serializable {
 
     private static final long serialVersionUID = 1L;
-    private E1objectiveSpendingId id;
+    private E1Id id;
     private E1 e1;
     private String _205;
     private String houseAddr1;
@@ -298,11 +298,11 @@ public class E1objectiveSpending implements java.io.Serializable {
 	this._728 = _728;
     }
 
-    public E1objectiveSpendingId getId() {
+    public E1Id getId() {
 	return this.id;
     }
 
-    public void setId(E1objectiveSpendingId id) {
+    public void setId(E1Id id) {
 	this.id = id;
     }
 

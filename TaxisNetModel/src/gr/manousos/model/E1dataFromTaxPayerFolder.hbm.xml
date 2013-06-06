@@ -3,36 +3,36 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated 3 ???????? 2013 11:58:43 ???? by Hibernate Tools 3.4.0.CR1 -->
 <hibernate-mapping>
-    <class name="gr.manousos.model.E1dataFromTaxPayerFolder" table="E1DataFromTaxPayerFolder" catalog="TaxisDB">
-        <composite-id name="id" class="gr.manousos.model.E1dataFromTaxPayerFolderId">
-            <key-property name="tid" type="int">
-                <column name="tID" />
-            </key-property>
-            <key-property name="year" type="int">
-                <column name="Year" />
-            </key-property>
-        </composite-id>
-        <one-to-one name="e1" class="gr.manousos.model.E1" constrained="true"></one-to-one>
-        <property name="_901" type="java.lang.Float">
-            <column name="_901" precision="12" scale="0" />
-        </property>
-        <property name="_902" type="java.lang.Float">
-            <column name="_902" precision="12" scale="0" />
-        </property>
-        <property name="_903" type="java.lang.Float">
-            <column name="_903" precision="12" scale="0" />
-        </property>
-        <property name="_904" type="java.lang.Float">
-            <column name="_904" precision="12" scale="0" />
-        </property>
-        <property name="_341" type="java.lang.Float">
-            <column name="_341" precision="12" scale="0" />
-        </property>
-        <property name="_995" type="java.lang.Float">
-            <column name="_995" precision="12" scale="0" />
-        </property>
-        <property name="_996" type="java.lang.Float">
-            <column name="_996" precision="12" scale="0" />
-        </property>
-    </class>
+	<class name="gr.manousos.model.E1dataFromTaxPayerFolder" table="E1DataFromTaxPayerFolder" catalog="TaxisDB">
+		<composite-id name="id" class="gr.manousos.model.E1Id">
+			<key-property name="tid" type="int">
+				<column name="tID" />
+			</key-property>
+			<key-property name="year" type="int">
+				<column name="Year" />
+			</key-property>
+		</composite-id>
+		<one-to-one name="e1" class="gr.manousos.model.E1" constrained="true"></one-to-one>
+		<property name="_901" type="java.lang.Float">
+			<column name="_901" precision="12" scale="0" />
+		</property>
+		<property name="_902" type="java.lang.Float">
+			<column name="_902" precision="12" scale="0" />
+		</property>
+		<property name="_903" type="java.lang.Float">
+			<column name="_903" precision="12" scale="0" />
+		</property>
+		<property name="_904" type="java.lang.Float">
+			<column name="_904" precision="12" scale="0" />
+		</property>
+		<property name="_341" type="java.lang.Float">
+			<column name="_341" precision="12" scale="0" />
+		</property>
+		<property name="_995" type="java.lang.Float">
+			<column name="_995" precision="12" scale="0" />
+		</property>
+		<property name="_996" type="java.lang.Float">
+			<column name="_996" precision="12" scale="0" />
+		</property>
+	</class>
 </hibernate-mapping>

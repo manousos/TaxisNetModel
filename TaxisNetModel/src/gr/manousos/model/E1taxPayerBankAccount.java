@@ -11,7 +11,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class E1taxPayerBankAccount implements java.io.Serializable {
 
     private static final long serialVersionUID = 1L;
-    private E1taxPayerBankAccountId id;
+    private E1Id id;
     private E1 e1;
     private String bic;
     private String iban;
@@ -29,11 +29,11 @@ public class E1taxPayerBankAccount implements java.io.Serializable {
 	this.iban = iban;
     }
 
-    public E1taxPayerBankAccountId getId() {
+    public E1Id getId() {
 	return this.id;
     }
 
-    public void setId(E1taxPayerBankAccountId id) {
+    public void setId(E1Id id) {
 	this.id = id;
     }
 

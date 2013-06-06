@@ -4,7 +4,7 @@
 <!-- Generated 3 ???????? 2013 11:58:43 ???? by Hibernate Tools 3.4.0.CR1 -->
 <hibernate-mapping>
     <class name="gr.manousos.model.E1taxableIncomes" table="E1TaxableIncomes" catalog="TaxisDB">
-        <composite-id name="id" class="gr.manousos.model.E1taxableIncomesId">
+        <composite-id name="id" class="gr.manousos.model.E1Id">
             <key-property name="tid" type="int">
                 <column name="tID" />
             </key-property>

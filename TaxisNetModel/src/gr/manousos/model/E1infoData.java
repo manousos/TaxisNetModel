@@ -11,7 +11,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class E1infoData implements java.io.Serializable {
 
     private static final long serialVersionUID = 1L;
-    private E1infoDataId id;
+    private E1Id id;
     private E1 e1;
     private Integer _327;
     private Integer _328;
@@ -99,11 +99,11 @@ public class E1infoData implements java.io.Serializable {
 	this._010 = _010;
     }
 
-    public E1infoDataId getId() {
+    public E1Id getId() {
 	return this.id;
     }
 
-    public void setId(E1infoDataId id) {
+    public void setId(E1Id id) {
 	this.id = id;
     }
 

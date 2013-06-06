@@ -3,138 +3,138 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated 3 ???????? 2013 11:58:43 ???? by Hibernate Tools 3.4.0.CR1 -->
 <hibernate-mapping>
-    <class name="gr.manousos.model.E1incomesReduceTaxes" table="E1IncomesReduceTaxes" catalog="TaxisDB">
-        <composite-id name="id" class="gr.manousos.model.E1incomesReduceTaxesId">
-            <key-property name="tid" type="int">
-                <column name="tID" />
-            </key-property>
-            <key-property name="year" type="int">
-                <column name="Year" />
-            </key-property>
-        </composite-id>
-        <one-to-one name="e1" class="gr.manousos.model.E1" constrained="true"></one-to-one>
-        <property name="_655" type="java.lang.Float">
-            <column name="_655" precision="12" scale="0" />
-        </property>
-        <property name="_656" type="java.lang.Float">
-            <column name="_656" precision="12" scale="0" />
-        </property>
-        <property name="_693" type="java.lang.Float">
-            <column name="_693" precision="12" scale="0" />
-        </property>
-        <property name="_694" type="java.lang.Float">
-            <column name="_694" precision="12" scale="0" />
-        </property>
-        <property name="_659" type="java.lang.Float">
-            <column name="_659" precision="12" scale="0" />
-        </property>
-        <property name="_660" type="java.lang.Float">
-            <column name="_660" precision="12" scale="0" />
-        </property>
-        <property name="_657" type="java.lang.Float">
-            <column name="_657" precision="12" scale="0" />
-        </property>
-        <property name="_658" type="java.lang.Float">
-            <column name="_658" precision="12" scale="0" />
-        </property>
-        <property name="_661" type="java.lang.Float">
-            <column name="_661" precision="12" scale="0" />
-        </property>
-        <property name="_662" type="java.lang.Float">
-            <column name="_662" precision="12" scale="0" />
-        </property>
-        <property name="_431" type="java.lang.Float">
-            <column name="_431" precision="12" scale="0" />
-        </property>
-        <property name="_432" type="java.lang.Float">
-            <column name="_432" precision="12" scale="0" />
-        </property>
-        <property name="_433" type="java.lang.Float">
-            <column name="_433" precision="12" scale="0" />
-        </property>
-        <property name="_434" type="java.lang.Float">
-            <column name="_434" precision="12" scale="0" />
-        </property>
-        <property name="_305" type="java.lang.Float">
-            <column name="_305" precision="12" scale="0" />
-        </property>
-        <property name="_306" type="java.lang.Float">
-            <column name="_306" precision="12" scale="0" />
-        </property>
-        <property name="_477" type="java.lang.Float">
-            <column name="_477" precision="12" scale="0" />
-        </property>
-        <property name="_478" type="java.lang.Float">
-            <column name="_478" precision="12" scale="0" />
-        </property>
-        <property name="lessorName1" type="string">
-            <column name="LessorName1" length="45" />
-        </property>
-        <property name="_790" type="string">
-            <column name="_790" length="10" />
-        </property>
-        <property name="_795" type="java.lang.Float">
-            <column name="_795" precision="12" scale="0" />
-        </property>
-        <property name="lassorName2" type="string">
-            <column name="LassorName2" length="45" />
-        </property>
-        <property name="_791" type="string">
-            <column name="_791" length="10" />
-        </property>
-        <property name="_796" type="java.lang.Float">
-            <column name="_796" precision="12" scale="0" />
-        </property>
-        <property name="_793" type="java.lang.Float">
-            <column name="_793" precision="12" scale="0" />
-        </property>
-        <property name="_794" type="java.lang.Float">
-            <column name="_794" precision="12" scale="0" />
-        </property>
-        <property name="_615" type="java.lang.Float">
-            <column name="_615" precision="12" scale="0" />
-        </property>
-        <property name="_616" type="java.lang.Float">
-            <column name="_616" precision="12" scale="0" />
-        </property>
-        <property name="lassorNameForStudent" type="string">
-            <column name="LassorNameForStudent" length="45" />
-        </property>
-        <property name="_417" type="string">
-            <column name="_417" length="10" />
-        </property>
-        <property name="areaStudentHouse" type="java.lang.Float">
-            <column name="AreaStudentHouse" precision="12" scale="0" />
-        </property>
-        <property name="_419" type="java.lang.Float">
-            <column name="_419" precision="12" scale="0" />
-        </property>
-        <property name="_420" type="java.lang.Float">
-            <column name="_420" precision="12" scale="0" />
-        </property>
-        <property name="_735" type="java.lang.Float">
-            <column name="_735" precision="12" scale="0" />
-        </property>
-        <property name="_736" type="java.lang.Float">
-            <column name="_736" precision="12" scale="0" />
-        </property>
-        <property name="_781" type="java.lang.Float">
-            <column name="_781" precision="12" scale="0" />
-        </property>
-        <property name="_782" type="java.lang.Float">
-            <column name="_782" precision="12" scale="0" />
-        </property>
-        <property name="_783" type="java.lang.Float">
-            <column name="_783" precision="12" scale="0" />
-        </property>
-        <property name="_784" type="java.lang.Float">
-            <column name="_784" precision="12" scale="0" />
-        </property>
-        <property name="_787" type="java.lang.Float">
-            <column name="_787" precision="12" scale="0" />
-        </property>
-        <property name="_788" type="java.lang.Float">
-            <column name="_788" precision="12" scale="0" />
-        </property>
-    </class>
+	<class name="gr.manousos.model.E1incomesReduceTaxes" table="E1IncomesReduceTaxes" catalog="TaxisDB">
+		<composite-id name="id" class="gr.manousos.model.E1Id">
+			<key-property name="tid" type="int">
+				<column name="tID" />
+			</key-property>
+			<key-property name="year" type="int">
+				<column name="Year" />
+			</key-property>
+		</composite-id>
+		<one-to-one name="e1" class="gr.manousos.model.E1" constrained="true"></one-to-one>
+		<property name="_655" type="java.lang.Float">
+			<column name="_655" precision="12" scale="0" />
+		</property>
+		<property name="_656" type="java.lang.Float">
+			<column name="_656" precision="12" scale="0" />
+		</property>
+		<property name="_693" type="java.lang.Float">
+			<column name="_693" precision="12" scale="0" />
+		</property>
+		<property name="_694" type="java.lang.Float">
+			<column name="_694" precision="12" scale="0" />
+		</property>
+		<property name="_659" type="java.lang.Float">
+			<column name="_659" precision="12" scale="0" />
+		</property>
+		<property name="_660" type="java.lang.Float">
+			<column name="_660" precision="12" scale="0" />
+		</property>
+		<property name="_657" type="java.lang.Float">
+			<column name="_657" precision="12" scale="0" />
+		</property>
+		<property name="_658" type="java.lang.Float">
+			<column name="_658" precision="12" scale="0" />
+		</property>
+		<property name="_661" type="java.lang.Float">
+			<column name="_661" precision="12" scale="0" />
+		</property>
+		<property name="_662" type="java.lang.Float">
+			<column name="_662" precision="12" scale="0" />
+		</property>
+		<property name="_431" type="java.lang.Float">
+			<column name="_431" precision="12" scale="0" />
+		</property>
+		<property name="_432" type="java.lang.Float">
+			<column name="_432" precision="12" scale="0" />
+		</property>
+		<property name="_433" type="java.lang.Float">
+			<column name="_433" precision="12" scale="0" />
+		</property>
+		<property name="_434" type="java.lang.Float">
+			<column name="_434" precision="12" scale="0" />
+		</property>
+		<property name="_305" type="java.lang.Float">
+			<column name="_305" precision="12" scale="0" />
+		</property>
+		<property name="_306" type="java.lang.Float">
+			<column name="_306" precision="12" scale="0" />
+		</property>
+		<property name="_477" type="java.lang.Float">
+			<column name="_477" precision="12" scale="0" />
+		</property>
+		<property name="_478" type="java.lang.Float">
+			<column name="_478" precision="12" scale="0" />
+		</property>
+		<property name="lessorName1" type="string">
+			<column name="LessorName1" length="45" />
+		</property>
+		<property name="_790" type="string">
+			<column name="_790" length="10" />
+		</property>
+		<property name="_795" type="java.lang.Float">
+			<column name="_795" precision="12" scale="0" />
+		</property>
+		<property name="lassorName2" type="string">
+			<column name="LassorName2" length="45" />
+		</property>
+		<property name="_791" type="string">
+			<column name="_791" length="10" />
+		</property>
+		<property name="_796" type="java.lang.Float">
+			<column name="_796" precision="12" scale="0" />
+		</property>
+		<property name="_793" type="java.lang.Float">
+			<column name="_793" precision="12" scale="0" />
+		</property>
+		<property name="_794" type="java.lang.Float">
+			<column name="_794" precision="12" scale="0" />
+		</property>
+		<property name="_615" type="java.lang.Float">
+			<column name="_615" precision="12" scale="0" />
+		</property>
+		<property name="_616" type="java.lang.Float">
+			<column name="_616" precision="12" scale="0" />
+		</property>
+		<property name="lassorNameForStudent" type="string">
+			<column name="LassorNameForStudent" length="45" />
+		</property>
+		<property name="_417" type="string">
+			<column name="_417" length="10" />
+		</property>
+		<property name="areaStudentHouse" type="java.lang.Float">
+			<column name="AreaStudentHouse" precision="12" scale="0" />
+		</property>
+		<property name="_419" type="java.lang.Float">
+			<column name="_419" precision="12" scale="0" />
+		</property>
+		<property name="_420" type="java.lang.Float">
+			<column name="_420" precision="12" scale="0" />
+		</property>
+		<property name="_735" type="java.lang.Float">
+			<column name="_735" precision="12" scale="0" />
+		</property>
+		<property name="_736" type="java.lang.Float">
+			<column name="_736" precision="12" scale="0" />
+		</property>
+		<property name="_781" type="java.lang.Float">
+			<column name="_781" precision="12" scale="0" />
+		</property>
+		<property name="_782" type="java.lang.Float">
+			<column name="_782" precision="12" scale="0" />
+		</property>
+		<property name="_783" type="java.lang.Float">
+			<column name="_783" precision="12" scale="0" />
+		</property>
+		<property name="_784" type="java.lang.Float">
+			<column name="_784" precision="12" scale="0" />
+		</property>
+		<property name="_787" type="java.lang.Float">
+			<column name="_787" precision="12" scale="0" />
+		</property>
+		<property name="_788" type="java.lang.Float">
+			<column name="_788" precision="12" scale="0" />
+		</property>
+	</class>
 </hibernate-mapping>

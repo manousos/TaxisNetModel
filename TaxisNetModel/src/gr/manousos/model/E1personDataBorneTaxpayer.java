@@ -8,7 +8,7 @@ package gr.manousos.model;
 public class E1personDataBorneTaxpayer implements java.io.Serializable {
 
     private static final long serialVersionUID = 1L;
-    private E1personDataBorneTaxpayerId id;
+    private E1Id id;
     private E1 e1;
     private String name1;
     private Integer birthYear1;
@@ -96,11 +96,11 @@ public class E1personDataBorneTaxpayer implements java.io.Serializable {
 	this.relationShipWithWife4 = relationShipWithWife4;
     }
 
-    public E1personDataBorneTaxpayerId getId() {
+    public E1Id getId() {
 	return this.id;
     }
 
-    public void setId(E1personDataBorneTaxpayerId id) {
+    public void setId(E1Id id) {
 	this.id = id;
     }
 

@@ -11,7 +11,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class E1taxableIncomes implements java.io.Serializable {
 
     private static final long serialVersionUID = 1L;
-    private E1taxableIncomesId id;
+    private E1Id id;
     private E1 e1;
     private Float _301;
     private Float _302;
@@ -410,11 +410,11 @@ public class E1taxableIncomes implements java.io.Serializable {
 	this.agrTotalWifeNetincome4 = agrTotalWifeNetincome4;
     }
 
-    public E1taxableIncomesId getId() {
+    public E1Id getId() {
 	return this.id;
     }
 
-    public void setId(E1taxableIncomesId id) {
+    public void setId(E1Id id) {
 	this.id = id;
     }
 
