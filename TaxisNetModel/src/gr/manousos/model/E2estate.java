@@ -13,208 +13,219 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class E2estate implements java.io.Serializable {
 
-	private static final long serialVersionUID = 1L;
-	private Integer estateId;
-	private E2 e2;
-	private String location;
-	private String position;
-	private String usage;
-	private float area;
-	private String tenantFullName;
-	private String tenantAfm;
-	private int from;
-	private int to;
-	private float monthlyRental;
-	private float rersentCoOwner;
-	private float revenueFreeHome;
-	private float revenueFreeOffice;
-	private float revenuePrivateHotel;
-	private float revenuePrivateOffice;
-	private Set<E2coOwner> e2coOwners = new HashSet<E2coOwner>(0);
+    private static final long serialVersionUID = 1L;
+    private Integer estateId;
+    private E2 e2;
+    private String location;
+    private String position;
+    private String usage;
+    private float area;
+    private String tenantFullName;
+    private String tenantAfm;
+    private int from;
+    private int to;
+    private float monthlyRental;
+    private float persentCoOwner;
+    private float revenueFreeHome;
+    private float revenueFreeOffice;
+    private float revenueFreeField;
+    private float revenuePrivateHotel;
+    private float revenuePrivateOffice;
+    private Set<E2coOwner> e2coOwners = new HashSet<E2coOwner>(0);
 
-	public E2estate() {
-	}
+    public E2estate() {
+    }
 
-	public E2estate(E2 e2, String location, String position, String usage,
-			float area, String tenantFullName, String tenantAfm, int from,
-			int to, float monthlyRental, float rersentCoOwner,
-			float revenueFreeHome, float revenueFreeOffice,
-			float revenuePrivateHotel, float revenuePrivateOffice) {
-		this.e2 = e2;
-		this.location = location;
-		this.position = position;
-		this.usage = usage;
-		this.area = area;
-		this.tenantFullName = tenantFullName;
-		this.tenantAfm = tenantAfm;
-		this.from = from;
-		this.to = to;
-		this.monthlyRental = monthlyRental;
-		this.rersentCoOwner = rersentCoOwner;
-		this.revenueFreeHome = revenueFreeHome;
-		this.revenueFreeOffice = revenueFreeOffice;
-		this.revenuePrivateHotel = revenuePrivateHotel;
-		this.revenuePrivateOffice = revenuePrivateOffice;
-	}
+    public E2estate(E2 e2, String location, String position, String usage,
+	    float area, String tenantFullName, String tenantAfm, int from,
+	    int to, float monthlyRental, float rersentCoOwner,
+	    float revenueFreeHome, float revenueFreeOffice,
+	    float revenueFreeField, float revenuePrivateHotel,
+	    float revenuePrivateOffice) {
+	this.e2 = e2;
+	this.location = location;
+	this.position = position;
+	this.usage = usage;
+	this.area = area;
+	this.tenantFullName = tenantFullName;
+	this.tenantAfm = tenantAfm;
+	this.from = from;
+	this.to = to;
+	this.monthlyRental = monthlyRental;
+	this.persentCoOwner = rersentCoOwner;
+	this.revenueFreeHome = revenueFreeHome;
+	this.revenueFreeOffice = revenueFreeOffice;
+	this.revenueFreeField = revenueFreeField;
+	this.revenuePrivateHotel = revenuePrivateHotel;
+	this.revenuePrivateOffice = revenuePrivateOffice;
+    }
 
-	public E2estate(E2 e2, String location, String position, String usage,
-			float area, String tenantFullName, String tenantAfm, int from,
-			int to, float monthlyRental, float rersentCoOwner,
-			float revenueFreeHome, float revenueFreeOffice,
-			float revenuePrivateHotel, float revenuePrivateOffice,
-			Set<E2coOwner> e2coOwners) {
-		this.e2 = e2;
-		this.location = location;
-		this.position = position;
-		this.usage = usage;
-		this.area = area;
-		this.tenantFullName = tenantFullName;
-		this.tenantAfm = tenantAfm;
-		this.from = from;
-		this.to = to;
-		this.monthlyRental = monthlyRental;
-		this.rersentCoOwner = rersentCoOwner;
-		this.revenueFreeHome = revenueFreeHome;
-		this.revenueFreeOffice = revenueFreeOffice;
-		this.revenuePrivateHotel = revenuePrivateHotel;
-		this.revenuePrivateOffice = revenuePrivateOffice;
-		this.e2coOwners = e2coOwners;
-	}
+    public E2estate(E2 e2, String location, String position, String usage,
+	    float area, String tenantFullName, String tenantAfm, int from,
+	    int to, float monthlyRental, float rersentCoOwner,
+	    float revenueFreeHome, float revenueFreeOffice,
+	    float revenuePrivateHotel, float revenuePrivateOffice,
+	    Set<E2coOwner> e2coOwners) {
+	this.e2 = e2;
+	this.location = location;
+	this.position = position;
+	this.usage = usage;
+	this.area = area;
+	this.tenantFullName = tenantFullName;
+	this.tenantAfm = tenantAfm;
+	this.from = from;
+	this.to = to;
+	this.monthlyRental = monthlyRental;
+	this.persentCoOwner = rersentCoOwner;
+	this.revenueFreeHome = revenueFreeHome;
+	this.revenueFreeOffice = revenueFreeOffice;
+	this.revenuePrivateHotel = revenuePrivateHotel;
+	this.revenuePrivateOffice = revenuePrivateOffice;
+	this.e2coOwners = e2coOwners;
+    }
 
-	public Integer getEstateId() {
-		return this.estateId;
-	}
+    public Integer getEstateId() {
+	return this.estateId;
+    }
 
-	public void setEstateId(Integer estateId) {
-		this.estateId = estateId;
-	}
+    public void setEstateId(Integer estateId) {
+	this.estateId = estateId;
+    }
 
-	public E2 getE2() {
-		return this.e2;
-	}
+    public E2 getE2() {
+	return this.e2;
+    }
 
-	public void setE2(E2 e2) {
-		this.e2 = e2;
-	}
+    public void setE2(E2 e2) {
+	this.e2 = e2;
+    }
 
-	public String getLocation() {
-		return this.location;
-	}
+    public String getLocation() {
+	return this.location;
+    }
 
-	public void setLocation(String location) {
-		this.location = location;
-	}
+    public void setLocation(String location) {
+	this.location = location;
+    }
 
-	public String getPosition() {
-		return this.position;
-	}
+    public String getPosition() {
+	return this.position;
+    }
 
-	public void setPosition(String position) {
-		this.position = position;
-	}
+    public void setPosition(String position) {
+	this.position = position;
+    }
 
-	public String getUsage() {
-		return this.usage;
-	}
+    public String getUsage() {
+	return this.usage;
+    }
 
-	public void setUsage(String usage) {
-		this.usage = usage;
-	}
+    public void setUsage(String usage) {
+	this.usage = usage;
+    }
 
-	public float getArea() {
-		return this.area;
-	}
+    public float getArea() {
+	return this.area;
+    }
 
-	public void setArea(float area) {
-		this.area = area;
-	}
+    public void setArea(float area) {
+	this.area = area;
+    }
 
-	public String getTenantFullName() {
-		return this.tenantFullName;
-	}
+    public String getTenantFullName() {
+	return this.tenantFullName;
+    }
 
-	public void setTenantFullName(String tenantFullName) {
-		this.tenantFullName = tenantFullName;
-	}
+    public void setTenantFullName(String tenantFullName) {
+	this.tenantFullName = tenantFullName;
+    }
 
-	public String getTenantAfm() {
-		return this.tenantAfm;
-	}
+    public String getTenantAfm() {
+	return this.tenantAfm;
+    }
 
-	public void setTenantAfm(String tenantAfm) {
-		this.tenantAfm = tenantAfm;
-	}
+    public void setTenantAfm(String tenantAfm) {
+	this.tenantAfm = tenantAfm;
+    }
 
-	public int getFrom() {
-		return this.from;
-	}
+    public int getFrom() {
+	return this.from;
+    }
 
-	public void setFrom(int from) {
-		this.from = from;
-	}
+    public void setFrom(int from) {
+	this.from = from;
+    }
 
-	public int getTo() {
-		return this.to;
-	}
+    public int getTo() {
+	return this.to;
+    }
 
-	public void setTo(int to) {
-		this.to = to;
-	}
+    public void setTo(int to) {
+	this.to = to;
+    }
 
-	public float getMonthlyRental() {
-		return this.monthlyRental;
-	}
+    public float getMonthlyRental() {
+	return this.monthlyRental;
+    }
 
-	public void setMonthlyRental(float monthlyRental) {
-		this.monthlyRental = monthlyRental;
-	}
+    public void setMonthlyRental(float monthlyRental) {
+	this.monthlyRental = monthlyRental;
+    }
 
-	public float getRersentCoOwner() {
-		return this.rersentCoOwner;
-	}
+    public float getRersentCoOwner() {
+	return this.persentCoOwner;
+    }
 
-	public void setRersentCoOwner(float rersentCoOwner) {
-		this.rersentCoOwner = rersentCoOwner;
-	}
+    public void setRersentCoOwner(float rersentCoOwner) {
+	this.persentCoOwner = rersentCoOwner;
+    }
 
-	public float getRevenueFreeHome() {
-		return this.revenueFreeHome;
-	}
+    public float getRevenueFreeHome() {
+	return this.revenueFreeHome;
+    }
 
-	public void setRevenueFreeHome(float revenueFreeHome) {
-		this.revenueFreeHome = revenueFreeHome;
-	}
+    public void setRevenueFreeHome(float revenueFreeHome) {
+	this.revenueFreeHome = revenueFreeHome;
+    }
 
-	public float getRevenueFreeOffice() {
-		return this.revenueFreeOffice;
-	}
+    public float getRevenueFreeOffice() {
+	return this.revenueFreeOffice;
+    }
 
-	public void setRevenueFreeOffice(float revenueFreeOffice) {
-		this.revenueFreeOffice = revenueFreeOffice;
-	}
+    public void setRevenueFreeOffice(float revenueFreeOffice) {
+	this.revenueFreeOffice = revenueFreeOffice;
+    }
 
-	public float getRevenuePrivateHotel() {
-		return this.revenuePrivateHotel;
-	}
+    public float getRevenueFreeField() {
+	return revenueFreeField;
+    }
 
-	public void setRevenuePrivateHotel(float revenuePrivateHotel) {
-		this.revenuePrivateHotel = revenuePrivateHotel;
-	}
+    public void setRevenueFreeField(float revenueFreeField) {
+	this.revenueFreeField = revenueFreeField;
+    }
 
-	public float getRevenuePrivateOffice() {
-		return this.revenuePrivateOffice;
-	}
+    public float getRevenuePrivateHotel() {
+	return this.revenuePrivateHotel;
+    }
 
-	public void setRevenuePrivateOffice(float revenuePrivateOffice) {
-		this.revenuePrivateOffice = revenuePrivateOffice;
-	}
+    public void setRevenuePrivateHotel(float revenuePrivateHotel) {
+	this.revenuePrivateHotel = revenuePrivateHotel;
+    }
 
-	public Set<E2coOwner> getE2coOwners() {
-		return this.e2coOwners;
-	}
+    public float getRevenuePrivateOffice() {
+	return this.revenuePrivateOffice;
+    }
 
-	public void setE2coOwners(Set<E2coOwner> e2coOwners) {
-		this.e2coOwners = e2coOwners;
-	}
+    public void setRevenuePrivateOffice(float revenuePrivateOffice) {
+	this.revenuePrivateOffice = revenuePrivateOffice;
+    }
+
+    public Set<E2coOwner> getE2coOwners() {
+	return this.e2coOwners;
+    }
+
+    public void setE2coOwners(Set<E2coOwner> e2coOwners) {
+	this.e2coOwners = e2coOwners;
+    }
 
 }
