@@ -172,11 +172,11 @@ public class E2estate implements java.io.Serializable {
 	this.monthlyRental = monthlyRental;
     }
 
-    public float getRersentCoOwner() {
+    public float getPersentCoOwner() {
 	return this.persentCoOwner;
     }
 
-    public void setRersentCoOwner(float rersentCoOwner) {
+    public void setPersentCoOwner(float rersentCoOwner) {
 	this.persentCoOwner = rersentCoOwner;
     }
 
