@@ -21,6 +21,7 @@ public class E1Id implements java.io.Serializable {
     public E1Id(int taxpayerId, int year) {
 	this.taxpayerId = taxpayerId;
 	this.year = year;
+	this.tid = this.taxpayerId;
     }
 
     public int getTaxpayerId() {
