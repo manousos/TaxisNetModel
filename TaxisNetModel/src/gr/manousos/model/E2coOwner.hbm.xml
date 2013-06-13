@@ -21,7 +21,7 @@
             <column name="Address" length="100" not-null="true" />
         </property>
         <property name="percent" type="float">
-            <column name="Percent" precision="12" scale="0" not-null="true" />
+            <column name='"Percent"' precision="12" scale="0" not-null="true" />
         </property>
         <property name="rent" type="java.lang.Float">
             <column name="Rent" precision="12" scale="0" />
